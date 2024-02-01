@@ -1,0 +1,30 @@
+@import 'components/shared/ui/_theme.scss';
+@import '../../../assets/scss/partials/mixins';
+
+.DevelopmentSettings__Container {
+	section {
+		margin-bottom: 30px;
+	}
+
+	h2 {
+		font-size: 18px;
+		font-weight: bold;
+		color: $purple_wine;
+	}
+
+	.ActionButtons {
+		margin: 20px;
+		text-align: center;
+	}
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+.list-options,
+.rating-board,
+.RatingTotal_Container {
+	@include no_select();
+}

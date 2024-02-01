@@ -1,0 +1,146 @@
+{
+	"autofill": {
+		"info_": {
+			"tasting_name": "Sake",
+			"tasting_country": "Japan",
+			"tasting_region": "Osaka",
+			"tasting_producer": "Oishi",
+			"tasting_vintage": "2000",
+			"tasting_grape": "Japanese Grape",
+			"tasting_price": "5000",
+			"tasting_currency": "Yen"
+		}
+	},
+	"events": [
+		{
+			"id": 1,
+			"ref": "x93t944",
+			"name": "myevent-1",
+			"description": "myevent-1 description",
+			"start_date": "2019-01-14 14:23:28",
+			"end_date": "2019-01-20 19:23:28",
+			"visibility": "hidden",
+			"owner_ref": "tex",
+			"created_at": "2019-01-16 13:19:26",
+			"updated_at": "2019-01-16 13:19:26",
+			"wines": []
+		},
+		{
+			"id": 2,
+			"ref": "c2g6888",
+			"name": "myevent-1",
+			"description": "myevent-1 description",
+			"start_date": "2019-01-14 14:23:28",
+			"end_date": "2019-01-20 19:23:28",
+			"visibility": "hidden",
+			"owner_ref": "tex",
+			"created_at": "2019-01-16 13:22:18",
+			"updated_at": "2019-01-16 13:22:18",
+			"wines": []
+		},
+		{
+			"id": 3,
+			"ref": "qzte385",
+			"name": "myevent-1",
+			"description": "myevent-1 description",
+			"start_date": "2019-01-14 14:23:28",
+			"end_date": "2019-01-20 19:23:28",
+			"visibility": "hidden",
+			"owner_ref": "tex",
+			"created_at": "2019-01-16 13:24:11",
+			"updated_at": "2019-01-16 13:24:11",
+			"wines": []
+		},
+		{
+			"id": 4,
+			"ref": "qrh8enf",
+			"name": "myevent-1",
+			"description": "myevent-1 description",
+			"start_date": "2019-01-14 14:23:28",
+			"end_date": "2019-01-20 19:23:28",
+			"visibility": "hidden",
+			"owner_ref": "tex",
+			"created_at": "2019-01-16 13:25:05",
+			"updated_at": "2019-01-16 13:25:05",
+			"wines": []
+		},
+		{
+			"id": 5,
+			"ref": "qnm4y5m",
+			"name": "myevent-1",
+			"description": "myevent-1 description",
+			"start_date": "2019-01-14 14:23:28",
+			"end_date": "2019-01-20 19:23:28",
+			"visibility": "hidden",
+			"owner_ref": "tex",
+			"created_at": "2019-01-16 13:25:28",
+			"updated_at": "2019-01-16 13:25:28",
+			"wines": []
+		},
+		{
+			"id": 6,
+			"ref": "kxr7qek",
+			"name": "myevent-1",
+			"description": "myevent-1 description",
+			"start_date": "2019-01-14 14:23:28",
+			"end_date": "2019-01-20 19:23:28",
+			"visibility": "hidden",
+			"owner_ref": "tex",
+			"created_at": "2019-01-16 13:25:49",
+			"updated_at": "2019-01-16 13:25:49",
+			"wines": []
+		},
+		{
+			"id": 7,
+			"ref": "mc5rln9",
+			"name": "myevent-1",
+			"description": "myevent-1 description",
+			"start_date": "2019-01-14 14:23:28",
+			"end_date": "2019-01-20 19:23:28",
+			"visibility": "hidden",
+			"owner_ref": "tex",
+			"created_at": "2019-01-16 13:26:17",
+			"updated_at": "2019-01-16 13:26:17",
+			"wines": []
+		},
+		{
+			"id": 8,
+			"ref": "tt9673f",
+			"name": "myevent-1",
+			"description": "myevent-1 description",
+			"start_date": "2019-01-14 14:23:28",
+			"end_date": "2019-01-20 19:23:28",
+			"visibility": "hidden",
+			"owner_ref": "tex",
+			"created_at": "2019-01-16 13:26:28",
+			"updated_at": "2019-01-16 13:26:28",
+			"wines": []
+		},
+		{
+			"id": 9,
+			"ref": "zmtc494",
+			"name": "myevent-1",
+			"description": "myevent-1 description",
+			"start_date": "2019-01-14 14:23:28",
+			"end_date": "2019-01-20 19:23:28",
+			"visibility": "hidden",
+			"owner_ref": "tex",
+			"created_at": "2019-01-16 13:26:29",
+			"updated_at": "2019-01-16 13:26:29",
+			"wines": []
+		},
+		{
+			"id": 10,
+			"ref": "arbcl8n",
+			"name": "myevent-1",
+			"description": "myevent-1 description",
+			"start_date": "2019-01-14 14:23:28",
+			"end_date": "2019-01-20 19:23:28",
+			"visibility": "hidden",
+			"owner_ref": "tex",
+			"created_at": "2019-01-16 13:26:53",
+			"updated_at": "2019-01-16 13:26:53",
+			"wines": []
+		}
+	]
+}

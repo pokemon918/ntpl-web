@@ -1,0 +1,159 @@
+COUNTRY,REGION / AREA,PRODUCER,NAME,COLOUR,TYPE,ID
+France,Alsace,Chapoutier,Riesling Schieferkopf Lieu Dit Buehl,White,Still,1000001
+France,Alsace,Chapoutier,Riesling Schieferkopf Kastelberg,White,Still,1000014
+France,Alsace,Chapoutier,Pinot Gris Schieferkopf,White,Still,1000027
+France,Alsace,Chapoutier,Riesling Schieferkopf,White,Still,1000030
+France,Alsace,Chapoutier,Sylvaner Schieferkopf,White,Still,1000043
+France,Alsace,Chapoutier,Riesling Weibelsberg,White,Still,1000056
+France,Alsace,Hugel,Riesling Jubilee,White,Still,1000069
+France,Alsace,Hugel,Riesling SGN,White,Still,1000072
+France,Alsace,Hugel,Riesling VT,White,Still,1000085
+France,Alsace,Hugel,Tokay Pinot Gris Jubilee,White,Still,1000098
+France,Alsace / Wintzenheim,Josmeyer,Riesling Hengst,White,Still,1000102
+France,Alsace / Kessler,Schlumberger,Gewurztraminer Kessler,White,Still,1000115
+France,Alsace / Sonnenglanz,Trapet,Gewurztraminer Sonnenglanz,White,Still,1000128
+France,Alsace / Hunawihr,Trimbach,Clos St Hune,White,Still,1000131
+France,Alsace,Trimbach,Gewurtzraminer Classic,White,Still,1000144
+France,Alsace,Trimbach,Gewurtzraminer Reserve,White,Still,1000157
+France,Alsace,Trimbach,Gewurztraminer Ribeaupierres,White,Still,1000160
+France,Alsace,Trimbach,Gewurztraminer SGN,White,Still,1000173
+France,Alsace,Trimbach,Gewurztraminer VT,White,Still,1000186
+France,Alsace,Trimbach,Muscat Reserve,White,Still,1000199
+France,Alsace,Trimbach,Pinot Blanc Classic,White,Still,1000203
+France,Alsace,Trimbach,Pinot Gris Hommage Jeanne,White,Still,1000216
+France,Alsace,Trimbach,Pinot Gris Reserve,White,Still,1000229
+France,Alsace,Trimbach,Pinot Gris Reserve Personnelle,White,Still,1000232
+France,Alsace,Trimbach,Pinot Gris SGN,White,Still,1000245
+France,Alsace,Trimbach,Pinot Noir Reserve,White,Still,1000258
+France,Alsace,Trimbach,Pinot Noir Reserve Cuve 7,White,Still,1000261
+France,Alsace,Trimbach,Riesling Classic,White,Still,1000274
+France,Alsace,Trimbach,Riesling Frederic Emile,White,Still,1000287
+France,Alsace,Trimbach,Riesling Reserve,White,Still,1000290
+France,Alsace,Trimbach,Sylvaner Classic,White,Still,1000304
+France,Alsace / Hunawihr,Zind Humbrecht,Pinot Gris Clos Winsbuhl,White,Still,1000317
+France,Alsace / Hunawihr,Zind Humbrecht,Pinot Gris Clos Winsbuhl VT,White,Still,1000320
+France,Alsace,Zind Humbrecht,Gewurztraminer,White,Still,1000333
+France,Alsace / Gueberschwihr,Zind Humbrecht,Gewurztraminer Goldert VT,White,Still,1000346
+France,Alsace / Wintzenheim,Zind Humbrecht,Riesling Hauserer,White,Still,1000359
+France,Alsace / Turckheim,Zind Humbrecht,Pinot Gris Heimbourg,White,Still,1000362
+France,Alsace / Turckheim,Zind Humbrecht,Pinot Gris Heimbourg VT,White,Still,1000375
+France,Alsace / Turckheim,Zind Humbrecht,Riesling Heimbourg,White,Still,1000388
+France,Alsace / Wintzenheim,Zind Humbrecht,Gewurztraminer Hengst,White,Still,1000391
+France,Alsace / Wintzenheim,Zind Humbrecht,Gewurztraminer Hengst SGN,White,Still,1000405
+France,Alsace / Turckheim,Zind Humbrecht,Pinot Gris Clos Jebsal SGN,White,Still,1000418
+France,Alsace / Turckheim,Zind Humbrecht,Pinot Gris Clos Jebsal  VT,White,Still,1000421
+France,Alsace,Zind Humbrecht,Pinot Gris,White,Still,1000434
+-,- / -,-,-,-,-,1000447
+France,Alsace / Thann,Zind Humbrecht,Riesling Rangen Thann Clos Saint Urbain,White,Still,1000450
+-,- / -,-,-,-,-,1000463
+-,- / -,-,-,-,-,1000476
+France,Alsace / Wintzenheim,Zind Humbrecht,Rotenberg Pinot Gris SGN,White,Still,1000489
+France,Alsace / Thann,Zind Humbrecht,Pinot Gris Saint Urbain,White,Still,1000492
+France,Alsace / Turckheim,Zind Humbrecht,Gewurztraminer Turckheim,White,Still,1000506
+France,Alsace / Turckheim,Zind Humbrecht,Pinot Gris Turckheim,White,Still,1000519
+France,Alsace / Turckheim,Zind Humbrecht,Riesling Turckheim,White,Still,1000522
+France,Alsace / Windsbuhl,Zind Humbrecht,Gewurztraminer Windsbuhl,White,Still,1000535
+France,Alsace / Windsbuhl,Zind Humbrecht,Riesling Winsbuhl,White,Still,1000548
+France,Alsace / Wintzenheim,Zind Humbrecht,Gewurztraminer Wintzenheim,White,Still,1000551
+Argentina,Mendoza,Achaval Ferrer,Finca Altamira,Red,Still,1000564
+Argentina,Mendoza,Achaval Ferrer,Finca Bella Vista,Red,Still,1000577
+Argentina,Mendoza,Achaval Ferrer,Finca Mirador,Red,Still,1000580
+Argentina,Mendoza,Achaval Ferrer,Malbec,Red,Still,1000593
+Argentina,Mendoza,Achaval Ferrer,Quimera,Red,Still,1000607
+Argentina,Mendoza,Alta Vista,Alto,Red,Still,1000610
+Argentina,Mendoza,Catena,Adrianna Vineyard Malbec,Red,Still,1000623
+Argentina,Mendoza,Catena,Alta Vista Malbec,Red,Still,1000636
+Argentina,Mendoza,Catena,Annamaria Clementi,Red,Still,1000649
+Argentina,Mendoza,Catena,Cabernet Sauvignon,Red,Still,1000652
+Argentina,Mendoza,Catena,Malbec Argentino,Red,Still,1000665
+Argentina,Mendoza,Catena,Nicolas Catena Zapata,Red,Still,1000678
+Argentina,San Juan,Las Moras,Cabernet Sauvignon,Red,Still,1000681
+Argentina,San Juan,Las Moras,Chardonnay,White,Still,1000694
+Argentina,San Juan,Las Moras,Intis Chardonnay Chenin Blanc,White,Still,1000708
+Argentina,San Juan,Las Moras,Intis Merlot Malbec,Red,Still,1000711
+Argentina,San Juan,Las Moras,Syrah,Red,Still,1000724
+Argentina,Mendoza,Trapiche,Malbec,Red,Still,1000737
+Argentina,Mendoza,Trapiche,Pinot Noir,Red,Still,1000740
+Argentina,Mendoza,Trapiche,Oak Cask Pinot Noir,Red,Still,1000753
+Argentina,Mendoza,Trapiche,Sauvignon Blanc,White,Still,1000766
+Argentina,Mendoza,Trapiche,Oak Cask Syrah ,Red,Still,1000779
+Argentina,Mendoza,Val de Flores,Malbec,Red,Still,1000782
+Argentina,Mendoza,Weinert,Estrella Cabernet Sauvignon,Red,Still,1000795
+Argentina,Mendoza,Weinert,Estrella Malbec,Red,Still,1000809
+Argentina,Salta,Yacochuya,Malbec,Red,Still,1000812
+Australia,South Australia / Clare Valley,Tim Adams,Aberfeldy Shiraz,Red,Still,1000825
+Australia,South Australia / Barossa Valley,Tim Adams,Shiraz,Red,Still,1000838
+Australia,South Australia / Clare Valley,Tim Adams,Sorby Shiraz,Red,Still,1000841
+Australia,South Australia / Adelaide Hills,Ashton Hills,Chardonnay,White,Still,1000854
+Australia,South Australia / Adelaide Hills,Ashton Hills,Oblique Reserve Merlot Cabernet Sauvignon,Red,Still,1000867
+Australia,South Australia / Adelaide Hills,Ashton Hills,Pinot Noir,Red,Still,1000870
+Australia,Victoria,Baileys Glenrowan,1904 Block Shiraz,Red,Still,1000883
+Australia,Victoria,Baileys Glenrowan,1920 Block Shiraz,Red,Still,1000896
+Australia,Victoria,Baileys Glenrowan,Cabernet Sauvignon Hermitage,Red,Still,1000900
+Australia,Victoria / Central Victoira,Balgownie,Estate Cabernet Sauvignon,Red,Still,1000913
+Australia,Victoria / Central Victoira,Balgownie,Estate Shiraz,Red,Still,1000926
+Australia,South Australia / Coonawarra,Balnaves,Tally Reserve Cabernet Sauvignon,Red,Still,1000939
+Australia,Victoria / Heathcote,Baptista,Graytown Shiraz,Red,Still,1000942
+United States,California / Napa Valley,Barnett,Rattlesnake Hill Cabernet Sauvignon,Red,Still,1000955
+Australia,South Australia / Barossa Valley,Barossa Valley Estate,E&E Black Pepper Shiraz,Red,Still,1000968
+Australia,South Australia / Clare Valley,Jim Barry,Armagh Shiraz,Red,Still,1000971
+Australia,South Australia / Clare Valley,Jim Barry,Mcrae Wood Shiraz,Red,Still,1000984
+Australia,Victoria / Beechworth,Battely,Shiraz,Red,Still,1000997
+Australia,Victoria / Pyrenees,Berry's Bridge,Shiraz,Red,Still,1001008
+Australia,Victoria / Macedon Ranges,Bindi,Original Vineyard Pinot Noir,Red,Still,1001011
+Australia,Victoria / Yarra Valley,Bortoli,Yarra Valley Estate Grown Pinot Noir,Red,Still,1001024
+Australia,South Australia / Coonawarra,Bowen,Bowen Estate Cabernet Sauvignon,Red,Still,1001037
+Australia,South Australia / Coonawarra,Bowen,Bowen Estate Shiraz,Red,Still,1001040
+Australia,South Australia,Boxhead,Shiraz Cabernet Sauvignon,Red,Still,1001053
+Australia,South Australia / Barossa Valley,Branson Coach House,Coach House Block Shiraz,Red,Still,1001066
+Australia,South Australia / Barossa Valley,Branson Coach House,Greenock Block Shiraz,Red,Still,1001079
+Australia,South Australia / Langhorne Creek,Bremerton,Old Adam Shiraz,Red,Still,1001082
+Australia,New South Wales / Hunter Valley,Brokenwood,Graveyard Vineyard Shiraz,Red,Still,1001095
+Australia,New South Wales / Hunter Valley,Brokenwood,Shiraz,Red,Still,1001109
+Australia,Victoria,Brown Brothers,Cabernet Sauvignon,Red,Still,1001112
+Australia,Victoria,Brown Brothers,Chardonnay,White,Still,1001125
+Australia,Victoria,Brown Brothers,King Valley Chardonnay,White,Still,1001138
+Australia,Victoria,Brown Brothers,Orange Muscat Flora,White,Still,1001141
+Australia,Victoria,Brown Brothers,Shiraz,Red,Still,1001154
+Australia,Victoria,Buller,Beverford Cabernet Sauvignon,Red,Still,1001167
+Australia,Victoria,Buller,Beverford Chardonnay,White,Still,1001170
+Australia,Victoria,Buller,Beverford Merlot,Red,Still,1001183
+Australia,Victoria,Buller,Beverford Shiraz,Red,Still,1001196
+Australia,Victoria,Buller,Fine Old Muscat,White,Still,1001200
+Australia,Victoria,Buller,Fine Old Tawny,Red,Still,1001213
+Australia,Victoria,Buller,Fine Old Tokay,Red,Still,1001226
+Australia,Victoria,Buller,Victoria Tawny,Red,Still,1001239
+Australia,South Australia / Barossa Valley,Burge Family,Draycott Premium Shiraz,Red,Still,1001242
+Australia,South Australia / Barossa Valley,Burge Family,Olive Hill Shiraz Grenache Mourvedre,Red,Still,1001255
+Australia,South Australia / Barossa Valley,Burge Family,Renoux,Red,Still,1001268
+Australia,South Australia / Barossa Valley,Grant Burge,Abednego Shiraz Grenache Mourvedre,Red,Still,1001271
+Australia,South Australia / Barossa Valley,Grant Burge,Filsell Old Vine Shiraz,Red,Still,1001284
+Australia,South Australia / Barossa Valley,Grant Burge,Holy Trinity,Red,Still,1001297
+Australia,South Australia / Barossa Valley,Grant Burge,Meshach Shiraz,Red,Still,1001301
+Australia,South Australia / Barossa Valley,Grant Burge,Shadrach Cabernet Sauvignon,Red,Still,1001314
+Australia,Victoria / Rutherglen,Campbells,Bobbie Burns Shiraz,Red,Still,1001327
+Australia,South Australia / Kangaroo Island,Cape D'Estaing,Admiral's Reserve Shiraz,Red,Still,1001330
+Australia,South Australia / Kangaroo Island,Cape D'Estaing,Cabernet Sauvignon,Red,Still,1001343
+Australia,South Australia / Kangaroo Island,Cape D'Estaing,Shiraz,Red,Still,1001356
+Australia,South Australia / Kangaroo Island,Cape D'Estaing,Shiraz Cabernet Sauvignon,Red,Still,1001369
+Australia,South Australia / Mount Benson,Cape Jaffa,Shiraz,Red,Still,1001372
+Australia,Western Australia / Margaret River,Cape Mentelle,Cabernet Sauvignon,Red,Still,1001385
+Australia,Western Australia / Margaret River,Cape Mentelle,Cabernet Sauvignon Merlot,Red,Still,1001398
+Australia,Western Australia / Margaret River,Cape Mentelle,Chardonnay,White,Still,1001402
+Australia,Western Australia / Margaret River,Cape Mentelle,Sauvignon Semillon,White,Still,1001415
+Australia,Western Australia / Margaret River,Cape Mentelle,Shiraz,Red,Still,1001428
+Australia,Western Australia / Mount Barker,Capel Vale,Kinnaird Shiraz,Red,Still,1001431
+Australia,Victoria / Rutherglen,Chambers Rosewood,Grand Special Muscat,White,Still,1001444
+Australia,Victoria / Rutherglen,Chambers Rosewood,Reserve Cabernet Sauvignon,Red,Still,1001457
+Australia,Victoria / Rutherglen,Chambers Rosewood,Reserve Shiraz,Red,Still,1001460
+Australia,Victoria / Rutherglen,Chambers Rosewood,Short Row Shiraz,Red,Still,1001473
+Australia,South Australia / McLaren Vale,Chapel Hill,Cabernet Sauvignon,Red,Still,1001486
+Australia,South Australia / McLaren Vale,Chapel Hill,Reserve Shiraz,Red,Still,1001499
+Australia,South Australia / McLaren Vale,Chapel Hill,Shiraz,Red,Still,1001503
+Australia,South Australia / McLaren Vale,Chapel Hill,Vicar Shiraz,Red,Still,1001516
+Australia,South Australia / Barossa Valley,Cimicky,Reserve Shiraz,Red,Still,1001529
+Australia,South Australia / Clarendon,Clarendon Hills,Astralis Shiraz,Red,Still,1001532
+Australia,South Australia / Clarendon,Clarendon Hills,Blewitt Springs Grenache,Red,Still,1001545
+Australia,South Australia / Clarendon,Clarendon Hills,Brookman Cabernet Sauvignon,Red,Still,1001558
+Australia,South Australia / Clarendon,Clarendon Hills,Brookman Merlot,Red,Still,1001561
+Australia,South Australia / Clarendon,Clarendon Hills,Brookman Syrah,Red,Still,1001574

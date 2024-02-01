@@ -1,0 +1,25 @@
+@import 'assets/scss/partials/_vars.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.search-group-bar {
+	background: #fff;
+	padding: 15px 20px;
+	border-bottom: 1px solid $c_border;
+	margin-bottom: 15px;
+
+	.input-group {
+		height: 45px;
+		line-height: 45px;
+		width: 100%;
+		max-width: 100%;
+		margin: 0 !important;
+	}
+}
+
+#search-input {
+	padding-top: 7px;
+	width: 100%;
+	display: inline-block;
+	flex: none;
+	@include border_radius(5px);
+}

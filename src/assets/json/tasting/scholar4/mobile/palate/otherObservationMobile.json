@@ -1,0 +1,11 @@
+[
+	{
+		"isMultiple": true,
+		"breadcrumb": "palate_ / tasting_other_observation",
+		"title": "tasting_other_observation",
+		"subtitle": "tasting_select_many",
+		"name": "tasting_other_observation",
+		"keys": ["tasting_other_observation"],
+		"required": ["tasting_other_observation"]
+	}
+]

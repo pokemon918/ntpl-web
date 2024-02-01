@@ -1,0 +1,26 @@
+@import '../_theme';
+@import 'assets/scss/partials/_mixins.scss';
+
+.SplashScreen_Wrapper {
+	height: 100vh;
+	cursor: pointer;
+	position: relative;
+	background-color: $purple_wine;
+
+	.SplashScreen_Container {
+		top: 40%;
+		left: 25px;
+		color: $white;
+		font-size: 48px;
+		max-width: 360px;
+		position: absolute;
+		font-weight: normal;
+		font-family: Abril Fatface;
+
+		@include desktop {
+			top: 30%;
+			left: 100px;
+			font-size: 68px;
+		}
+	}
+}

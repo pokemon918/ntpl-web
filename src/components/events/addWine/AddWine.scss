@@ -1,0 +1,156 @@
+@import 'components/shared/ui/_theme.scss';
+
+.AddWine__Step {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.AddWine__Title {
+	text-align: center;
+
+	font-size: 24px;
+	font-weight: 600;
+	color: $purple_wine;
+	font-family: Raleway;
+}
+
+.AddWine__Search {
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+}
+
+// Producer
+
+.ProducerList__Wrapper {
+	padding: 10px 0px;
+	margin: 0px -30px 20px -30px;
+	border-bottom: 1px solid #b0a5b8;
+	border-top: 1px solid #b0a5b8;
+	max-height: 300px;
+	overflow-y: scroll;
+
+	.ProducerList__Header {
+		display: flex;
+		margin: 10px 30px 0px 30px;
+		font-weight: 600;
+		font-size: 15px;
+		padding: 0px 10px;
+		color: $purple_grape_light;
+
+		.ProducerList__Producer {
+			flex: 3;
+		}
+
+		.ProducerList__Region {
+			flex: 3;
+		}
+
+		.ProducerList__Country {
+			flex: 2;
+		}
+
+		.ProducerList__Next {
+			flex: 1;
+		}
+	}
+
+	.ProducerList__Empty {
+		display: flex;
+		margin: 0px 30px;
+		padding: 20px 10px;
+		color: $primary;
+	}
+
+	.ProducerList__Item {
+		display: flex;
+		margin: 0px 30px;
+		padding: 20px 10px;
+		color: $primary;
+		border-bottom: 1px solid #b0a5b8;
+
+		&:nth-last-child(1) {
+			border-bottom: none;
+		}
+
+		&:hover {
+			cursor: pointer;
+			background-color: #d7d2db;
+		}
+
+		.ProducerList__Producer {
+			font-weight: 600;
+			flex: 3;
+		}
+
+		.ProducerList__Region {
+			flex: 3;
+		}
+
+		.ProducerList__Country {
+			flex: 2;
+		}
+
+		.ProducerList__Next {
+			flex: 1;
+			text-align: center;
+		}
+	}
+}
+
+// Footer
+.Footer__Wrapper {
+	position: relative;
+	right: 0;
+	left: 0;
+	color: $primary;
+	background: #eae9df;
+
+	.Footer__Step1 {
+		padding: 20px;
+		text-align: center;
+
+		a {
+			font-weight: 600;
+			color: $purple_wine;
+			text-decoration-line: underline;
+		}
+	}
+
+	.Footer__Step2 {
+		display: flex;
+		justify-content: space-between;
+		padding: 30px;
+
+		button {
+			min-width: 200px;
+			flex: 1;
+		}
+	}
+}
+
+// Wineinfo
+.WineInfo__Wrapper {
+	margin-bottom: 30px;
+
+	.WineInfo__Producer {
+		font-weight: 600;
+	}
+
+	.WineInfo__Region {
+		font-weight: 600;
+	}
+
+	.WineInfo__Country {
+		font-weight: 600;
+	}
+
+	.WineInfo__Vintage__Container {
+		position: relative;
+
+		.WineInfo__Vintage {
+			position: absolute;
+			z-index: 999;
+		}
+	}
+}

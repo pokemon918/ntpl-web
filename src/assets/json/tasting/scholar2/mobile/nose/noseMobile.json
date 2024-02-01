@@ -1,0 +1,9 @@
+[
+	{
+		"isMultiple": false,
+		"breadcrumb": "nose_",
+		"name": "nose_",
+		"keys": ["noseintensity__"],
+		"required": ["noseintensity__"]
+	}
+]

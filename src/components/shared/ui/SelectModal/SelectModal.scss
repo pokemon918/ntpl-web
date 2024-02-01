@@ -1,0 +1,19 @@
+@import 'assets/scss/partials/_mixins.scss';
+@import '../_theme';
+.Select_Modal_Wrapper {
+	&.active {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 100;
+		overflow: hidden;
+		width: 100%;
+		height: 100vh;
+		background-color: #f5f4ef;
+	}
+
+	.SelectModal_Footer_Wrapper {
+		margin: 10px 0;
+	}
+}

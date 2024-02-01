@@ -1,0 +1,16 @@
+[
+	{
+		"isMultiple": false,
+		"breadcrumb": "appearance_ / winetype_",
+		"keys": ["winetype_"],
+		"name": "winetype_",
+		"required": ["winetype_"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "appearance_ / sherrytype_",
+		"keys": ["color_"],
+		"name": "sherrytype_",
+		"required": ["color_"]
+	}
+]

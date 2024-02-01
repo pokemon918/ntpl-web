@@ -1,0 +1,84 @@
+@import 'assets/scss/partials/_mixins.scss';
+@import 'components/shared/ui/_theme.scss';
+
+.SubscriptionPayment__Container {
+	.SubscriptionPayment_Info {
+		margin-bottom: 14px;
+
+		& > span {
+			display: block;
+			//font-size: 14px;
+			//color: $primary-text-light;
+		}
+	}
+
+	.label {
+		font-weight: 600;
+		//font-size: 14px;
+	}
+
+	.SubscriptionPayment_Wrapper {
+		display: flex;
+
+		.label {
+			//font-size: 14px;
+			flex: 1 1;
+		}
+
+		@include mobile {
+			flex-wrap: wrap;
+			.label {
+				margin-bottom: 6px;
+				width: 100%;
+				flex-grow: 0;
+				flex-shrink: 1;
+				flex-basis: auto;
+			}
+		}
+	}
+
+	.SubscriptionPayment_Info_Wrapper {
+		flex: 2;
+		//font-size: 14px;
+		//color: $primary-text-light;
+	}
+
+	.SubscriptionPayment__StatusText {
+		margin-bottom: 30px;
+
+		&.center {
+			text-align: center;
+		}
+
+		p:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	.SubscriptionPayment__ActionButtons {
+		margin: 60px 0;
+
+		.ButtonContainer {
+			&:not(:first-of-type) {
+				margin-top: 10px;
+			}
+			text-align: center;
+
+			span {
+				line-height: 1.8;
+			}
+		}
+	}
+
+	.DialogBox__Container__CloseButton {
+		@include mobile {
+			display: none;
+		}
+	}
+
+	.SubscriptionPayment_Title {
+		.title {
+			margin-bottom: 12px;
+		}
+	}
+}

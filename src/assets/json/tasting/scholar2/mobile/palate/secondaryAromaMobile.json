@@ -1,0 +1,30 @@
+[
+	{
+		"isMultiple": true,
+		"breadcrumb": "palate_ / tasting_aromas_secondary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"name": "notes_yeast_",
+		"subHeader": "scholar_yeast_subHeader",
+		"keys": ["notes_yeast_"],
+		"required": ["notes_yeast_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "palate_ / tasting_aromas_secondary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"name": "malolactic_",
+		"keys": ["malolactic_"],
+		"required": ["malolactic_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "palate_ / tasting_aromas_secondary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"name": "notes_oak_",
+		"keys": ["notes_oak_"],
+		"required": ["notes_oak_"]
+	}
+]

@@ -1,0 +1,21 @@
+.ElementsList__Container {
+	.SearchBar__Wrapper {
+		max-width: 100%;
+
+		input {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.ElementsList__List__Container {
+	display: flex;
+	flex-direction: column;
+	padding: 0px 20px;
+}
+
+.ElementsList_Empty {
+	margin: 15px 0px;
+	text-align: center;
+	font-size: 14px;
+}

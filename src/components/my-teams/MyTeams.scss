@@ -1,0 +1,151 @@
+@import 'assets/scss/partials/_vars.scss';
+@import 'assets/scss/partials/_mixins.scss';
+@import 'components/shared/ui/_theme.scss';
+
+.MyTeams_Container {
+	.MyTeams__Content {
+		position: relative;
+		top: 115px;
+
+		.MyTeams__Actions {
+			position: absolute;
+			right: 0;
+		}
+	}
+}
+
+.MyTeam_Title_Wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+
+	.MyTeam_Title {
+		font-weight: 500;
+		font-family: 'Abril Fatface';
+		color: $purple_wine;
+	}
+}
+
+.MyTeam_Manage {
+	margin-bottom: 50px;
+}
+
+.MyTeam__Item {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid $primary-text-light;
+	color: $purple_wine;
+	font-size: 14px;
+	padding-right: 20px;
+
+	& > div {
+		align-self: center;
+	}
+}
+
+.MyTeam__Item_Title_Wrapper {
+	display: flex;
+	align-items: center;
+	flex: 2 1;
+	.MyTeam__Item_Title {
+		font-weight: 600;
+	}
+}
+
+.MyTeam__Items_Title {
+	font-size: 18px;
+	font-weight: 700;
+	color: $purple_wine;
+	margin-bottom: 30px;
+}
+
+.MyTeam__Item_Image {
+	margin-right: 10px;
+	img {
+		object-fit: cover;
+		width: 40px;
+		height: 40px;
+		overflow: hidden;
+		border-radius: 100%;
+	}
+}
+
+.MyTeam_Items_Header {
+	display: flex;
+	justify-content: space-between;
+	color: $primary-text-light;
+	font-size: 12px;
+	padding: 0 20px 0 50px;
+	margin-bottom: 5px;
+	span {
+		&:nth-child(1) {
+			flex: 2 1;
+		}
+		&:nth-child(2) {
+			flex: 1 1;
+			padding-right: 25px;
+		}
+		&:nth-child(3) {
+			padding-right: 18px;
+		}
+	}
+}
+
+.MyTeam__Item_Participants {
+	flex: 1;
+	span {
+		text-transform: lowercase;
+	}
+}
+
+.MyTeams__Error {
+	padding: 30px 0;
+	text-align: center;
+
+	button {
+		margin-top: 30px;
+	}
+}
+
+.Create_Team_Image_Wrapper {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-color: #f5f4ef;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&:hover {
+		.Create_Team_Image_Wrapper_Default {
+			display: inline;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			cursor: pointer;
+			transform: translate(-50%, -50%);
+			background: black;
+			padding: 8px;
+			font-weight: 600;
+			font-size: 12px;
+			color: white;
+			text-decoration: underline;
+			border-radius: 40px 40px;
+			white-space: nowrap;
+		}
+	}
+
+	.Create_Team_Image_Wrapper_Default {
+		display: none;
+	}
+}

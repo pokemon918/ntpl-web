@@ -1,0 +1,77 @@
+@import '../_vars';
+@import '../_mixins';
+
+$colours: 'nuance_white' $cp_color_white, 'nuance_rose' $cp_nuance_rose, 'nuance_red' $cp_color_red,
+	'type_white' $cp_color_white, 'type_rose' $cp_nuance_rose, 'type_red' $cp_color_red;
+
+$clarity_list: 'nuance_lemongreen' $cp_lemon_green darken($cp_lemon_green, 20),
+	'nuance_lemon' $cp_lemon darken($cp_lemon, 20), 'nuance_gold' $cp_gold darken($cp_gold, 20),
+	'nuance_amber' $cp_amber darken($cp_amber, 20), 'nuance_brown' $cp_brown_w darken($cp_brown_w, 20),
+	'nuance_pink' $cp_pink darken($cp_pink, 20), 'nuance_pinkorange' #f97976,
+	'nuance_salmon' $cp_salmon darken($cp_salmon, 20),
+	'nuance_orange' $cp_orange darken($cp_orange, 20),
+	'nuance_onionskin' $cp_onion_skin darken($cp_onion_skin, 20),
+	'nuance_purple' $cp_purple darken($cp_purple, 20), 'nuance_ruby' $cp_ruby darken($cp_ruby, 20),
+	'nuance_garnet' $cp_garnet darken($cp_garnet, 20), 'nuance_tawny' $cp_tawny darken($cp_tawny, 20),
+	'nuance_brown' $cp_brown_r darken($cp_brown_r, 20),
+	'nuance_brown_red' $cp_brown_r darken($cp_brown_r, 20);
+
+.box-selection-option {
+	.option-color-pallette {
+		&.category_still,
+		&.category_sparkling,
+		&.category_fortified {
+			background: $cp_wine_type;
+		}
+
+		@each $i in $colours {
+			&.#{nth($i, 1)} {
+				background: nth($i, 2);
+			}
+		}
+
+		@each $i in $clarity_list {
+			$c1: nth($i, 2);
+			$c2: darken(nth($i, 2), 15);
+			$c3: darken(nth($i, 2), 25);
+			$c1_pale: desaturate($c1, 40%);
+			$c1_medium: desaturate($c1, 10%);
+			$c1_deep: saturate($c1, 20%);
+			$c3_pale: darken($c1_pale, 25%);
+			$c3_medium: darken($c1_medium, 25%);
+			$c3_deep: darken($c1_deep, 25%);
+
+			&.#{nth($i, 1)} {
+				background: nth($i, 2);
+			}
+
+			&.clarity_hazy.#{nth($i, 1)} {
+				@include radial_gradient($c1, $c3) &.colorintensity_deep {
+					@include radial_gradient($c1_deep, $c3_deep);
+				}
+
+				&.colorintensity_medium {
+					@include radial_gradient($c1_medium, $c3_medium);
+				}
+
+				&.colorintensity_pale {
+					@include radial_gradient($c1_pale, $c3_pale);
+				}
+			}
+
+			&.#{nth($i, 1)}.clarity_clear {
+				&.colorintensity_deep {
+					background: $c1_deep;
+				}
+
+				&.colorintensity_medium {
+					background: $c1_medium;
+				}
+
+				&.colorintensity_pale {
+					background: $c1_pale;
+				}
+			}
+		}
+	}
+}

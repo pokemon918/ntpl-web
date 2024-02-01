@@ -1,0 +1,31 @@
+@import 'components/shared/ui/_theme.scss';
+
+.MyWines__Container {
+	position: relative;
+
+	h1 {
+		font-family: Abril Fatface;
+		font-size: 28px;
+		color: $purple_wine;
+	}
+
+	.MyWines__Text {
+		font-family: Raleway;
+		font-size: 14px;
+		color: $purple_heather;
+
+		a {
+			font-weight: bold;
+			color: $purple_wine;
+		}
+	}
+
+	.MyWines__Error {
+		padding: 20px 0;
+		text-align: center;
+
+		&_Title {
+			margin-bottom: 30px;
+		}
+	}
+}

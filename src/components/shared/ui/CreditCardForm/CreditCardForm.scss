@@ -1,0 +1,35 @@
+@import '../_theme';
+
+.CreditCardForm__Container {
+	width: calc(100% - 32px);
+	padding: 15px 20px;
+
+	& div {
+		max-width: 100%;
+	}
+
+	.CreditCardForm__Inline {
+		display: flex;
+		width: 100%;
+
+		& div:nth-child(1),
+		& div:nth-child(2) {
+			flex-basis: 50%;
+		}
+
+		.CreditCardForm__PaddingLeft {
+			padding-left: 10px;
+		}
+
+		.CreditCardForm__PaddingRight {
+			padding-right: 10px;
+		}
+	}
+
+	.CreditCardForm__Label {
+		color: $purple_wine;
+		font-family: $body_font_family;
+		font-size: 14px;
+		font-weight: 600;
+	}
+}

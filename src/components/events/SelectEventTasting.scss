@@ -1,0 +1,18 @@
+@import 'components/shared/ui/_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.EventSummary__Selected_Wine {
+	text-align: left;
+
+	.WineList__Item {
+		padding: 10px 0;
+		border-top: 1px solid #c0b7c5;
+		border-bottom: 1px solid #c0b7c5;
+		cursor: pointer;
+	}
+
+	.StartTasting__Container {
+		margin-top: 50px;
+		text-align: center;
+	}
+}

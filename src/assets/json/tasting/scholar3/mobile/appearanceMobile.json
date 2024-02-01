@@ -1,0 +1,30 @@
+[
+	{
+		"isMultiple": false,
+		"breadcrumb": "appearance_ / clarity__",
+		"keys": ["clarity__"],
+		"name": "clarity__",
+		"required": ["clarity__"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "appearance_ / colorintensity__",
+		"keys": ["colorintensity__"],
+		"name": "colorintensity__",
+		"required": ["colorintensity__"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "appearance_ / color_",
+		"keys": ["color_"],
+		"name": "color_",
+		"required": ["color_"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "appearance_ / nuance_",
+		"keys": ["nuance_"],
+		"name": "nuance_",
+		"required": ["nuance_"]
+	}
+]

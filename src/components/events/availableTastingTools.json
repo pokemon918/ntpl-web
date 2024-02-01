@@ -1,0 +1,22 @@
+[
+	{
+		"id": "event_tasting_type_quick",
+		"name": "quickTasting"
+	},
+	{
+		"id": "event_tasting_type_profound",
+		"name": "profoundTasting"
+	},
+	{
+		"id": "event_tasting_type_scholar2",
+		"name": "scholar2"
+	},
+	{
+		"id": "event_tasting_type_scholar3",
+		"name": "scholar3"
+	},
+	{
+		"id": "event_tasting_type_scholar4",
+		"name": "scholar4"
+	}
+]

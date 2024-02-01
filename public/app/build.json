@@ -1,0 +1,8 @@
+{
+	"build":"__BUILD__",
+	"version":"__VERSION__",
+	"commit":"__COMMIT__",
+	"branch":"__BRANCH__",
+	"datetime":"__DATETIME__",
+	"tags":"__TAGS__"
+}

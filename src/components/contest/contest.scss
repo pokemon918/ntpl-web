@@ -1,0 +1,581 @@
+@import 'components/shared/ui/_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.Contest_Scroll_Wrapper {
+	overflow-x: scroll;
+}
+
+body .contest tbody {
+	background: none;
+}
+
+.contest {
+	font-size: 16px;
+
+	@include mobile {
+		font-size: 13px;
+	}
+
+	h1,
+	h2,
+	h3 {
+		font-family: 'Abril Fatface';
+		text-align: left;
+	}
+	h3 {
+		margin: 50px 0 30px 0;
+	}
+
+	h1,
+	h2 {
+		margin-bottom: 50px;
+	}
+
+	table {
+		width: 100%;
+		margin: 0 0 20px 0;
+		border-collapse: collapse;
+	}
+
+	table,
+	th,
+	td {
+		border: none;
+	}
+
+	table thead tr,
+	table > tr:first-child {
+		background-color: $primary;
+	}
+
+	.spacer {
+		margin-bottom: 100px;
+	}
+
+	th {
+		padding: 13px 0 13px 1ch;
+		text-align: center;
+		font-size: 0.9rem;
+		vertical-align: bottom;
+		@include mobile {
+			font-size: 0.7rem;
+		}
+		&:first-child {
+			padding-left: 13px;
+		}
+	}
+
+	th:last-child {
+		padding: 13px 1ch 13px 1ch;
+	}
+
+	thead.middle th {
+		vertical-align: middle;
+	}
+
+	td {
+		padding: 13px 0 13px 1ch;
+		font-size: 16px;
+		vertical-align: top;
+
+		@include mobile {
+			font-size: 13px;
+		}
+		text-align: center;
+
+		&:first-child {
+			padding-left: 5px;
+		}
+	}
+
+	table.air td {
+		padding: 13px 10px;
+		vertical-align: middle;
+		text-align: center;
+
+		&:first-child {
+			padding-left: 5px;
+			text-align: left;
+		}
+	}
+
+	td:first-child,
+	th:first-child {
+		text-align: left;
+	}
+
+	.long_text_wrapper {
+		min-width: 235px;
+		padding: 0 8px;
+		text-align: left;
+	}
+
+	.l-align {
+		text-align: left;
+	}
+
+	.vertical-text {
+		writing-mode: vertical-lr;
+		transform: rotate(-140deg);
+		transform: rotate(-180deg);
+		position: relative;
+		left: -5px;
+	}
+
+	tbody > tr,
+	table > tr:not(:first-child) {
+		border-bottom: 1px $secondary-darker solid;
+	}
+
+	tr:last-child {
+		box-shadow: 0 5px 2px -4px $primary-light;
+	}
+
+	th,
+	.ContestDetails__Header {
+		width: auto;
+		color: $secondary;
+		background: $primary;
+	}
+
+	.ContestProgress__Header {
+		background-color: $primary;
+	}
+
+	.Contest_Header {
+		display: flex;
+		padding: 5px 0px;
+
+		h1 {
+			flex: 3;
+		}
+
+		a {
+			flex: 1;
+		}
+	}
+
+	.Dropdown__Container {
+		width: auto;
+
+		.Dropdown__Value {
+			font-weight: 100 !important;
+			font-size: 16px;
+
+			@include mobile {
+				font-size: 13px;
+			}
+		}
+	}
+
+	.ContestProgress__Wrapper table {
+		box-shadow: 1px 5px 7px -4px $primary-light;
+		overflow-x: auto;
+
+		&::-webkit-scrollbar {
+			height: 4px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: $primary-text-light;
+		}
+	}
+
+	.flight {
+		margin-bottom: 75px;
+		overflow-x: auto;
+
+		&::-webkit-scrollbar {
+			height: 4px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: $primary-text-light;
+		}
+	}
+
+	.Contest_Header_Wrapper {
+		margin-bottom: 50px;
+	}
+
+	.Contest_Team_Wrapper {
+		display: flex;
+		justify-content: space-between;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.Contest_Team_Wrapper > div {
+		padding: 0px 10px 10px 10px;
+		flex: 1;
+	}
+
+	.Contest_Team_Info {
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	.ContestArrival__Wrapper table {
+		box-shadow: 1px 5px 2px -4px $primary-light;
+
+		&::-webkit-scrollbar {
+			height: 4px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: $primary-text-light;
+		}
+	}
+
+	.Dropdown__Container .Dropdown__List .Dropdown__Item {
+		text-align: left;
+		padding: 8px;
+
+		@include mobile {
+			font-size: 13px;
+		}
+	}
+
+	.ContestProgress__Row td {
+		white-space: nowrap;
+
+		&:not(:first-of-type) {
+			text-align: center;
+		}
+	}
+
+	li {
+		padding: 10px;
+	}
+
+	.corner-button {
+		float: right;
+		margin: 0;
+
+		&.Size--small {
+			height: 35px;
+		}
+
+		@include mobile {
+			display: block;
+			float: none;
+			//margin: 20px auto;
+			text-align: center;
+		}
+	}
+
+	thead {
+		@include no_select();
+	}
+}
+
+.ext-link {
+	color: rgba($primary, 0.1);
+}
+
+.TeamDetails__JoinList_Name {
+	font-size: 18px;
+}
+
+.medium-icon {
+	font-size: 1.4em;
+}
+
+.Contest_Back {
+	color: $primary;
+	font-size: 14px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+.Contest_Back > * {
+	cursor: pointer;
+}
+
+.Contest_Participant_Container {
+	font-size: 14px;
+	color: $purple_heather;
+}
+
+.Contest_Confirm {
+	color: $primary;
+	cursor: pointer;
+	font-size: 13px;
+}
+
+.Contest_Team_Dropover {
+	width: 15%;
+}
+
+.Contest_Table_Scroll {
+	overflow-x: auto;
+	margin-bottom: 10px;
+	&::-webkit-scrollbar {
+		height: 2px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $primary-text-light;
+	}
+}
+/* This should be in a general file. Sorry. MRW */
+.hide {
+	display: none;
+}
+
+a,
+a:hover,
+a:active {
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+body a,
+body a:hover {
+	color: $primary;
+}
+
+.link,
+.links a {
+	border-bottom: 2px solid $primary-light;
+	cursor: pointer;
+}
+
+.link:hover,
+.links a:hover,
+.link:active,
+.links a:active {
+	border-bottom: 2px solid $primary;
+	text-shadow: 0 0 1px $primary-light;
+}
+
+b.link:hover,
+.links b:hover,
+b.link:active,
+.links b:active {
+	text-shadow: none;
+}
+
+.extra-spacing {
+	margin-bottom: 50px;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+.ContestProgress__Wrapper {
+	overflow: hidden;
+	th {
+		@include no_select();
+	}
+
+	td {
+		cursor: default;
+	}
+}
+
+.pointer input,
+.pointer,
+.hand,
+.link-mouse {
+	cursor: pointer;
+}
+
+.no-select {
+	@include no_select();
+}
+
+.no-mouse {
+	cursor: none;
+}
+
+.just-mouse {
+	cursor: default;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.no-wrap {
+	white-space: nowrap;
+}
+/*
+.__react_component_tooltip.place-left::after {
+    border-left: 8px solid red !important;
+}
+
+.__react_component_tooltip.place-right::after {
+    border-right: 8px solid red !important;
+}
+
+.__react_component_tooltip.place-top::after {
+    border-top: 8px solid red !important;
+}
+
+.__react_component_tooltip.place-bottom::after {
+    border-bottom: 8px solid red !important;
+}*/
+
+.max-w-xl {
+	max-width: 400px;
+}
+
+.min-w-m {
+	min-width: 120px;
+}
+
+.min-w-s {
+	min-width: 60px;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+span.ring[data-content='silver'] {
+	background-color: $silver;
+}
+
+/*span.ring[data-content='bronze'] {
+	background-color: $bronze;
+}*/
+
+span.ring[data-content='gold'] {
+	background-color: $gold;
+}
+
+span.ring.strong[data-content='silver'],
+span.ring.strong[data-content='bronze'],
+span.ring.strong[data-content='gold'] {
+	box-shadow: 0 0 0 2px $primary;
+	font-weight: bold;
+}
+span.ring[data-content='silver'],
+span.ring[data-content='bronze'],
+span.ring[data-content='gold'] {
+	box-shadow: 0 0 0 1px $primary-text-light;
+	font-weight: normal;
+}
+
+.ring.strong {
+	color: $primary;
+	box-shadow: 0 0 0 2px $primary;
+}
+
+span.ring {
+	box-shadow: 0 0 0 0px $primary-text-light;
+	box-shadow: none;
+	color: $primary-text-light;
+	background: none;
+	border-radius: 0.8em;
+	-moz-border-radius: 0.8em;
+	-webkit-border-radius: 0.8em;
+	color: $primary;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 1.6em;
+	margin-right: 5px;
+	text-align: center;
+	width: 1.6em;
+}
+
+span.ring .no-ring {
+	box-shadow: 0 0 0px 9px $secondary;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.rating-circle {
+	background: $primary;
+	border-radius: 50%;
+	display: inline-block;
+	height: 5px;
+	width: 5px;
+	box-shadow: 0 0 1px 1px $primary;
+	overflow: hidden;
+}
+
+.rating-circle.-M {
+	box-shadow: 0 0 1px 5px $primary;
+}
+
+.rating-circle.-H {
+	box-shadow: 0 0 1px 9px $primary;
+}
+
+.step-container.rating-step {
+	@include no_select();
+}
+
+.huge.strong.ring {
+	transform: scale(2);
+	margin: 0 50% 30px 50%;
+	position: relative;
+	left: -12px;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.flex.shrink {
+	justify-content: space-evenly;
+}
+
+.flex .SearchBar__Wrapper {
+	width: initial;
+}
+
+.soft-text {
+	color: $primary-text-light;
+}
+
+body div .align-left {
+	text-align: left !important;
+}
+
+.text-error {
+	color: crimson;
+}
+
+body h5,
+body h5 {
+	margin-top: 20px;
+}
+
+.small-text {
+	font-size: 0.8em;
+}
+
+.contest-progress tbody tr:hover {
+	background-color: rgba($primary, 0.1);
+}
+
+.hide {
+	display: none;
+}
+
+// iPad in landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	.Background__Wrapper .Body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+}

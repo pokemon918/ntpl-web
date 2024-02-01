@@ -1,0 +1,28 @@
+@import 'components/shared/ui/_theme';
+
+.container {
+	max-width: 630px;
+	margin-bottom: 70px;
+}
+
+.text {
+	font-family: $body_font_family;
+	font-size: 24px;
+	font-weight: 600;
+	color: $purple_wine;
+}
+
+.separator {
+	margin-top: 25px;
+	margin-bottom: 55px;
+	border: none;
+	border-top: 2px solid #d7d2db;
+}
+
+.fields {
+	& > *:not(:last-child) {
+		padding-bottom: 42px;
+		border-bottom: 1px solid #e0ddd0;
+		margin-bottom: 37px;
+	}
+}

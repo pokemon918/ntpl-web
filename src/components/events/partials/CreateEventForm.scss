@@ -1,0 +1,40 @@
+@import 'components/shared/ui/_theme.scss';
+
+.Create_Event_Image_Wrapper {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-color: #f5f4ef;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&:hover {
+		.Create_Event_Image_Wrapper_Default {
+			display: inline;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			cursor: pointer;
+			transform: translate(-50%, -50%);
+			background: black;
+			padding: 8px;
+			font-weight: 600;
+			font-size: 12px;
+			color: white;
+			text-decoration: underline;
+			border-radius: 40px 40px;
+			white-space: nowrap;
+		}
+	}
+
+	.Create_Event_Image_Wrapper_Default {
+		display: none;
+	}
+}

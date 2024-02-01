@@ -1,0 +1,19 @@
+@import '../_theme';
+@import '../../../../assets/scss/partials/mixins';
+
+.SingleSelector__Group {
+	margin-bottom: 20px;
+
+	.SingleSelector__GroupHeader {
+		@include no_select();
+		margin: 0 15px;
+		padding: 3px;
+		padding-top: 5px;
+		background-color: $secondary-dark;
+		color: $purple_heather;
+		text-align: left;
+		text-indent: 20px;
+		font-weight: bold;
+		font-size: 11px;
+	}
+}

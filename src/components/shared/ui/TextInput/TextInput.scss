@@ -1,0 +1,98 @@
+@import 'assets/scss/partials/_mixins.scss';
+@import '../_theme';
+
+.TextInput__Container {
+	outline: none;
+	margin-bottom: 15px;
+
+	@include mobile {
+		margin-bottom: 6px;
+	}
+
+	&.inline {
+		display: inline-block;
+	}
+
+	&.small {
+		input {
+			width: 80px;
+		}
+	}
+
+	label {
+		visibility: hidden;
+		font-family: $body_font_family;
+		font-size: 14px;
+		font-weight: 500;
+		margin-bottom: 0px;
+	}
+
+	input {
+		font-family: $body_font_family;
+		color: $purple_wine;
+		font-size: 13px;
+		border: none;
+		border-bottom: 1.5px solid $purple_greyed;
+		&:hover {
+			border-bottom: 1.5px solid $primary;
+		}
+
+		background-color: transparent;
+		outline: none;
+		box-shadow: none;
+		width: 100%;
+		font-weight: 600;
+		border-radius: 0;
+		padding-left: 0px;
+
+		&.dropover {
+			cursor: pointer;
+		}
+
+		&:disabled {
+			-webkit-text-fill-color: $purple_wine;
+			-webkit-opacity: 1;
+			opacity: 1;
+		}
+
+		&:focus {
+			border-bottom-color: $purple_wine;
+		}
+
+		&::placeholder {
+			-webkit-text-fill-color: $purple_greyed;
+			color: $purple_greyed;
+			opacity: 1;
+			font-weight: 100;
+		}
+
+		@include desktop {
+			font-size: 16px;
+		}
+	}
+
+	& label.TextInput__Label__Visible {
+		visibility: visible;
+		color: $purple_greyed;
+	}
+
+	&.disabled {
+		//opacity: 1;
+		//font-size: 18px;
+
+		& input {
+			//font-weight: 600;
+			border-bottom: 1.5px solid #b0a5b800;
+		}
+	}
+
+	.TextInput__Input_Field {
+		position: relative;
+
+		svg {
+			position: absolute;
+			right: 0;
+			top: 5px;
+		}
+	}
+}

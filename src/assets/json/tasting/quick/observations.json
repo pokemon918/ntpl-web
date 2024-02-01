@@ -1,0 +1,6 @@
+{
+	"breadcrumb": "tasting_observations / tasting_quality",
+	"keys": ["quality__"],
+	"name": "tasting_quality",
+	"required": ["quality__"]
+}

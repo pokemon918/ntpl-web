@@ -1,0 +1,30 @@
+[
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_palate_ / note_descriptors",
+		"name": "note_descriptors",
+		"subtitle": "tasting_select_many",
+		"keys": ["notes_sparkling_red_"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "nose_palate_ / noseintensity__",
+		"name": "notes_intensity",
+		"keys": ["noseintensity__"],
+		"required": ["noseintensity__"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "nose_palate_ / development__",
+		"keys": ["development__"],
+		"required": ["development__"],
+		"name": "fruitdevelopment_white__"
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "palate_ / tasting_autolytic",
+		"name": "tasting_autolytic_battonage",
+		"keys": ["autolytic_"],
+		"required": ["autolytic_"]
+	}
+]

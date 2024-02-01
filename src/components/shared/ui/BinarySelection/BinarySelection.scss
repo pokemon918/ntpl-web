@@ -1,0 +1,31 @@
+@import '../_theme';
+
+.BinarySelection_Container {
+	font-size: 18px;
+	font-weight: 600;
+	color: $purple_wine;
+	font-family: Raleway;
+	display: inline-block;
+	border-top: 1px solid #b0a5b8;
+	border-bottom: 1px solid #b0a5b8;
+
+	.BinarySelection_Item {
+		padding: 25px 55px;
+		display: inline-block;
+		background-color: #f5f4ef;
+		border-right: 1px solid #b0a5b8;
+		cursor: pointer;
+
+		&:last-of-type {
+			border-right: none;
+		}
+
+		&:hover {
+			background-color: lighten(#d7d2db, 5);
+		}
+
+		&.active {
+			background-color: #d7d2db;
+		}
+	}
+}

@@ -1,0 +1,6 @@
+LATER:
+-------
+- Prevent user access to other pages except login if user is logged out
+- Loading/Spinner component for all async requests
+- Fetch wine-tasting by ref
+- Refactor logout

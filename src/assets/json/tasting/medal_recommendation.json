@@ -1,0 +1,10 @@
+{
+	"name": "tasting_medal",
+	"keys": [
+		"tasting_recommendation_medal",
+		"tasting_recommendation_commended",
+		"tasting_recommendation_faulty",
+		"tasting_recommendation_out"
+	],
+	"required": ["tasting_medal"]
+}

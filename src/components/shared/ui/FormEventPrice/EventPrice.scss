@@ -1,0 +1,32 @@
+.EventPrice__CombinedInputs {
+	display: flex;
+}
+
+.EventPrice__PriceContainer {
+	display: flex;
+
+	& > *:not(:last-child) {
+		margin-right: 10px;
+	}
+}
+
+.EventPrice__PriceInput {
+	position: relative;
+	top: -26px; // default styling of the number input must be improved for reuse so we can avoid this unwanted glitch
+}
+
+.EventPrice__PriceDisabled {
+	&,
+	* {
+		cursor: not-allowed;
+	}
+
+	&,
+	.EventPrice__PriceInput::placeholder {
+		opacity: 0.7;
+	}
+}
+
+.EventPrice__Dropdown {
+	font-weight: normal;
+}

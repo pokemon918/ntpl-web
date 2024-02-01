@@ -1,0 +1,10 @@
+[
+	{
+		"isMultiple": false,
+		"breadcrumb": "tasting_observations",
+		"title": "tasting_observations",
+		"name": "quality__",
+		"keys": ["quality__"],
+		"required": ["quality__"]
+	}
+]

@@ -1,0 +1,104 @@
+@import 'assets/scss/partials/_mixins.scss';
+@import 'components/shared/ui/_theme.scss';
+
+.InviteMembers__Backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	opacity: 0.7;
+	height: 100vh;
+	background-color: $primary;
+	transition: opacity 0.15s linear;
+}
+
+.InviteMembers__Wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1100;
+	width: 100vw;
+	height: 100vh;
+	overflow-y: scroll;
+}
+
+.InviteMembers__Modal {
+	width: 100%;
+	position: relative;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%) !important;
+	z-index: 1101;
+	transform: translateX(0px);
+	background-color: $secondary;
+	font-family: $body_font_family;
+	box-shadow: 0px 0px 5px #aaa;
+
+	.InviteMembers__Container {
+		overflow: hidden;
+	}
+
+	.InviteMembers__Container__Header {
+		width: 100%;
+		font-size: 24px;
+		color: $purple_wine;
+		padding: 30px 30px 24px;
+
+		.InviteMembers__Title {
+			flex: 1;
+			font-weight: 600;
+			margin-bottom: 32px;
+			text-align: center;
+		}
+
+		.InviteMembers__Description {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 16px;
+		}
+	}
+
+	.InviteMembers__Container__Body {
+		color: $purple_wine;
+		font-size: 18px;
+		line-height: 24px;
+		padding: 0 30px 30px;
+
+		.TextArea__Wrapper {
+			width: 100%;
+		}
+
+		textarea {
+			border: none;
+			resize: none;
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+
+	.InviteMembers__Container__FooterWrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		background-color: $secondary-dark;
+		padding: 20px 30px;
+
+		button {
+			max-width: 200px;
+			width: 100%;
+		}
+
+		@include mobile {
+			flex-wrap: wrap;
+
+			button {
+				max-width: none;
+				&:first-child {
+					margin-right: 0;
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+@import 'assets/scss/partials/_vars.scss';
+@import 'components/shared/ui/_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+/* BoxSelection */
+.box-selection {
+	margin-bottom: 35px;
+
+	.box-selection-title {
+		margin-bottom: 20px;
+		color: $purple_wine;
+		font-family: 'Abril Fatface';
+		text-align: center;
+	}
+}
+
+.box-selection-wrapper {
+	.row {
+		border-bottom: 1px solid $c_border;
+	}
+}
+
+.box-selection-option {
+	text-align: center;
+	padding: 0 !important;
+
+	&:last-child {
+		border-right: 0;
+	}
+
+	label {
+		cursor: pointer;
+		padding: 25px 20px;
+		width: 100%;
+		font-size: 20px;
+		font-weight: 300;
+		color: $purple_wine;
+		height: 100%;
+	}
+
+	.option-color-pallette {
+		height: 50px;
+		width: 50px;
+		background: #ccc;
+		@include border_radius(25px);
+		margin: 12px auto;
+	}
+
+	.option-wine-pallette {
+		height: 50px;
+		width: 50px;
+		margin: 12px auto;
+	}
+
+	input[type='radio'] {
+		position: absolute;
+		left: -9999px;
+	}
+}

@@ -1,0 +1,44 @@
+@import '../_theme';
+
+.LocationInput__Container {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	.LocationInput__InputField {
+		flex: 1;
+	}
+
+	> button {
+		position: relative;
+		top: 10px;
+		outline: none !important;
+	}
+
+	.LocationInput__Field {
+		display: flex;
+	}
+
+	.LocationInput__ListItem {
+		width: 100%;
+		margin-top: 20px;
+		color: $purple_greyed;
+		cursor: pointer;
+	}
+
+	.Button.Button__Transparent {
+		outline: none;
+	}
+
+	.inform-modal {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #ffffff;
+		text-align: center;
+		width: 100px;
+		height: 100px;
+	}
+}

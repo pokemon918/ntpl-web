@@ -1,0 +1,61 @@
+@import '../_vars';
+@import '../_mixins';
+
+.info-form {
+	@include no_select();
+	width: 100%;
+	margin: auto;
+	padding-bottom: 30px;
+	@include border_radius(5px);
+
+	.info-field-wrapper {
+		position: relative;
+
+		.mini-label {
+			position: absolute;
+			top: 3px;
+			right: 22px;
+			font-size: 11px;
+			color: $c_text_lighter;
+		}
+	}
+
+	.col-form-label {
+		font-weight: 400;
+		font-size: 18px;
+		color: $c_text;
+	}
+}
+
+.react-autosuggest__suggestions-container {
+	position: relative;
+}
+
+.react-autosuggest__suggestions-list {
+	position: absolute;
+	width: 100%;
+	background: $cp_white;
+	list-style: none;
+	padding: 5px 10px;
+	z-index: 10;
+	top: -2px;
+	border: 1px solid #ddd;
+	border-radius: 0 0 3px 3px;
+	max-height: 216px;
+	overflow-y: scroll;
+	outline: 0;
+	outline: thin dotted \9;
+	/* IE6-9 */
+
+	@include b-s(0, 1px, 1px, 3px, rgba(82, 168, 236, 0.6), true);
+	@include b-s(0, 0, 8px, 0px, rgba(82, 168, 236, 0.6));
+
+	li {
+		border-bottom: 1px solid #f0f0f0;
+		padding: 5px 0;
+
+		&:last-child {
+			border: 0;
+		}
+	}
+}

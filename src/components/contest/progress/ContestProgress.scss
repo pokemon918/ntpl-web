@@ -1,0 +1,25 @@
+.contest.-progress {
+	.sticky {
+		position: -webkit-sticky; // this is for all Safari (Desktop & iOS), not for Chrome
+		position: sticky;
+		top: 49px;
+	}
+}
+
+.ContestProgress__Search {
+	max-width: 600px;
+	margin: 0 auto 50px;
+	.SearchBar__Wrapper .SearchBar__Default {
+		margin: 0;
+	}
+}
+
+.team-spinner {
+	position: absolute;
+	top: 40%;
+	left: 45%;
+}
+
+.team-headline {
+	position: relative;
+}

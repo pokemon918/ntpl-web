@@ -1,0 +1,29 @@
+@import 'components/shared/ui/_theme.scss';
+
+.Events__Container {
+	.Events__Item {
+		margin: 20px 0px;
+	}
+
+	h1 {
+		font-family: Abril Fatface;
+		font-size: 28px;
+		color: $purple_wine;
+	}
+
+	h2 {
+		font-family: Raleway;
+		font-size: 14px;
+		color: $purple_heather;
+
+		a {
+			font-weight: bold;
+			color: $purple_wine;
+		}
+	}
+
+	.Spinner_Wrap {
+		position: relative;
+		height: 50px;
+	}
+}

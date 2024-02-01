@@ -1,0 +1,11 @@
+.DropoverLink__Container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+
+	.DropoverLink__Chevron {
+		margin-left: 1em;
+		font-size: 0.5em;
+	}
+}

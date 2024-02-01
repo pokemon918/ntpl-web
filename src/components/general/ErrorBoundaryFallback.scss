@@ -1,0 +1,19 @@
+@import 'assets/scss/partials/_vars.scss';
+@import 'assets/scss/partials/_mixins.scss';
+@import 'components/shared/ui/_theme.scss';
+
+.error-boundary-page {
+	font-family: Raleway;
+	//text-align: center;
+	color: $purple_wine;
+
+	.header-error-boundary {
+		//	margin: 20px;
+		font-size: 35px;
+		font-family: Raleway;
+	}
+
+	p {
+		margin: 20px 0;
+	}
+}

@@ -1,0 +1,182 @@
+@import 'assets/scss/partials/_mixins.scss';
+@import '../../_theme';
+
+.SelectionButton__Context {
+	margin: 0 10px;
+	padding: 10px;
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+	background-color: #f5f4ef;
+	border-bottom: 1px solid #b0a5b8;
+	cursor: pointer;
+
+	&.isMobile {
+		display: flex;
+
+		@include desktop {
+			display: none;
+		}
+	}
+
+	&.isDesktop {
+		display: none;
+
+		@include desktop {
+			display: flex;
+		}
+	}
+
+	@include desktop {
+		margin: 0 15px;
+		padding: 15px;
+
+		&:hover {
+			background-color: #efede6;
+		}
+
+		&.active:hover {
+			background-color: #cdc6d2;
+		}
+	}
+
+	&.looksDisabled {
+		opacity: 0.3;
+
+		&:hover {
+			cursor: not-allowed;
+			background-color: inherit;
+		}
+	}
+
+	&.active {
+		background-color: #d7d2db;
+	}
+
+	img {
+		width: 60px;
+		height: 60px;
+		margin: 0px 10px;
+
+		@include desktop {
+			width: 90px;
+			height: 90px;
+		}
+	}
+	.SelectionButton__Context__WineColor {
+		width: 50px;
+		height: 50px;
+		margin-right: 25px;
+		border-radius: 100%;
+	}
+
+	.SelectionButton__Context__WineType {
+		width: 50px;
+		margin-right: 25px;
+		text-align: center;
+	}
+
+	.SelectionButton__Context__Chevron {
+		float: right;
+		padding: 10px;
+
+		@include desktop {
+			padding: 15px;
+		}
+
+		@include mobile {
+			padding: 7.5px 10px;
+		}
+	}
+
+	.SelectionButton__Context__Sub_Text {
+		font-weight: 300;
+		color: #391d4d;
+		font-size: 14px;
+	}
+
+	.SelectionButton__Description__Wrapper {
+		@include no_select();
+		flex: 1;
+		display: flex;
+		padding: 15px;
+		flex-direction: column;
+		justify-content: center;
+
+		.SelectionButton__Context__HeadingWrapper {
+			margin-bottom: 3px;
+
+			&.shortSubHeaderOnMobile {
+				@include mobile {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+
+					.SelectionButton__Context_SubHeader {
+						margin-left: 10px;
+
+						&:before {
+							content: '(';
+						}
+
+						&:after {
+							content: ')';
+						}
+					}
+				}
+			}
+		}
+
+		.SelectionButton__Context_SubHeader {
+			text-align: left;
+			font-size: 11px;
+			font-family: Raleway;
+			font-weight: 600;
+			color: $primary-text-light;
+		}
+
+		.SelectionButton__Context__Description {
+			text-align: left;
+			padding: 2px 0px;
+			width: 100%;
+			padding: 0px;
+			font-family: Raleway;
+			font-size: 13px;
+			font-weight: 400;
+			color: $purple_wine;
+
+			@include desktop {
+				font-size: 13px;
+			}
+		}
+	}
+
+	.SelectionButton__Context__Text {
+		flex: 1;
+		text-align: left;
+		font-size: 14px;
+		font-weight: 600;
+		color: $purple_wine;
+		font-family: Raleway;
+
+		@include desktop {
+			font-size: 16px;
+		}
+	}
+}
+
+.touch {
+	.SelectionButton__Context {
+		&:hover {
+			background-color: inherit;
+		}
+
+		&:focus {
+			background-color: #cdc6d2;
+		}
+
+		&.active {
+			background-color: #d7d2db;
+		}
+	}
+}

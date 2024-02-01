@@ -1,0 +1,22 @@
+@import 'assets/scss/partials/_vars.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.Selectors__Container {
+	display: block;
+
+	@include desktop {
+		display: none;
+	}
+}
+
+.Selectors__Container__Desktop {
+	display: none;
+	@include desktop {
+		display: block;
+	}
+}
+
+.Selectors_SubHeader {
+	font-size: 15px;
+	padding: 2px 0px;
+}

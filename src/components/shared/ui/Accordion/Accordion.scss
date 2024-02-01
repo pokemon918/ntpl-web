@@ -1,0 +1,106 @@
+@import '../_theme';
+@import 'assets/scss/partials/_mixins.scss';
+
+@keyframes slideIn {
+	0% {
+		top: -30px;
+		opacity: 0;
+	}
+	100% {
+		top: 0px;
+		opacity: 1;
+	}
+}
+
+@keyframes slideOut {
+	0% {
+		top: 0px;
+		opacity: 1;
+	}
+	100% {
+		top: -30px;
+		opacity: 0;
+	}
+}
+
+@keyframes rotateIn {
+	0% {
+		-ms-transform: rotate(180deg); /* IE 9 */
+		-webkit-transform: rotate(180deg); /* Safari */
+		transform: rotate(180deg);
+	}
+	100% {
+		-ms-transform: rotate(0deg); /* IE 9 */
+		-webkit-transform: rotate(0deg); /* Safari */
+		transform: rotate(0deg);
+	}
+}
+
+.Accordion__Wrapper {
+	margin: auto;
+
+	.Accordion__Header {
+		cursor: pointer;
+		position: relative;
+
+		&:not(.no-border) {
+			padding: 10px 35px 10px 0;
+			border-bottom: 1px solid #b0a5b8;
+		}
+
+		@include desktop {
+			padding: 30px 0px;
+		}
+
+		.Accordion__Title {
+			color: $default_title;
+			font-family: Raleway;
+			font-size: 16px;
+			font-weight: 600;
+
+			& + span {
+				display: block;
+				font-size: 14px;
+				font-weight: 400;
+				color: #887794;
+
+				@include mobile {
+					font-size: 12px;
+				}
+			}
+		}
+
+		.Accordion__Icon {
+			color: $default_title;
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			display: block;
+			transform: translateY(-50%);
+			animation-duration: 0.7s;
+			animation-name: rotateIn;
+		}
+	}
+
+	.Accordion__Body {
+		padding: 0px 25px;
+		padding-bottom: 25px !important;
+		border-bottom: 1px solid #b0a5b8;
+		position: relative;
+		animation-name: slideIn;
+		animation-duration: 0.3s;
+	}
+
+	.Accordion__Show {
+		display: block;
+	}
+
+	.Accordion__Hide {
+		display: none;
+	}
+
+	.Accordion__Hide__Animation {
+		animation-name: slideOut;
+		animation-duration: 0.3s;
+	}
+}

@@ -1,0 +1,39 @@
+@import 'assets/scss/partials/_mixins.scss';
+
+$max_width: 1200px;
+$max_columns: 12;
+$gutter: 24px;
+$margin: 0px $gutter / 2;
+
+@mixin columns($columns) {
+	&.columns_#{$columns} {
+		@include desktop {
+			max-width: $max_width * ($columns / $max_columns);
+		}
+	}
+}
+
+.Grid__Wrapper {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+
+	@for $i from 1 through $max_columns {
+		@include columns($i);
+	}
+
+	.Grid__Column {
+		width: 100%;
+		margin: $margin;
+		flex: 1;
+	}
+
+	.Grid__Column_Customize {
+		flex: 3;
+	}
+
+	&.noGutter .Grid__Column {
+		margin: 0;
+	}
+}

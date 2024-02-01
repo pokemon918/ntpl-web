@@ -1,0 +1,38 @@
+[
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_secondary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"name": "notes_herbaceous_",
+		"keys": ["notes_herbaceous_"],
+		"required": ["notes_herbaceous_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_secondary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"name": "notes_herbal_",
+		"keys": ["notes_herbal_"],
+		"required": ["notes_herbal_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_secondary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"name": "notes_pungent_spice_",
+		"keys": ["notes_pungent_spice_"],
+		"required": ["notes_pungent_spice_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_secondary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"name": "notes_other_",
+		"keys": ["notes_other_"],
+		"required": ["notes_other_"]
+	}
+]

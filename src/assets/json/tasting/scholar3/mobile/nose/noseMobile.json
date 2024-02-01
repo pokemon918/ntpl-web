@@ -1,0 +1,25 @@
+[
+	{
+		"isMultiple": true,
+		"title": "tasting_aromas_primary",
+		"subtitle": "tasting_select_many",
+		"breadcrumb": "appearance_",
+		"name": "other_observations__",
+		"keys": ["other_observations__"],
+		"required": []
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "nose_",
+		"name": "nose_",
+		"keys": ["condition__"],
+		"required": ["condition__"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "nose_",
+		"name": "nose_",
+		"keys": ["noseintensity__"],
+		"required": ["noseintensity__"]
+	}
+]

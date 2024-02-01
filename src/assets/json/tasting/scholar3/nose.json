@@ -1,0 +1,64 @@
+[
+	{
+		"isMultiple": true,
+		"breadcrumb": "scholar3_ / appearance_",
+		"name": "other_observations__",
+		"subtitle": "tasting_select_many",
+		"keys": ["other_observations__"],
+		"required": []
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "scholar3_ / nose_",
+		"name": "nose_",
+		"keys": ["condition__", "noseintensity__"],
+		"required": ["condition__", "noseintensity__"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "scholar3_ / nose_ / tasting_aromas_primary",
+		"title": "tasting_aromas_primary",
+		"subtitle": "tasting_select_many",
+		"keys": [
+			"notes_floral_",
+			"notes_fruit_green_",
+			"notes_fruit_citrus_",
+			"notes_stone_fruit_",
+			"notes_tropical_",
+			"notes_fruit_red_",
+			"notes_fruit_black_",
+			"notes_fruit_dried_or_cooked_",
+			"notes_herbaceous_",
+			"notes_herbal_",
+			"notes_pungent_spice_",
+			"notes_other_"
+		]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "scholar3_ / nose_ / tasting_aromas_secondary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"keys": ["notes_yeast_", "notes_mlf_", "notes_oak_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "scholar3_ / nose_ / tasting_aromas_tertiary",
+		"title": "tasting_aromas_tertiary",
+		"subtitle": "tasting_select_many",
+		"keys": [
+			"deliberateoxidation__",
+			"fruitdevelopment_white__",
+			"fruitdevelopment_red__",
+			"bottleage_white__",
+			"bottleage_red__"
+		]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "scholar3_ / nose_",
+		"name": "nose_",
+		"keys": ["development__"],
+		"required": ["development__"]
+	}
+]

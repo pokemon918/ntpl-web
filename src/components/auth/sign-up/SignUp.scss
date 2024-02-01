@@ -1,0 +1,118 @@
+@import 'components/shared/ui/_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.SignUp__Wrapper {
+	padding: 0 40px;
+	@include mobile {
+		padding: 0;
+	}
+}
+
+.SignUp__Item {
+	margin: 30px 0px;
+	.Checkbox__Container .Checkbox__Wrapper .Checkbox_Label {
+		white-space: pre-line;
+	}
+	a {
+		font-weight: 600;
+		color: $purple_wine;
+		text-decoration-line: underline;
+
+		&:hover {
+			text-decoration-line: underline;
+			color: $purple_wine;
+		}
+	}
+}
+
+.SignUp__Error {
+	color: red;
+	font-size: 12px;
+}
+
+.SignUp__Title {
+	margin: 43px 0 0px 0;
+	color: #391d4d;
+	height: 43px;
+
+	color: $purple_wine;
+
+	@include mobile {
+		margin: 27px 0 0;
+		height: 31px;
+	}
+}
+
+.SignUp__SubTitle {
+	font-size: 14px;
+	margin-bottom: -10px;
+}
+
+.Signup_Title_Input {
+	margin-top: 30px;
+}
+
+.Signup__Terms__Link {
+	font-weight: 600;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.SignUp__Modal {
+	color: $primary;
+	padding: 10px 50px;
+	font-family: 'Raleway';
+
+	.SignUp__Modal__Title {
+		font-weight: bold;
+	}
+
+	.SignUp__Modal__Description {
+		text-align: justify;
+	}
+}
+
+.SignUp_Text {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 40px;
+	font-weight: normal;
+	font-family: Raleway;
+	color: $purple_wine;
+
+	a {
+		font-weight: bold;
+		color: $purple_wine;
+
+		&:hover {
+			color: $purple_wine;
+		}
+	}
+}
+
+.SingUp__Button {
+	text-align: center;
+	&.margin {
+		margin-bottom: 40px;
+	}
+	button {
+		width: 100%;
+	}
+}
+
+.glow {
+	//box-shadow: 0px 0px 9px 4px $primary-text-light;
+	animation: glow 0.5s ease-in-out infinite alternate;
+	//border-radius: 4px;
+}
+
+@-webkit-keyframes glow {
+	from {
+		//box-shadow: 0px 0px 9px 4px $primary-text-light;
+		filter: drop-shadow(0px 0px 0px $primary);
+	}
+	to {
+		//box-shadow: 0px 0px 6px 0px $primary-text-light;
+		filter: drop-shadow(0px 0px 2px $primary);
+	}
+}

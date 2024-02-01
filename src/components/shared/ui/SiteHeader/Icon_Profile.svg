@@ -1,0 +1,10 @@
+<svg width="12px" height="13px" viewBox="0 0 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <g id="desktop/header-signed-in" transform="translate(-1222.000000, -24.000000)" fill="#391D4D" stroke="#391B4C">
+        <g id="profile" transform="translate(1223.000000, 25.000000)">
+            <path d="M9.64285761,9.26857143 C9.64312399,9.03536699 9.52953235,8.81671642 9.33857143,8.68285714 C8.04996226,7.84836427 6.53384113,7.43501284 5,7.5 C3.46615887,7.43501284 1.95003774,7.84836427 0.661428571,8.68285714 C0.470467652,8.81671642 0.356876015,9.03536699 0.357142388,9.26857143 L0.357142388,11.0714286 L9.64285761,11.0714286 L9.64285761,9.26857143 Z" id="Path"></path>
+            <circle id="Oval" cx="5" cy="2.85714286" r="2.5"></circle>
+        </g>
+    </g>
+</g>
+</svg>

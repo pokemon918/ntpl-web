@@ -1,0 +1,65 @@
+@import 'assets/scss/partials/_mixins.scss';
+@import '../_theme';
+
+html {
+	overflow-y: scroll;
+	height: 98%;
+}
+
+body.SiteMenuOpen {
+	overflow: hidden;
+}
+
+.Background__Wrapper {
+	.Body {
+		width: 100%;
+		margin: 50px auto;
+		color: #391d4d;
+
+		@include desktop {
+			width: 90%;
+		}
+
+		@include mobile {
+			margin-top: 0;
+		}
+
+		.Body__Grid__Container {
+			width: 90%;
+			margin: auto;
+			display: grid;
+			grid-template-columns: auto;
+			text-align: center;
+
+			@include desktop {
+				grid-template-columns: repeat(3, auto);
+			}
+		}
+
+		.Body__Grid__Item {
+			padding: 30px;
+		}
+	}
+
+	&.isEmbedded {
+		.Header {
+			display: none;
+		}
+	}
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #391c4d;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #eae9df;
+}
+
+::-webkit-scrollbar-track {
+	background: #b0a5b7;
+}

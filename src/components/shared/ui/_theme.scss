@@ -1,0 +1,88 @@
+$body_font_family: 'Raleway', sans-serif;
+$headings_font_family: 'Abril Fatface', cursive;
+
+// colour palettes, check out this thesaurus for shade names: https://digitalsynopsis.com/design/color-thesaurus-correct-names-of-shades/
+$white: #ffffff;
+$white_cotton: #e7eeed;
+$white_grain: #ebe9e0;
+
+$black: #000000;
+$black_jet: #3c3c3c;
+
+$purple_grape: #6d224b;
+$purple_grape_strong: #860b4e;
+$purple_grape_light: #8a4e6f;
+$purple_heather: #887794;
+$purple_mauve: #614a71;
+$purple_mauve_dark: #59436a;
+$purple_violet: #4a2e5e;
+$purple_wine: #391d4d;
+$purple_greyed: #b0a5b8;
+$purple_greyed_light: #d7d2db;
+
+$pink_greyed: #e2d3dc;
+$pink_crepe: #b995a9;
+
+$blue_teal: #89a8a3;
+
+$green_pistachio: #b8cbc8;
+$primary: #391d4d;
+$primary-light: #b0a5b8;
+$primary-grey: #eae9df;
+$primary-text-light: #887794;
+$secondary: #f5f4ef;
+$secondary-dark: #ebe9e0;
+$secondary-darker: #dbdacd;
+$trial_modal_background: #ccc7b1;
+$secondary_button_background: #d7d2db;
+
+$gold: #b79a67;
+$silver: #b2b2b2;
+$bronze: #bf8d71;
+
+$light_grey_grain: darken($white_grain, 5);
+$grey_grain: darken($white_grain, 10);
+$grey: #ccc;
+$dark_grey: #999;
+
+// default theme colours, displayed over a light grey background
+$default_background: $white_cotton;
+$default_title: $purple_wine;
+$default_subtitle: $purple_mauve_dark;
+
+$default_button_primary: $purple_wine;
+$default_button_primary_disabled: $pink_greyed;
+$default_button_secondary: $purple_grape_light;
+$default_hr: $purple_heather;
+
+$default_card_background: $white;
+$default_card_badges: $purple_grape;
+$default_card_bottom: $purple_wine;
+
+$default_panel_background: $purple_mauve;
+
+$default_table_header: $white_cotton;
+$default_table_active: $green_pistachio;
+
+// constrast theme colours, displayed over a purple background with a vineyard picture
+$contrast_background: $purple_violet;
+$contrast_title: $white;
+$contrast_subtitle: $purple_mauve;
+
+$contrast_hero_background: $purple_wine;
+$contrast_hero_foreground: $white;
+
+$contrast_button_primary: $purple_grape;
+$contrast_button_secondary: $purple_grape_light;
+$contrast_hr: $purple_heather;
+
+$contrast_card_background: $white;
+$contrast_card_badges: $purple_grape;
+$contrast_card_bottom: $blue_teal;
+
+$contrast_panel_background: $purple_mauve;
+
+$contrast_table_header: $white_cotton;
+$contrast_table_active: $green_pistachio;
+
+$default_input_border: $dark_grey;

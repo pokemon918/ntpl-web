@@ -1,0 +1,58 @@
+@import '~rc-slider/assets/index.css';
+
+@import 'assets/scss/partials/_mixins.scss';
+@import '../_theme';
+
+.Slider {
+	position: relative;
+
+	.Slider__Title {
+		font-family: $body_font_family;
+		font-size: 18px;
+		font-weight: 600;
+		color: $purple_wine;
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: -5px;
+
+		@include mobile {
+			font-size: 16px;
+			margin-bottom: -6px;
+		}
+	}
+
+	.Slider__Labels {
+		display: flex;
+		width: 100%;
+
+		& div {
+			flex-basis: 50%;
+			font-family: $body_font_family;
+			font-size: 10px;
+			color: #887794;
+			font-weight: 500;
+		}
+		& div:nth-child(1) {
+			text-align: left;
+		}
+		& div:nth-child(2) {
+			text-align: right;
+		}
+	}
+
+	.Slider__HandleCore {
+		border-radius: 50%;
+	}
+}
+
+@keyframes shadow-pulse {
+	0% {
+		box-shadow: 0 0 0 0px rgba(57, 29, 77, 0.2);
+	}
+	50% {
+		box-shadow: 0 0 0 10px rgba(57, 29, 77, 0.2);
+	}
+	100% {
+		box-shadow: 0 0 0 0px rgba(57, 29, 77, 0.2);
+	}
+}

@@ -1,0 +1,57 @@
+@import '../_theme';
+
+.HeroContainer__Wrapper {
+	position: relative;
+	width: 100%;
+	height: 675px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: $contrast_hero_foreground;
+	background-color: $contrast_hero_background;
+
+	&::before {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('./hero-background.jpg');
+		background-size: cover;
+		opacity: 0.1;
+		content: '';
+	}
+
+	header {
+		margin-top: 128px;
+		margin-bottom: 96px;
+	}
+
+	h1 {
+		font-family: $headings_font_family;
+		font-size: 64px;
+	}
+
+	h2 {
+		font-family: $body_font_family;
+		font-size: 16px;
+		text-align: right;
+	}
+
+	.HeroContainer__Menu {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		display: flex;
+		align-items: center;
+		font-size: 28px;
+		cursor: pointer;
+
+		span {
+			margin-left: 10px;
+			font-family: $body_font_family;
+			font-size: 12px;
+		}
+	}
+}

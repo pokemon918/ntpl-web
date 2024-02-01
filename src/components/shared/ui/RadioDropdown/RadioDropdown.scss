@@ -1,0 +1,40 @@
+@import '../_theme';
+
+.RadioDropdown__Wrapper {
+	display: inline-block;
+	position: relative;
+
+	.RadioDropdown__SelectedOption {
+		display: inline-block;
+		font-weight: 600;
+		text-align: left;
+		cursor: pointer;
+
+		svg {
+			margin-left: 10px;
+		}
+	}
+
+	.RadioDropdown__Container {
+		position: absolute;
+		top: 30px;
+		left: 0;
+		padding: 25px 35px;
+		width: max-content;
+		background-color: $secondary;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		z-index: 100;
+	}
+
+	&.alignRight {
+		.RadioDropdown__SelectedOption {
+			margin-left: 10px;
+			text-align: right;
+		}
+
+		.RadioDropdown__Container {
+			left: initial;
+			right: 0;
+		}
+	}
+}

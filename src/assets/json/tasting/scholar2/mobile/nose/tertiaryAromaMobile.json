@@ -1,0 +1,29 @@
+[
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_tertiary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"name": "tertiary_red_wine",
+		"keys": ["tertiary_red_wine"],
+		"required": ["tertiary_red_wine"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_tertiary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"name": "tertiary_white_wine",
+		"keys": ["tertiary_white_wine"],
+		"required": ["tertiary_white_wine"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_tertiary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"name": "deliberateoxidation__",
+		"keys": ["deliberateoxidation__"],
+		"required": ["deliberateoxidation__"]
+	}
+]

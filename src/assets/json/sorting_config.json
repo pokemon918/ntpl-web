@@ -1,0 +1,32 @@
+{
+	"defaultOption": "date",
+	"options": [
+		{
+			"id": "date",
+			"label": "tasting_sort_by_most_recent",
+			"field": "created_at",
+			"order": "desc",
+			"transform": "date"
+		},
+		{"id": "name", "label": "tasting_sort_by_wine_name", "field": "name", "order": "asc"},
+		{"id": "price_low", "label": "tasting_sort_by_price_low", "field": "price", "order": "asc"},
+		{
+			"id": "price_high",
+			"label": "tasting_sort_by_price_high",
+			"field": "price",
+			"order": "desc"
+		},
+		{
+			"id": "rating_low",
+			"label": "tasting_sort_by_rating_low",
+			"field": "rating.final_points",
+			"order": "asc"
+		},
+		{
+			"id": "rating_high",
+			"label": "tasting_sort_by_rating_high",
+			"field": "rating.final_points",
+			"order": "desc"
+		}
+	]
+}

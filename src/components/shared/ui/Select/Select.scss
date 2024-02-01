@@ -1,0 +1,81 @@
+@import '../_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.Select__Container {
+	width: 70%;
+	position: relative;
+	display: inline-block;
+
+	.Select__Value {
+		width: 100%;
+
+		cursor: pointer;
+		font-size: 18px;
+		color: $purple_wine;
+		font-weight: 600;
+		display: inline-block;
+		font-family: 'Raleway', sans-serif;
+		border-bottom: 1.5px solid $purple_greyed;
+
+		@include desktop {
+			font-size: 16px;
+		}
+
+		&.lg span {
+			padding-right: 50px;
+		}
+
+		&::after {
+			content: url('./Icon_ChevronDown.svg');
+			float: right;
+			margin-left: 5px;
+		}
+
+		&.TextInput__Container,
+		&:focus {
+			border-bottom: none;
+		}
+		&:active {
+			border-bottom: none;
+		}
+
+		&.disabled {
+			font-weight: 600;
+			opacity: 1;
+			border-bottom: none;
+			position: relative;
+			top: 2px;
+			color: $purple_wine;
+
+			&::after {
+				content: '';
+			}
+		}
+	}
+
+	.Select__List {
+		z-index: 99;
+		position: absolute;
+		width: 100%;
+		min-width: 150px;
+		overflow-x: hidden;
+		max-height: 250px;
+		overflow-y: auto;
+		border: 2px solid $purple_greyed;
+		border-top: 0;
+
+		.Select__Item {
+			padding: 10px 8px;
+			font-family: 'Raleway', sans-serif;
+			font-size: 14px;
+			font-weight: normal;
+			background-color: #ebe9e0;
+			cursor: pointer;
+
+			&:hover,
+			&.isSelected {
+				background-color: darken(#ebe9e0, 5);
+			}
+		}
+	}
+}

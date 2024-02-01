@@ -1,0 +1,155 @@
+@import 'assets/scss/partials/_mixins.scss';
+@import '../_theme';
+
+.SiteHeader_Wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 99;
+	padding: 10px 25px;
+	align-content: center;
+	display: flex;
+	justify-content: space-between;
+
+	&.all {
+		left: 0;
+		background-color: white;
+		background-color: $primary-grey;
+	}
+
+	&.authenticated {
+		background-color: #eae9df; /* off-white yellowish ?!? */
+		background-color: $primary-grey;
+	}
+
+	@include desktop {
+		padding: 10px 50px;
+	}
+
+	.SiteHeader_Logo {
+		display: inline-block;
+		position: relative;
+		z-index: 999;
+		cursor: pointer;
+
+		img {
+			height: 25px;
+		}
+	}
+
+	.SiteHeader_Navigation {
+		display: flex;
+		align-items: center;
+
+		.SiteHeader_NavigationUser {
+			display: none;
+			margin-right: 20px;
+
+			a {
+				color: #391d4d;
+			}
+
+			@include desktop {
+				display: block;
+				margin-right: 30px;
+			}
+
+			@include landscape {
+				display: block;
+			}
+		}
+
+		.SiteHeader_NavigationUnAuthorized {
+			display: flex;
+		}
+
+		.SiteHeader_Navigation_Link {
+			margin-right: 5px;
+			white-space: nowrap;
+
+			a {
+				background-color: transparent;
+				@include border_radius(25px);
+				font-family: $body_font_family;
+				font-weight: 600;
+				border: 2px solid $default_button_primary;
+				color: $primary;
+				height: 35px;
+				padding: 5px 15px;
+				font-size: 14px;
+			}
+
+			&:hover {
+				cursor: pointer;
+
+				a {
+					box-shadow: 0px 0px 1px 1px $primary;
+				}
+			}
+
+			&:last-child {
+				a {
+					margin-right: 0;
+					border-color: transparent;
+					background-color: transparent;
+				}
+			}
+
+			@include desktop {
+				margin-right: 10px;
+
+				a {
+					padding: 5px 25px;
+				}
+			}
+		}
+	}
+
+	.SiteHeader_UserInfo {
+		display: flex;
+		font-size: 14px;
+		font-weight: 600;
+		color: $primary;
+
+		.SiteHeader_UserInfo_Icon {
+			display: flex;
+			align-items: center;
+			margin-right: 10px;
+		}
+	}
+
+	.SiteHeader_Hamburger {
+		margin: 2px auto;
+		cursor: pointer;
+
+		.SiteHeader_Hamburger_Item {
+			width: 20px;
+			height: 3px;
+			margin: 4px 0;
+			background-color: #391d4d;
+
+			@include desktop {
+				width: 25px;
+			}
+		}
+	}
+}
+
+#ghost {
+	@include no_select();
+	position: fixed;
+	top: 40%;
+	left: 0;
+	cursor: pointer;
+	z-index: 99999;
+	font-family: raleway, monospace;
+	font-size: 9px;
+	color: #887794;
+	white-space: nowrap;
+	transform: rotate(90deg);
+	transform-origin: left bottom;
+	@include desktop {
+		font-size: 11px;
+		font-weight: bold;
+	}
+}

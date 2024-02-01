@@ -1,0 +1,33 @@
+@import 'components/shared/ui/_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.PersonalNote__Wrapper {
+	.PersonalNote_Item {
+		h1 {
+			font-family: Abril Fatface;
+			text-align: center;
+			margin: 30px 0 0 0;
+		}
+		h2 {
+			margin-bottom: 30px;
+			font-family: Raleway;
+			font-size: 14px;
+			color: $purple_heather;
+			text-align: center;
+		}
+	}
+
+	.PersonalNote_Wrapper {
+		font-size: 40px;
+		margin-bottom: 5px;
+		font-weight: normal;
+		font-family: Abril Fatface;
+		color: $primary;
+		text-align: center;
+
+		@include mobile {
+			font-size: 24px;
+			margin-bottom: 15px;
+		}
+	}
+}

@@ -1,0 +1,140 @@
+@import 'components/shared/ui/_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.ProfileBanner__Header {
+	position: absolute;
+	top: 45px;
+	left: 0;
+	right: 0;
+
+	.ProfileBanner__Header__Background {
+		background-image: url('./profile_bg.png');
+		background-blend-mode: multiply;
+		background-color: $primary;
+		overflow-x: hidden;
+		background-size: cover;
+		opacity: 0.8;
+		padding: 60px 20px 20px;
+
+		@include mobile {
+			background: transparent;
+			padding: 20px;
+		}
+	}
+
+	.ProfileBanner__Header__Title {
+		display: flex;
+		align-items: flex-end;
+		h1 {
+			color: $white;
+			font-size: 48px;
+			font-family: 'Abril Fatface', cursive;
+		}
+
+		@include mobile {
+			display: none;
+		}
+	}
+
+	.ProfileBanner__Content {
+		display: flex;
+		justify-content: space-between;
+
+		@include mobile {
+			flex-wrap: wrap;
+		}
+	}
+
+	.ProfileBanner__Img__Wrapper {
+		display: flex;
+		cursor: pointer;
+		position: relative;
+
+		:hover {
+			.ProfileBanner__Change {
+				display: inline;
+				position: absolute;
+				top: 28px;
+				right: 2px;
+				cursor: pointer;
+				background: black;
+				padding: 8px;
+				font-weight: 600;
+				font-size: 12px;
+				color: white;
+				text-decoration: underline;
+				border-radius: 0px 0px 40px 40px;
+
+				@include mobile {
+					display: none;
+				}
+			}
+		}
+
+		.ProfileBanner__Loading {
+			position: absolute;
+			top: 25px;
+			right: -1px;
+			font-weight: 600;
+			color: white;
+		}
+
+		.ProfileBanner__Change {
+			display: none;
+		}
+
+		.ProfileBanner__ProfileImg {
+			&.loading {
+				opacity: 0.2;
+			}
+		}
+
+		.ProfileBanner__ProfileImg {
+			width: 64px;
+			height: 64px;
+			border-radius: 64px;
+
+			img {
+				width: 64px;
+				height: 64px;
+				border-radius: 64px;
+				border: 2px solid $white;
+			}
+		}
+
+		.ProfileBanner__ProfileInfo {
+			color: $white;
+			margin-right: 30px;
+			text-align: right;
+
+			.ProfileInfo__Name {
+				font-weight: 600;
+				font-size: 20px;
+			}
+
+			.ProfileInfo__Company {
+				font-size: 14px;
+				margin-bottom: 4px;
+				color: $purple_heather;
+			}
+
+			.ProfileInfo__Wine {
+				font-size: 14px;
+				display: inline-block;
+			}
+
+			@include mobile {
+				color: $purple_wine;
+				text-align: left;
+				order: 1;
+				margin-left: 30px;
+			}
+		}
+	}
+}
+
+.isEmbedded {
+	.ProfileBanner__Header {
+		top: 0;
+	}
+}

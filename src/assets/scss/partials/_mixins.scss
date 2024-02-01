@@ -1,0 +1,186 @@
+//* DOC: _mixins.scss */
+// _mixins.scss
+
+// Imports
+@import '_vars';
+
+$mobile: 768px;
+
+@mixin desktop {
+	@media (min-width: #{$mobile + 1px}) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media (max-width: #{$mobile}) {
+		@content;
+	}
+}
+
+@mixin landscape {
+	@media screen and (orientation: landscape) {
+		@content;
+	}
+}
+
+@mixin portrait {
+	/* Portrait */
+	@media screen and (orientation: portrait) {
+		@content;
+	}
+}
+
+@mixin screenHeight($height) {
+	@media (max-width: #{$height}) {
+		@content;
+	}
+}
+
+@mixin radial_gradient($c_inner, $c_outer) {
+	// $c_inner is the altered color
+	background: $c_inner; /* Old browsers */
+	background: -moz-radial-gradient(
+		center,
+		ellipse cover,
+		$c_outer 0%,
+		$c_inner 100%
+	); /* FF3.6-15 */
+	background: -webkit-radial-gradient(
+		center,
+		ellipse cover,
+		$c_outer 0%,
+		$c_inner 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(
+		ellipse at center,
+		$c_outer 0%,
+		$c_inner 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(
+			startColorstr='$c_outer',
+			endColorstr='$c_inner',
+			GradientType=1
+		); /* IE6-9 fallback on horizontal gradient */
+}
+
+@mixin linear_gradient($color) {
+	// $c_inner is the altered color
+	background: $color; /* Old browsers */
+	background: -moz-linear-gradient(
+		top,
+		$color 0%,
+		$color 0%,
+		$color 65%,
+		transparent 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		top,
+		$color 0%,
+		$color 0%,
+		$color 65%,
+		transparent 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to bottom,
+		$color 0%,
+		$color 0%,
+		$color 65%,
+		transparent 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(
+			startColorstr='#f0f0f0',
+			endColorstr='transparent',
+			GradientType=0
+		); /* IE6-9 */
+}
+
+@mixin box($b_radius: $b_round, $bg_color: #fafafa, $b_color: $c_border) {
+	background-color: $bg_color;
+	border: 1px solid $b_color;
+	border-radius: $b_radius;
+	box-shadow: 0 1px 0 0 #eeeeee;
+}
+
+@mixin border_radius($b_radius) {
+	-webkit-border-radius: $b_radius;
+	border-radius: $b_radius;
+}
+
+@mixin no_select() {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Chrome/Safari/Opera */
+	-khtml-user-select: none; /* Konqueror */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+@mixin b-s($x, $y, $blur, $spread, $color, $inset: false) {
+	@if $inset {
+		-webkit-box-shadow: inset $x $y $blur $spread $color;
+		-moz-box-shadow: inset $x $y $blur $spread $color;
+		box-shadow: inset $x $y $blur $spread $color;
+	} @else {
+		-webkit-box-shadow: $x $y $blur $spread $color;
+		-moz-box-shadow: $x $y $blur $spread $color;
+		box-shadow: $x $y $blur $spread $color;
+	}
+}
+
+@mixin b-s-none($important: false) {
+	@if $important {
+		-webkit-box-shadow: none !important;
+		-moz-box-shadow: none !important;
+		box-shadow: none !important;
+	} @else {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+}
+
+/*transition: property duration timing-function delay|initial|inherit;*/
+@mixin transition($prop, $duration, $timing) {
+	-webkit-transition: $prop $duration $timing;
+	-moz-transition: $prop $duration $timing;
+	-ms-transition: $prop $duration $timing;
+	-o-transition: $prop $duration $timing;
+	transition: $prop $duration $timing;
+}
+
+@mixin animate($name, $duration, $iteration, $timing) {
+	-webkit-animation: $name $duration $iteration $timing;
+	-moz-animation: $name $duration $iteration $timing;
+	-o-animation: $name $duration $iteration $timing;
+	animation: $name $duration $iteration $timing;
+}
+
+@mixin transform($transforms) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+	transform: $transforms;
+}
+
+@mixin boxsizing($value) {
+	-webkit-box-sizing: $value;
+	-moz-box-sizing: $value;
+	box-sizing: $value;
+}
+
+@mixin rotate($deg) {
+	@include transform(rotate(#{$deg}deg));
+}
+
+@mixin font_face($name, $local1, $local2, $url, $weight, $style: normal) {
+	@font-face {
+		font-family: $name;
+		src: local($local1), local($local2), url($url + '.woff2') format('woff2'),
+			url($url + '.woff') format('woff');
+		font-weight: $weight;
+		font-style: $style;
+	}
+}

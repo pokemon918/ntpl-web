@@ -1,0 +1,158 @@
+@import 'components/shared/ui/_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.CreateEvent__Wrapper {
+	color: $purple_wine;
+}
+
+.CreateEvent__Info {
+	float: left;
+	width: 100%;
+
+	@include desktop {
+		width: 50%;
+	}
+}
+
+.Radio__Container .Radio__Wrapper {
+	margin-bottom: 0;
+}
+
+.CreateEvent__Section {
+	padding: 30px 0px;
+	border-bottom: 1px solid $primary-light;
+	display: flex;
+
+	.CreateEvent__SubSection {
+		font-size: 13px;
+		font-weight: 100;
+		padding: 10px 10px 10px 0px;
+	}
+
+	.CreateEvent__Section__Title {
+		flex: 1;
+		font-weight: 600;
+	}
+
+	.CreateEvent__DatePicker {
+		position: relative;
+
+		.CreateEvent__Icon {
+			position: absolute;
+			left: -20px;
+		}
+	}
+
+	.CreateEvent__Section__Value {
+		flex: 2;
+
+		.TextInput__Container {
+			margin-top: -30px;
+		}
+
+		&.CreateEvent__DatePicker {
+			.TextInput__Container {
+				margin-top: -10px;
+			}
+		}
+
+		.Dropdown__Container {
+			position: relative;
+			top: -4px;
+		}
+
+		.Checkbox__Container {
+			margin: 10px 0px;
+		}
+	}
+}
+
+.CreateEvent__Date__Column {
+	margin: 10px 0px;
+}
+
+.CreateEvent__Section__Price {
+	display: flex;
+
+	.host {
+		margin-top: -27px;
+		padding: 0px 5px;
+	}
+
+	.CreateEvent__Section__Title {
+		flex: 1;
+	}
+}
+
+.CreateEvent__Title {
+	font-size: 35px;
+	font-weight: 600;
+	color: $purple_wine;
+
+	&.spacing {
+		margin-bottom: 40px;
+	}
+}
+
+.CreatEvent__Margin {
+	margin-top: 50px;
+}
+
+.CreateEvent__Description {
+	font-size: 30px;
+	font-weight: 600;
+	color: $purple_wine;
+
+	&.spacing {
+		margin-bottom: 40px;
+	}
+}
+
+.CreateEvent__WineList {
+	margin-top: 50px;
+	margin-bottom: 120px;
+}
+
+.CreateEvent__Footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 30px 0px;
+	text-align: center;
+	margin-top: 50px;
+	background: #eae9df;
+}
+
+.CreateEvent__DatePicker__Middle {
+	text-align: center;
+	width: 0%;
+	margin: 0 auto;
+}
+
+.CreateEvent__Picker {
+	position: absolute;
+	right: 200px;
+}
+
+.react-datepicker__input-container {
+	input {
+		font-family: $body_font_family;
+		color: $purple_wine;
+		font-size: 14px;
+		border: none;
+		border-bottom: 1.5px solid $purple_greyed;
+		background-color: transparent;
+		outline: none;
+		width: 100%;
+		font-weight: 600;
+
+		&:focus {
+			box-shadow: 0 4px 2px -2px $primary;
+		}
+
+		&::placeholder {
+			color: $purple_wine;
+		}
+	}
+}

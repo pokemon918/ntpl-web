@@ -1,0 +1,69 @@
+@import '../_theme';
+@import 'assets/scss/partials/_mixins.scss';
+
+.TrialStatusModal__Root {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $secondary;
+
+	.TrialStatusModal__Wrapper {
+		position: relative;
+		width: 295px;
+		height: 313px;
+		background-color: $trial_modal_background;
+		overflow: hidden;
+		padding: 20px;
+		color: $primary;
+		border: none;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+		.TrialStatusModal__Container__Header {
+			margin-top: 25px;
+			font-size: 28px;
+			font-weight: normal;
+			color: $primary;
+			font-family: $headings_font_family;
+			margin-right: 20px;
+		}
+
+		.TrialStatusModal__Container__CloseButton {
+			position: absolute !important;
+			top: 20px;
+			right: 20px;
+			font-size: 32px;
+			font-weight: 500;
+			color: $primary;
+			cursor: pointer;
+		}
+
+		.TrialStatusModal__Container__Body {
+			width: 100%;
+			.TrialStatusModal__Container__BodyContent {
+				margin: 31px auto;
+				font-family: $body_font_family;
+				font-size: 18px;
+				font-weight: normal;
+				color: $primary;
+			}
+		}
+
+		.TrialStatusModal__Container__FooterWrapper {
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			background-color: $trial_modal_background;
+			padding-top: 15px;
+
+			.TrialStatusModal__Container__FooterContainer {
+				margin: 0 auto;
+				text-align: center;
+			}
+		}
+	}
+}

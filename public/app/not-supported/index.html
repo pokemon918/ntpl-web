@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Tasting wine better - with Noteable</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="theme-color" content="#391d4d" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+		<style type="text/css">
+			body {
+				background-color: rgb(245, 244, 239);
+				font-size: 14px;
+				font-family: 'Raleway', helvetica, sans-serif;
+				width: 80ch;
+				max-width: 95vw;
+				margin: 5% auto;
+				padding: 1ch;
+				color: #391d4d;
+			}
+			img {
+				margin: 80px;
+				cursor: pointer;
+			}
+			p,
+			img {
+					-webkit-user-select: none; 
+					-moz-user-select: none; 
+					-ms-user-select: none; 
+					user-select: none;
+			}
+		</style>
+
+		<body onclick="location.href='/'">
+			<center><img src="../gfx/ntbl-logo-dark.png" alt="Logo" /></center>
+
+			<p>
+				Oh! - it looks like you your browser does not support all features needed to get a full
+				experience.
+			</p>
+
+			<p>Please upgrade your browser and come back.</p>
+
+			<script>
+				if (/\/noteable.co/.test(window.location.origin)) {
+					!(function() {
+						var analytics = (window.analytics = window.analytics || []);
+						if (!analytics.initialize)
+							if (analytics.invoked)
+								window.console && console.error && console.error('Segment snippet included twice.');
+							else {
+								analytics.invoked = !0;
+								analytics.methods = [
+									'trackSubmit',
+									'trackClick',
+									'trackLink',
+									'trackForm',
+									'pageview',
+									'identify',
+									'reset',
+									'group',
+									'track',
+									'ready',
+									'alias',
+									'debug',
+									'page',
+									'once',
+									'off',
+									'on',
+								];
+								analytics.factory = function(t) {
+									return function() {
+										var e = Array.prototype.slice.call(arguments);
+										e.unshift(t);
+										analytics.push(e);
+										return analytics;
+									};
+								};
+								for (var t = 0; t < analytics.methods.length; t++) {
+									var e = analytics.methods[t];
+									analytics[e] = analytics.factory(e);
+								}
+								analytics.load = function(t, e) {
+									var n = document.createElement('script');
+									n.type = 'text/javascript';
+									n.async = !0;
+									n.src = 'https://cdn.segment.com/analytics.js/v1/' + t + '/analytics.min.js';
+									var a = document.getElementsByTagName('script')[0];
+									a.parentNode.insertBefore(n, a);
+									analytics._loadOptions = e;
+								};
+								analytics.SNIPPET_VERSION = '4.1.0';
+								analytics.load('fpGRII1IMfIWQPLQaRID0sBxNnaYNyJl');
+								analytics.page();
+							}
+					})();
+				}
+			</script>
+		</body>
+	</head>
+</html>

@@ -1,0 +1,28 @@
+@import '../../theme';
+@import 'assets/scss/partials/_mixins.scss';
+
+.SearchResultsListItem__Container {
+	padding: 15px;
+	font-family: Raleway;
+	font-size: 18px;
+	color: $primary-light;
+	background-color: $secondary;
+	cursor: pointer;
+
+	@include desktop {
+		max-width: 600px;
+	}
+
+	&:hover {
+		background-color: lighten($secondary_button_background, 5);
+	}
+
+	&.isSelected {
+		background-color: $secondary_button_background;
+	}
+
+	strong {
+		color: $purple_wine;
+		font-weight: 600;
+	}
+}

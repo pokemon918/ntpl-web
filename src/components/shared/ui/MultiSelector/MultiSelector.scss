@@ -1,0 +1,132 @@
+@import 'assets/scss/partials/_mixins.scss';
+@import '../_theme';
+
+.NotesSelection__List {
+	background-color: transparent;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.NotesSelection__List__SubHeader {
+	font-weight: 300;
+	font-size: 14px;
+	color: #887794;
+}
+
+.NotesSelection__List__Item {
+	cursor: pointer;
+	font-size: 16px;
+	padding: 25px 0px;
+	text-align: center;
+	color: $purple_wine;
+	font-family: Raleway;
+	display: inline-block;
+	font-weight: 600;
+	background-color: #f5f4ef;
+	border-top: 1px solid #b0a5b8;
+
+	@include desktop {
+		padding: 30px 0px;
+	}
+
+	@include mobile {
+		font-size: 14px;
+		max-height: 90px;
+	}
+
+	&.odd {
+		&:nth-last-child(2) {
+			border-bottom: 1px solid #b0a5b8;
+			margin-bottom: -1px;
+		}
+	}
+
+	&:nth-child(1),
+	&:nth-child(2) {
+		border-top: none;
+	}
+
+	&:nth-child(2n + 1) {
+		border-right: 1px solid #b0a5b8;
+	}
+
+	&.active {
+		background-color: #d7d2db;
+	}
+
+	@include desktop {
+		&:hover {
+			background-color: #ebe9e0;
+			background-color: #efede6;
+		}
+
+		&.active:hover {
+			background-color: #d7d2db;
+			background-color: #cdc6d2;
+		}
+	}
+}
+
+.touch {
+	.NotesSelection__List__Item {
+		&:hover {
+			background-color: inherit;
+		}
+
+		&.active {
+			background-color: #d7d2db;
+		}
+	}
+}
+
+.Tasting__Header {
+	position: fixed;
+	height: 134vh;
+	color: $white;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	font-size: 50px;
+	background: rgba($primary, 0.85);
+	text-transform: capitalize;
+	font-weight: 400;
+	font-family: 'Abril fatface';
+	display: flex;
+	z-index: 9999;
+	align-items: center;
+	justify-content: center;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+	animation-name: hideAnimation;
+	text-shadow: 0 0 20px $primary;
+	@include no_select();
+	pointer-events: none;
+}
+
+@keyframes hideAnimation {
+	0% {
+		opacity: 0;
+		right: 0;
+		left: 0;
+	}
+	35% {
+		opacity: 1;
+	}
+	45% {
+		opacity: 1;
+	}
+	99% {
+		opacity: 0;
+		z-index: 1;
+		left: 0;
+		right: 0;
+	}
+	100% {
+		opacity: 0;
+		z-index: -9;
+		left: -101vw;
+		right: 101vw;
+		pointer-events: none;
+	}
+}

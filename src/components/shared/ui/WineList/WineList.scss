@@ -1,0 +1,23 @@
+@import 'assets/scss/partials/_mixins.scss';
+
+.WineList__Container {
+	.WineList__Item {
+		padding: 10px 0;
+		cursor: pointer;
+		border-bottom: 1px solid #c0b7c5;
+
+		&:first-of-type {
+			padding-top: 0;
+		}
+
+		&:last-of-type {
+			border-bottom: none;
+		}
+
+		@include desktop {
+			&:hover {
+				background-color: #d7d2db;
+			}
+		}
+	}
+}

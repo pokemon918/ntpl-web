@@ -1,0 +1,51 @@
+@import '../../_theme';
+@import 'assets/scss/partials/_mixins.scss';
+
+.SelectionButton__Context {
+	width: 100%;
+
+	@include desktop {
+		width: 300px;
+	}
+
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	padding: 0px 20px;
+	min-height: 50px;
+	background-color: #f5f4ef;
+	border-bottom: 1px solid #b0a5b8;
+
+	&.active {
+		background-color: #d7d2db;
+	}
+
+	&:hover {
+		background-color: #d7d2db;
+	}
+
+	.SelectionButton__Context__WineColor {
+		padding: 25px;
+		margin-right: 25px;
+		border-radius: 25px;
+	}
+
+	.SelectionButton__Context__WineType {
+		width: 50px;
+		margin-right: 25px;
+		text-align: center;
+	}
+
+	.SelectionButton__Context__Chevron {
+		float: right;
+	}
+
+	.SelectionButton__Context__Text {
+		flex: 1;
+		padding: 30px 5px;
+		font-size: 18px;
+		font-weight: 600;
+		color: $purple_wine;
+		font-family: Raleway;
+	}
+}

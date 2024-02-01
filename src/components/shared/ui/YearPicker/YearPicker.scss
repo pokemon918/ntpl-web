@@ -1,0 +1,101 @@
+@import '../theme';
+
+.YearPicker__Container {
+	color: $purple_wine;
+	width: 280px;
+	border: 1px solid $grey;
+	border-radius: 3px;
+	font-size: 1rem;
+	box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+	background-color: $white;
+	margin-bottom: 10px;
+	margin: auto;
+	font-family: $body_font_family;
+
+	&.StaticPosition {
+		position: static;
+	}
+}
+
+.YearPicker__Header {
+	display: flex;
+	width: 92%;
+	height: 3.5rem;
+	border-bottom: 1.4px solid $grey;
+	align-items: center;
+	justify-content: space-around;
+	font-weight: 600;
+	margin: auto;
+}
+
+.YearPicker__Prev,
+.YearPicker__Next {
+	cursor: pointer;
+	font-size: 2.4rem;
+
+	&:hover {
+		color: $purple_wine;
+	}
+
+	&.disabled {
+		color: $pink_greyed;
+		cursor: not-allowed;
+	}
+
+	&.disabled:hover {
+		color: $pink_greyed;
+	}
+}
+
+.YearPicker__Year {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0.5rem;
+}
+
+.YearPicker__Items {
+	list-style: none;
+	padding: 1rem 0rem;
+	flex: 33%;
+	width: 100%;
+
+	&:hover {
+		background-color: $secondary_button_background;
+		color: $purple_wine;
+		cursor: pointer;
+	}
+
+	&.selected {
+		color: $purple_wine;
+		font-weight: 600;
+		background: $secondary_button_background;
+	}
+
+	&.disabled {
+		color: $pink_greyed;
+		cursor: not-allowed;
+	}
+
+	&.disabled:hover {
+		background: none;
+	}
+}
+
+.YearPicker__Footer {
+	display: flex;
+	width: 92%;
+	height: 3.5rem;
+	border-top: 1.4px solid $grey;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	margin: auto;
+	text-decoration: underline;
+
+	.YearPicker__NoSelect {
+		cursor: pointer;
+	}
+}

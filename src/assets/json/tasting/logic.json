@@ -1,0 +1,186 @@
+{
+	"fruitdevelopment_red__": {
+		"notif": [
+			"nuance_white",
+			"nuance_lemongreen",
+			"nuance_lemon",
+			"nuance_gold",
+			"nuance_amber",
+			"nuance_brown"
+		]
+	},
+	"bottleage_red__": {
+		"notif": [
+			"nuance_white",
+			"nuance_lemongreen",
+			"nuance_lemon",
+			"nuance_gold",
+			"nuance_amber",
+			"nuance_brown"
+		]
+	},
+	"fruitdevelopment_white__": {
+		"notif": [
+			"nuance_red",
+			"nuance_purple",
+			"nuance_ruby",
+			"nuance_garnet",
+			"nuance_tawny",
+			"nuance_brown"
+		]
+	},
+	"bottleage_white__": {
+		"notif": [
+			"nuance_red",
+			"nuance_purple",
+			"nuance_ruby",
+			"nuance_garnet",
+			"nuance_tawny",
+			"nuance_brown"
+		]
+	},
+	"note_tomato_leaf": {
+		"notif": [
+			"nuance_white",
+			"nuance_lemongreen",
+			"nuance_lemon",
+			"nuance_gold",
+			"nuance_amber",
+			"nuance_brown"
+		]
+	},
+
+	"note_blackcurrant_leaf": {
+		"notif": [
+			"nuance_white",
+			"nuance_lemongreen",
+			"nuance_lemon",
+			"nuance_gold",
+			"nuance_amber",
+			"nuance_brown"
+		]
+	},
+	"note_liquorice": {
+		"notif": [
+			"nuance_white",
+			"nuance_lemongreen",
+			"nuance_lemon",
+			"nuance_gold",
+			"nuance_amber",
+			"nuance_brown"
+		]
+	},
+
+	"note_apple": {
+		"notif": [
+			"nuance_red",
+			"nuance_purple",
+			"nuance_ruby",
+			"nuance_garnet",
+			"nuance_tawny",
+			"nuance_brown"
+		]
+	},
+	"note_chamomile": {
+		"notif": [
+			"nuance_red",
+			"nuance_purple",
+			"nuance_ruby",
+			"nuance_garnet",
+			"nuance_tawny",
+			"nuance_brown"
+		]
+	},
+	"note_elderflower": {
+		"notif": [
+			"nuance_red",
+			"nuance_purple",
+			"nuance_ruby",
+			"nuance_garnet",
+			"nuance_tawny",
+			"nuance_brown"
+		]
+	},
+
+	"note_lemon": {
+		"notif": [
+			"nuance_red",
+			"nuance_purple",
+			"nuance_ruby",
+			"nuance_garnet",
+			"nuance_tawny",
+			"nuance_brown"
+		]
+	},
+
+	"note_lime": {
+		"notif": [
+			"nuance_red",
+			"nuance_purple",
+			"nuance_ruby",
+			"nuance_garnet",
+			"nuance_tawny",
+			"nuance_brown"
+		]
+	},
+
+	"notes_fruit_red_": {
+		"notif": ["nuance_white"]
+	},
+
+	"notes_fruit_black_": {
+		"notif": ["nuance_white"]
+	},
+
+	"notes_stone_fruit_": {
+		"notif": [
+			"nuance_red",
+			"nuance_purple",
+			"nuance_ruby",
+			"nuance_garnet",
+			"nuance_tawny",
+			"nuance_brown"
+		]
+	},
+
+	"notes_fruit_green_": {
+		"notif": [
+			"nuance_red",
+			"nuance_purple",
+			"nuance_ruby",
+			"nuance_garnet",
+			"nuance_tawny",
+			"nuance_brown"
+		]
+	},
+
+	"notes_tropical_": {
+		"notif": [
+			"nuance_red",
+			"nuance_purple",
+			"nuance_ruby",
+			"nuance_garnet",
+			"nuance_tawny",
+			"nuance_brown"
+		]
+	},
+
+	"tannins__": {
+		"onlyif": ["category_sparkling", "category_still", "category_fortified"]
+	},
+	"mousse__": {
+		"onlyif": ["category_sparkling", "category_still", "category_fortified"]
+	},
+	"nuance_tint_": {
+		"onlyif": ["color_"]
+	},
+	"color_": {
+		"onlyif": ["color_"]
+	},
+	"clarity__": {
+		"onlyif": ["nuance_tint_"]
+	},
+	"colorintensity__": {
+		"onlyif": ["clarity__"]
+	}
+}

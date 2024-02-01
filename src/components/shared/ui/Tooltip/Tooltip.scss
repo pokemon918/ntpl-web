@@ -1,0 +1,52 @@
+@import 'assets/scss/partials/_vars.scss';
+@import 'assets/scss/partials/_mixins.scss';
+@import 'components/shared/ui/_theme.scss';
+
+.Tolltip__Wrapper_Sticky {
+	position: relative !important;
+	display: block;
+
+	.__react_component_tooltip {
+		opacity: 1;
+		visibility: visible;
+		position: absolute !important;
+		width: 250px;
+		left: 0 !important;
+		top: 50px !important;
+		font-weight: bold;
+		border-radius: 1rem;
+		border: 2px solid $primary !important;
+		max-width: 500px;
+		text-align: left;
+		background-color: $primary-light;
+		border: 2px solid $primary-light !important;
+		background-color: $primary;
+		color: $secondary !important;
+	}
+}
+
+.hoverTooltip.__react_component_tooltip {
+	font-weight: bold;
+	border-radius: 1rem;
+	border: 2px solid $primary !important;
+	max-width: 500px;
+	text-align: left;
+	background-color: $primary-light;
+	color: $primary !important;
+
+	border: 2px solid $primary-light !important;
+	background-color: $primary;
+	color: $secondary !important;
+}
+
+.__react_component_tooltip.type-dark.place-bottom:after {
+	border-bottom-color: $primary-light;
+}
+
+.__react_component_tooltip.place-bottom {
+	margin-top: 5px;
+}
+
+.__react_component_tooltip.show {
+	opacity: 1;
+}

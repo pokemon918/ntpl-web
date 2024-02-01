@@ -1,0 +1,238 @@
+image: atlassian/default-image:2
+
+clone:
+  depth: 1 # include the last commit only
+options:
+  max-time: 15
+
+definitions:
+  caches:
+    yarncircleci: /home/circleci/.cache/yarn
+    yarncypress: /usr/local/share/.cache/yarn
+    yarn: $HOME/.cache/yarn
+    npm: $HOME/.npm
+    cypress: $HOME/.cache/Cypress
+    nodelocal: ./node_modules
+  steps:
+    - step: &futureCode
+        name: Test potential future code
+        script:
+          - yarn cache dir
+          - '[ -z "$BITBUCKET_PR_DESTINATION_BRANCH" ] || (git fetch && git checkout $BITBUCKET_PR_DESTINATION_BRANCH && git merge $BITBUCKET_BRANCH && yarn install && yarn test-ci)'
+        artifacts:
+          - test-output/** 
+
+    - step: &push2test
+        name: Deploy to test.ntbl.link 
+        deployment: Test
+        script:
+          - apt-get update && apt-get install -y sshpass
+          - (echo $BITBUCKET_BRANCH && git --no-pager log -n 40 --pretty=format:'%cr [%h] %s' --abbrev-commit) > ./build/build.version
+          - sshpass -p $NTBL_KEY scp -r ./build/ ntbl.link@ntbl.link:/var/www/ntbl.link/test_new/          
+          - sshpass -p $NTBL_KEY ssh -t ntbl.link@ntbl.link "rm -fr ./test && mv ./test_new ./test; exit"
+          - sshpass -p $NTBL_KEY ssh -t ntbl.link@ntbl.link "alias php="/opt/alt/php-latest/usr/bin/php" && cd test-api/ntbl-api && npm run download ; exit"
+
+
+    - step: &ci
+        name: Build and test code
+        image: 'cypress/included:3.6.0'
+        size: 2x # Double resources available for this step.
+        caches:
+          - yarncypress
+          - npm
+          - cypress
+          - yarn 
+          - nodelocal
+        script:
+          # Pusing many commits at once will still trigger pipelines to run on each of them. Exit if not head. To rerun an old pipeline make a commit with the message "Pipeline"
+          - eval '[[ ! -z "$BITBUCKET_TAG" ]] || [ "$BITBUCKET_COMMIT" == "$(git rev-parse --short=12 $BITBUCKET_BRANCH)" ] || [ "Pipeline" == "$(git show -s --format=%B $BITBUCKET_BRANCH | head -n 1 | xargs)" ] || (echo "Ill pass this run..." && exit 0)'
+          - HIST_FILE="./public_html/autodeploy/history.txt"
+          
+          # Be smart - reuse things
+          - apt-get update && apt-get install -y sshpass
+          - DEPLOY_NAME="$BITBUCKET_BRANCH"
+          - eval '[[ -z "$BITBUCKET_TAG" ]] || DEPLOY_NAME="$BITBUCKET_TAG"'
+          - DEPLOY_KEY="$(echo $DEPLOY_NAME | npx rexreplace '[^\w\d]+' - | npx rexreplace '^-|-$' '' | npx rexreplace '^([^a-z])' x€1)"
+          - KEY_INFO="WEB $DEPLOY_KEY $DEPLOY_NAME $BITBUCKET_BUILD_NUMBER"
+          - echo $KEY_INFO
+          
+          # Build
+          - sshpass -p $NTBL_KEY ssh -t ntbl.link@ntbl.link "echo '$(date '+%Y-%m-%d %T') 1 $KEY_INFO BUILD_START' >> $HIST_FILE ; exit"
+          - yarn install --frozen-lockfile
+          - yarn test-format
+          - yarn test-unit
+          - yarn build
+          - yarn upload-sourcemaps
+          - (echo $DEPLOY_NAME && git --no-pager log -n 40 --pretty=format:'%cD [%h] %s %cr' --abbrev-commit) > ./build/deploy.txt
+          
+          # CI deploy
+          - sshpass -p $NTBL_KEY ssh -t ntbl.link@ntbl.link "echo '$(date '+%Y-%m-%d %T') 2 $KEY_INFO AUTODEPLOY_START' >> $HIST_FILE ; exit"
+          - sshpass -p $NTBL_KEY ssh -t ntbl.link@ntbl.link "mkdir -p /var/www/ntbl.link/public_html/autodeploy/$DEPLOY_KEY ; exit"
+          - sshpass -p $NTBL_KEY scp -r ./build/. "ntbl.link@ntbl.link:/var/www/ntbl.link/public_html/autodeploy/$DEPLOY_KEY/"
+
+          # E2E
+          - sshpass -p $NTBL_KEY ssh -t ntbl.link@ntbl.link "echo '$(date '+%Y-%m-%d %T') 3 $KEY_INFO E2E_START' >> $HIST_FILE ; exit"
+ 
+          # Test E2E locally
+          - yarn serve & sleep 2
+          - echo '127.0.0.1 pipeline_'"$BITBUCKET_BUILD_NUMBER"'.ci-test.ntbl.link' >> /etc/hosts
+          - echo skipping tests #yarn test-e2e-ci --env 'API_URL=https://ci-api.ntbl.link,APP_URL=http://pipeline_'"$BITBUCKET_BUILD_NUMBER"'.ci-test.ntbl.link:3000'
+
+          # Test E2E remotely
+          #- yarn test-e2e-ci --env 'API_URL=https://ci-api.ntbl.link,APP_URL=http://$DEPLOY_KEY.ntbl.link'
+ 
+          - sshpass -p $NTBL_KEY ssh -t ntbl.link@ntbl.link "echo '$(date '+%Y-%m-%d %T') 4 $KEY_INFO E2E_OK' >> $HIST_FILE ; exit"
+          
+
+          
+        artifacts:
+          - test-output/**
+          - build/**
+          - test/e2e/cypress/videos/**
+          - test/e2e/cypress/screenshots/**
+
+
+
+    - step: &deployStorybook
+        name: Deploy storybook
+        image: 'cypress/included:3.6.0'
+        #size: 2x # Double resources available for this step.
+        caches:
+          - yarncypress
+          - npm
+          - cypress
+          - yarn 
+          - nodelocal
+        script:
+          # Pusing many commits at once will still trigger pipelines to run on each of them. Exit if not head. To rerun an old pipeline make a commit with the message "Pipeline"
+          - eval '[[ ! -z "$BITBUCKET_TAG" ]] || [ "$BITBUCKET_COMMIT" == "$(git rev-parse --short=12 $BITBUCKET_BRANCH)" ] || [ "Pipeline" == "$(git show -s --format=%B $BITBUCKET_BRANCH | head -n 1 | xargs)" ] || (echo "Ill pass this run..." && exit 0)'
+          - HIST_FILE="./public_html/autodeploy/history.txt"
+          - apt-get update && apt-get install -y sshpass
+          
+          # Build
+          - sshpass -p $NTBL_KEY ssh -t ntbl.link@ntbl.link "echo '$(date '+%Y-%m-%d %T') 1 $KEY_INFO STORYBOOK_START' >> $HIST_FILE ; exit"
+          - yarn install --frozen-lockfile
+          - yarn build-storybook
+          
+          # Deploy
+          - sshpass -p $NTBL_KEY ssh -t ntbl.link@ntbl.link "mkdir -p /var/www/ntbl.link/storybook ; exit"
+          - sshpass -p $NTBL_KEY scp -r ./storybook-static/. "ntbl.link@ntbl.link:/var/www/ntbl.link/storybook/"
+          
+          
+          # Chromatic needs the git history but cant get it working anymore. 
+          #- sshpass -p $NTBL_KEY ssh -t ntbl.link@ntbl.link "echo '$(date '+%Y-%m-%d %T') 4 $KEY_INFO STORYBOOK2CLOUD_START' >> $HIST_FILE ; exit"
+          #- git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+          #- git remote update
+          #- git fetch --all
+          #- git checkout $BITBUCKET_BRANCH
+          #- npx chromatic --exit-once-uploaded --storybook-build-dir ./storybook-static 
+          #- sshpass -p $NTBL_KEY ssh -t ntbl.link@ntbl.link "echo '$(date '+%Y-%m-%d %T') 4 $KEY_INFO STORYBOOK2CLOUD_OK' >> $HIST_FILE ; exit"
+
+          # Done
+          - sshpass -p $NTBL_KEY ssh -t ntbl.link@ntbl.link "echo '$(date '+%Y-%m-%d %T') 4 $KEY_INFO STORYBOOK_OK' >> $HIST_FILE ; exit"
+          
+          
+
+    - step: &buildOnly
+        name: Build code
+        image: 'circleci/node:8-browsers'
+        #size: 2x # Double resources available for this step.
+        caches:
+          - yarncircleci
+          - nodelocal
+        script:
+          -  #sudo npm install -g yarn
+          - yarn install --frozen-lockfile
+          - yarn build
+        artifacts:
+          - build/**
+
+  
+
+pipelines:
+  #  custom:
+  #    pull-requests:
+  #      - step:
+  #          name: Test potential future code
+  #          caches:
+  #              - yarncircleci
+  #          script:
+  #            - echo Testing the potential future code created if merging pull request \#$BITBUCKET_PR_ID from $BITBUCKET_BRANCH into $BITBUCKET_PR_DESTINATION_BRANCH
+  #            - git fetch && git checkout $BITBUCKET_PR_DESTINATION_BRANCH && git merge $BITBUCKET_BRANCH
+  #            - npm install -g yarn && yarn install
+  #            - yarn test-ci
+  #          artifacts:
+  #            - ./test-output/*
+
+  branches:
+    'QQQQrelease/*':
+      - step: *buildOnly
+      - step: *push2test
+      - step: *ci     
+
+    'QQQhotfix/*':
+      - parallel:
+          - step: *buildOnly
+      - step:
+          name: Deploy to test.ntbl.link
+          deployment: Test
+          script:
+            - apt-get update && apt-get install -y sshpass
+            - (echo $BITBUCKET_BRANCH && git --no-pager log -n 40 --pretty=format:'%cr [%h] %s' --abbrev-commit) > ./build/build.version
+            - sshpass -p $NTBL_KEY ssh -t ntbl.link@ntbl.link "rm -fr ./test ; exit"
+            - sshpass -p $NTBL_KEY scp -r ./build/ ntbl.link@ntbl.link:/var/www/ntbl.link/test/
+
+    '{master,hotfix*,release*}':
+      - step: *ci
+
+    'develop':
+      - step: *ci
+      - step: *deployStorybook
+
+  pull-requests:
+    "**":
+      - step: *ci
+    
+    '{master,hotfix*,release*}':
+      - step: *ci
+      - step:
+          trigger: manual
+          script:
+            - echo 'Autodelpoy not implemented'
+  
+  tags:
+    "**":
+      - step: *ci
+      
+    "deploy2test*":
+      - step: *ci
+      - step: *push2test
+  
+    
+ 
+
+#    default:
+#      - step:
+#        script: 
+#          - abc
+#      - step: *buildOnly
+#- step: *futureCode
+#      - step:
+#          name: Deploy to dev.ntbl.link
+#          deployment: Dev
+#          script:
+#            - apt-get update && apt-get install -y sshpass
+#            - (echo $BITBUCKET_BRANCH && git --no-pager log -n 40 --pretty=format:'%cr [%h] %s' --abbrev-commit) > ./build/build.version
+#            - sshpass -p $NTBL_KEY ssh -t ntbl.link@ntbl.link "rm -fr ./dev ; exit"
+#            - sshpass -p $NTBL_KEY scp -r ./build/ ntbl.link@ntbl.link:/var/www/ntbl.link/dev/
+
+#    'QQQdevops/*': #any branch with PR
+#      - step: *ci
+#- step: *futureCode
+#- step:
+#   script:
+# prettier is not providing same result locally and on remote. Disableling.
+#- npx prettier@1.18.2 '**/*.{json,scss,css,js}' --write
+#- npx prettier@1.18.2 '**/*.{json,scss,css,js}' --list-different
+#- git diff
+

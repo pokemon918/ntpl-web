@@ -1,0 +1,60 @@
+@import '../theme';
+@import 'assets/scss/partials/_mixins.scss';
+
+.Breadcrumb__Container {
+	display: flex;
+	align-items: center;
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: 600;
+	position: fixed;
+	@include no_select();
+
+	@include mobile {
+		font-size: 12px;
+		position: static;
+	}
+
+	a {
+		color: $purple_heather;
+		text-decoration: inherit;
+
+		&:hover {
+			color: $purple_heather;
+		}
+	}
+
+	.Breadcrumb__Separator,
+	.Breadcrumb__Item {
+		margin-right: 10px;
+	}
+
+	.Breadcrumb__Separator {
+		font-size: 10px;
+		line-height: 14px;
+	}
+
+	.Breadcrumb__Item {
+		color: $purple_heather;
+
+		&:last-of-type {
+			color: $purple_wine;
+		}
+	}
+}
+
+.Breadcrumb__Wrapper {
+	margin: 10px 0px;
+	width: 100%;
+	padding-top: 30px;
+	position: fixed;
+	top: 35px;
+	left: 0;
+	right: 0;
+	background: #f4f4ee;
+	z-index: 98;
+
+	@include mobile {
+		position: static;
+	}
+}

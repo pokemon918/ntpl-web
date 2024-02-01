@@ -1,0 +1,77 @@
+@import 'assets/scss/partials/_vars.scss';
+@import 'assets/scss/partials/_mixins.scss';
+@import 'components/shared/ui/_theme.scss';
+
+.my-events-page {
+	.title {
+		margin-bottom: 25px;
+		color: $purple_wine;
+
+		.btn {
+			padding: 10px 36px 10px 18px !important;
+			background: $cp_primary !important;
+			float: right;
+			margin-top: 5px;
+			margin-right: 8%;
+			position: relative;
+
+			&.with-events {
+				margin-right: 2%;
+			}
+
+			.arrow-icon {
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+.Spinner_Wrap {
+	position: relative;
+	height: 50px;
+}
+
+.MyEvents__Item {
+	padding: 10px;
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+	color: $primary;
+	background-color: #f5f4ef;
+	border-bottom: 1px solid #b0a5b8;
+}
+
+.MyEvents__Error {
+	padding: 30px 0;
+	text-align: center;
+
+	button {
+		margin-top: 30px;
+	}
+}
+
+.create-event-form {
+	.react-date-picker {
+		height: calc(2.25rem + 2px);
+		width: 100%;
+	}
+
+	.react-date-picker__wrapper {
+		padding: 0 10px;
+		border: thin solid #ccc;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		width: 100%;
+	}
+}
+
+.loading-wrapper {
+	text-align: center;
+
+	.fa-spin {
+		color: $cp_primary;
+	}
+}

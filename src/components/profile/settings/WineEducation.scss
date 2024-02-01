@@ -1,0 +1,56 @@
+@import '~components/shared/ui/_theme.scss';
+
+.WineEducation__Container {
+	.WineEducation__Title {
+		margin-bottom: 15px;
+	}
+
+	hr {
+		margin: 1.5rem 0;
+	}
+
+	.WineEducation__List {
+		margin-top: 15px;
+
+		.WineEducation__Item {
+			position: relative;
+			display: grid;
+			grid-template-columns: 100px 1fr;
+			grid-gap: 10px;
+
+			.WineEducation__ItemLabel {
+				font-weight: 600;
+			}
+
+			.WineEducation__ItemActions {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				height: 100%;
+				padding-bottom: 5px;
+				display: flex;
+				align-items: flex-end;
+				justify-content: flex-end;
+
+				button svg {
+					margin-right: 10px;
+				}
+			}
+
+			.Radio__Label {
+				font-size: 16px;
+				font-weight: normal;
+			}
+		}
+	}
+
+	.WineEducation__Actions {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		button:not(:first-of-type) {
+			margin-top: 25px;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+@import 'components/shared/ui/_theme';
+
+.container {
+	position: relative;
+	display: inline-block;
+}
+
+.input {
+	width: 140px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	background-color: $white;
+	background-image: url('./calendarIcon.png');
+	background-repeat: no-repeat;
+	background-position: center right 12px;
+	border: 1px solid $secondary-dark;
+}
+
+.text {
+	margin: 0 16px;
+	font-size: 14px;
+	color: $primary;
+
+	&.placeholder {
+		color: rgba($black, 0.2);
+	}
+}
+
+.value {
+	position: absolute;
+	top: 20px;
+	right: -20px;
+	transform: scale(0);
+	opacity: 0;
+}

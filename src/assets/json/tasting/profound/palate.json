@@ -1,0 +1,56 @@
+[
+	{
+		"isMultiple": false,
+		"breadcrumb": "profound_ / palate_",
+		"title": "palate_",
+		"keys": [
+			"sweetness__",
+			"acidity__",
+			"tannins__",
+			"alcohol__",
+			"body__",
+			"flavourintensity__",
+			"finish__"
+		],
+		"required": [
+			"sweetness__",
+			"acidity__",
+			"tannins__",
+			"alcohol__",
+			"body__",
+			"flavourintensity__",
+			"finish__"
+		]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "profound_ / palate_ / tasting_aromas_primary",
+		"title": "tasting_aromas_primary",
+		"subtitle": "tasting_select_many",
+		"keys": [
+			"notes_floral_",
+			"notes_fruit_green_",
+			"notes_fruit_citrus_",
+			"notes_stone_fruit_",
+			"notes_tropical_",
+			"notes_fruit_red_",
+			"notes_fruit_black_",
+			"notes_fruit_dried_",
+			"notes_fruit_cooked_"
+		]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "profound_ / palate_ / tasting_aromas_secondary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"keys": ["notes_herbaceous_", "notes_herbal_", "notes_pungent_spice_", "notes_other_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "profound_ / palate_ / tasting_aromas_tertiary",
+		"title": "tasting_aromas_tertiary",
+		"subtitle": "tasting_select_many",
+		"keys": ["notes_yeast_", "notes_mlf_", "notes_oak_"]
+	}
+]

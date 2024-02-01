@@ -1,0 +1,28 @@
+@import 'assets/scss/partials/_mixins.scss';
+@import '../_theme';
+
+.RatingTotal_Container {
+	margin-top: -26px;
+	font-size: 64px;
+	font-weight: 900;
+	font-style: normal;
+	color: $purple_wine;
+	font-variant-numeric: tabular-nums;
+	font-family: 'rawline', sans-serif;
+
+	@include desktop {
+		margin-top: -10px;
+	}
+
+	@include mobile {
+		font-size: 56px;
+		margin-bottom: -5px;
+	}
+
+	.RatingTotal__SubHeader {
+		font-family: Raleway;
+		font-size: 14px;
+		color: $primary-text-light;
+		font-weight: 400;
+	}
+}

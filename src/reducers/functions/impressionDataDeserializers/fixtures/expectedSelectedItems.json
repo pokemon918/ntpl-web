@@ -1,0 +1,74 @@
+{
+	"impressionRef": "k3x9tlm",
+	"appearance": {
+		"winetype_": "category_still",
+		"color_": "nuance_white"
+	},
+	"comments": {
+		"personal_location": "",
+		"wine_personal": "give it to me",
+		"food_pairing": "with cheese"
+	},
+	"info": {
+		"tasting_name": "Wine 3 from Slovenia",
+		"tasting_country": "Slovenia",
+		"tasting_region": "Podravje",
+		"tasting_producer": "",
+		"tasting_vintage": "2016",
+		"tasting_grape": "",
+		"tasting_price": 10.62,
+		"tasting_currency": "GBP",
+		"tasting_location": ""
+	},
+	"event": {
+		"swa_round_2": true
+	},
+	"metadata": {
+		"medal_page": true
+	},
+	"collection": {
+		"id": "kneqrs",
+		"mold": "qmcgel"
+	},
+	"nose": {
+		"notes_white_": [
+			"notes_fruit_citrus_",
+			"notes_fruit_green_",
+			"notes_minerality_",
+			"notes_tropical_"
+		]
+	},
+	"characteristics": {
+		"sweetness__": "sweetness_sweet",
+		"acidity__": "acidity_mediumminus",
+		"tannins__": "tannins_mediumplus",
+		"alcohol__": "alcohol_low",
+		"body__": "body_medium"
+	},
+	"observations": {
+		"readiness__": "readiness_suitableforbottleageing",
+		"quality__": "quality_verygood"
+	},
+	"rating": {
+		"rating_balance_": 0.9125,
+		"rating_balance_touched": true,
+		"rating_finish__": 0.825,
+		"rating_finish__touched": true,
+		"rating_intensity__": 0.6875,
+		"rating_intensity__touched": true,
+		"rating_complexity_": 0.55,
+		"rating_complexity_touched": true,
+		"rating_typicity_": 0.975,
+		"rating_typicity_touched": true,
+		"rating_drinkability_": 0.7875,
+		"rating_drinkability_touched": true,
+		"rating_maturity_": 0.5625,
+		"rating_maturity_touched": true,
+		"rating_value_for_money_": 0.975,
+		"rating_value_for_money_touched": true,
+		"previous_quality": "quality_verygood"
+	},
+	"medal": {
+		"selectedMedal": "medal_gold"
+	}
+}

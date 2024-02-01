@@ -1,0 +1,43 @@
+[
+	{
+		"isMultiple": false,
+		"breadcrumb": "scholar4_ / nose_",
+		"name": "nose_",
+		"keys": ["noseintensity__"],
+		"required": ["noseintensity__"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "scholar4_ / nose_ / tasting_aromas_primary",
+		"title": "tasting_aromas_primary",
+		"subtitle": "tasting_select_many",
+		"keys": [
+			"notes_floral_",
+			"notes_fruit_green_",
+			"notes_fruit_citrus_",
+			"notes_stone_fruit_",
+			"notes_tropical_",
+			"notes_fruit_red_",
+			"notes_fruit_black_",
+			"notes_herbaceous_",
+			"notes_herbal_",
+			"spice_",
+			"ripeness_",
+			"notes_other_"
+		]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "scholar4_ / nose_ / tasting_aromas_secondary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"keys": ["notes_yeast_", "malolactic_", "notes_oak_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "scholar4_ / nose_ / tasting_aromas_tertiary",
+		"title": "tasting_aromas_tertiary",
+		"subtitle": "tasting_select_many",
+		"keys": ["tertiary_red_wine", "tertiary_white_wine", "deliberate_oxidised_"]
+	}
+]

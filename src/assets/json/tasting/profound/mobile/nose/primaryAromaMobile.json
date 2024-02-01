@@ -1,0 +1,83 @@
+[
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_primary",
+		"title": "tasting_aromas_primary",
+		"subtitle": "tasting_select_many",
+		"name": "notes_floral_",
+		"keys": ["notes_floral_"],
+		"required": ["notes_floral_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_primary",
+		"title": "tasting_aromas_primary",
+		"subtitle": "tasting_select_many",
+		"name": "notes_fruit_green_",
+		"keys": ["notes_fruit_green_"],
+		"required": ["notes_fruit_green_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_primary",
+		"title": "tasting_aromas_primary",
+		"subtitle": "tasting_select_many",
+		"name": "notes_fruit_citrus_",
+		"keys": ["notes_fruit_citrus_"],
+		"required": ["notes_fruit_citrus_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_primary",
+		"title": "tasting_aromas_primary",
+		"subtitle": "tasting_select_many",
+		"name": "notes_stone_fruit_",
+		"keys": ["notes_stone_fruit_"],
+		"required": ["notes_stone_fruit_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_primary",
+		"title": "tasting_aromas_primary",
+		"subtitle": "tasting_select_many",
+		"name": "notes_tropical_",
+		"keys": ["notes_tropical_"],
+		"required": ["notes_tropical_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_primary",
+		"title": "tasting_aromas_primary",
+		"subtitle": "tasting_select_many",
+		"name": "notes_fruit_red_",
+		"keys": ["notes_fruit_red_"],
+		"required": ["notes_fruit_red_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_primary",
+		"title": "tasting_aromas_primary",
+		"subtitle": "tasting_select_many",
+		"name": "notes_fruit_black_",
+		"keys": ["notes_fruit_black_"],
+		"required": ["notes_fruit_black_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_primary",
+		"title": "tasting_aromas_primary",
+		"subtitle": "tasting_select_many",
+		"name": "notes_fruit_dried_",
+		"keys": ["notes_fruit_dried_"],
+		"required": ["notes_fruit_dried_"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_primary",
+		"title": "tasting_aromas_primary",
+		"subtitle": "tasting_select_many",
+		"name": "notes_fruit_cooked_",
+		"keys": ["notes_fruit_cooked_"],
+		"required": ["notes_fruit_cooked_"]
+	}
+]

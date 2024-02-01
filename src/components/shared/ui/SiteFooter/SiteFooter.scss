@@ -1,0 +1,19 @@
+@import 'assets/scss/partials/_mixins.scss';
+@import '../_theme';
+
+.SiteFooter__Container {
+	position: fixed;
+	z-index: 99;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: 20vh;
+	background: #eae9df;
+	padding: 10px 25px;
+	color: $purple_wine;
+	font-family: $body_font_family;
+
+	@include desktop {
+		padding: 10px 50px;
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"keys": ["winetype_", "color_", "nuance_tint_", "colorintensity__"],
+	"required": ["winetype_", "color_", "nuance_tint_", "colorintensity__"],
+	"default": {
+		"winetype_": "category_still"
+	}
+}

@@ -1,0 +1,86 @@
+@import '../_theme';
+
+$unchecked: url('./Icon_RadioDefault.svg');
+$checked: url('./Icon_RadioSelected.svg');
+
+.RadioSelection__Container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	& .RadioSelection__Item {
+		position: relative;
+		margin-bottom: 20px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		& .RadioSelection__Item__head {
+			display: flex;
+			flex-direction: row;
+			font-family: $body_font_family;
+			color: $purple_wine;
+
+			input {
+				margin-right: 20px;
+				cursor: pointer;
+				visibility: hidden;
+			}
+
+			input + .RadioSelection__ItemWrapper::before {
+				content: '';
+				position: absolute;
+				background: $unchecked center center;
+				width: 18px;
+				height: 18px;
+				left: 0;
+				top: 3px;
+				visibility: visible;
+				color: $purple_wine;
+			}
+
+			input:checked + .RadioSelection__ItemWrapper::before {
+				background: $checked center center;
+			}
+
+			.RadioSelection__ItemWrapper {
+				display: flex;
+			}
+
+			.RadioSelection__ItemContent {
+				display: flex;
+				flex-direction: row;
+			}
+
+			label.RadioSelection__Item__head__label {
+				flex: 1;
+				display: block;
+				font-size: 18px;
+				font-weight: 500;
+				text-align: left;
+				cursor: pointer;
+			}
+
+			button {
+				border: none;
+				background: transparent;
+				outline: none;
+				cursor: pointer;
+			}
+		}
+
+		& .RadioSelection__Item__body {
+			font-family: $body_font_family;
+			color: $purple_wine;
+			font-size: 14px;
+			margin-top: 5px;
+			margin-right: 50px;
+			display: none;
+		}
+
+		& .RadioSelection__Item__body__display {
+			display: block;
+		}
+	}
+}

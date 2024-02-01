@@ -1,0 +1,42 @@
+@import '../partials/_mixins';
+
+$fontPath: '.../../../../fonts/';
+$abrilPath: $fontPath + 'Abril_Fatface/';
+
+/* Abril Fatface (regular) */
+@include font_face(
+	'Abril Fatface',
+	'Abril Fatface',
+	'AbrilFatface-Regular',
+	$abrilPath + 'AbrilFatface-Regular',
+	400
+);
+
+/* Raleway (regular|semibold|bold|black) */
+$ralewayPath: $fontPath + 'Raleway/';
+@include font_face('Raleway', 'Raleway', 'Raleway-Regular', $ralewayPath + 'Raleway-Regular', 400);
+@include font_face(
+	'Raleway',
+	'Raleway SemiBold',
+	'Raleway-SemiBold',
+	$ralewayPath + 'Raleway-SemiBold',
+	600
+);
+@include font_face('Raleway', 'Raleway Bold', 'Raleway-Bold', $ralewayPath + 'Raleway-Bold', 700);
+@include font_face(
+	'Raleway',
+	'Raleway Black',
+	'Raleway-Black',
+	$ralewayPath + 'subset-Raleway-Black',
+	900
+);
+
+/* Raleway (black) */
+$rawlinePath: $fontPath + 'Rawline/';
+@include font_face(
+	'Rawline',
+	'Rawline-Black-NumbersOnly',
+	'Rawline-Black-NumbersOnly',
+	$rawlinePath + 'Rawline-Black-NumbersOnly',
+	900
+);

@@ -1,0 +1,51 @@
+@import '../_theme';
+@import 'assets/scss/partials/_mixins.scss';
+
+.TastingTypeCard__Wrapper {
+	width: 90%;
+	color: $purple_wine;
+	display: inline-block;
+	background-color: $white;
+
+	@include border_radius(6px);
+	@include desktop {
+		width: 300px;
+	}
+
+	.header {
+		width: 100%;
+		height: 150px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		span {
+			font-family: $headings_font_family;
+			font-size: 28px;
+			font-weight: normal;
+		}
+	}
+
+	.footer {
+		width: 100%;
+		height: 50px;
+		display: flex;
+		text-align: left;
+		padding: 0px;
+		align-items: center;
+		border-radius: 0px 0px 6px 6px;
+		background-color: $contrast_card_bottom;
+
+		.icon {
+			margin: 0px 15px;
+			width: 24px;
+			height: 24px;
+			display: inline-block;
+		}
+
+		span {
+			font-family: $body_font_family;
+			font-size: 12px;
+		}
+	}
+}

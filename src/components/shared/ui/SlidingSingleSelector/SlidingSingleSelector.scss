@@ -1,0 +1,78 @@
+@import '../_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.SlidingSingleSelector__Wrapper {
+	@include no_select();
+
+	position: relative;
+	overflow-x: hidden;
+	max-width: 450px;
+	transform: translateX(115px);
+
+	@include mobile {
+		max-width: none;
+		overflow-y: hidden;
+		transform: translate(0, 0);
+	}
+
+	@include desktop {
+		transform: translateX(72px);
+	}
+
+	.SlidingSingleSelector__Block {
+		position: relative;
+		&:after {
+			content: '';
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			background: linear-gradient(to left, rgb(245, 244, 239), transparent 10%),
+				linear-gradient(to right, rgb(245, 244, 239), transparent 10%);
+			pointer-events: none;
+			z-index: 1;
+		}
+	}
+
+	.SlidingSingleSelector__Title {
+		color: $primary;
+		font-weight: 600;
+		margin-bottom: 5px;
+		text-align: center;
+		font-family: $body_font_family;
+	}
+
+	.SlidingSingleSelector__Container {
+		position: relative;
+		width: max-content;
+		display: flex;
+		justify-content: center;
+		transition: 0.2s ease-out;
+
+		.SlidingSingleSelector__Item {
+			padding: 10px 20px;
+			background-color: transparent;
+			border: 1px solid #ccc7b1;
+			font-family: $body_font_family;
+			border-right: none;
+			color: #a99bb3;
+			@include no_select();
+
+			&.isSelected {
+				background-color: #d7d2db;
+				color: #391d4e;
+				z-index: 5;
+			}
+
+			&:hover {
+				background-color: lighten(#b0a5b8, 10%);
+				cursor: pointer;
+			}
+
+			&:active {
+				background-color: lighten(#b0a5b8, 5%);
+			}
+		}
+	}
+}

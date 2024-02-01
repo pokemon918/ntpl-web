@@ -1,0 +1,49 @@
+#AuthType Basic
+#AuthName "Demo access"
+#AuthUserFile /var/www/winenode.com/.htpasswd
+#Require valid-user
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+
+
+	#First rewrite any request to the wrong domain to use the correct one (here www.)
+	#RewriteCond %{HTTP_HOST} !^www\.
+	#RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+	#Now, rewrite to HTTPS:
+#	RewriteCond %{HTTPS} off
+#	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Redirect Trailing Slashes If Not A Folder...
+#    RewriteCond %{LA-U:REMOTE_USER} !^$
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller... 
+#    RewriteCond %{LA-U:REMOTE_USER} !^$
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.html [L]
+
+    # Handle Authorization Header
+    RewriteCond %{LA-U:REMOTE_USER} !^$
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+
+
+	# for debug
+	##ErrorDocument 404 "Request: %{REQUEST_URI} Referrer: %{HTTP_REFERER} Host: %{HTTP_HOST}"
+	#RewriteRule ^ - [L,R=404]
+
+	# For autodeploy
+	#RewriteCond %{HTTP_HOST} !^(www\.)?ntbl\.link [NC]
+	#RewriteCond %{REQUEST_URI} !/autodeploy/.
+	#RewriteCond %{HTTP_HOST} ^(([^.]+))\.ntbl\.link
+	#RewriteRule .* /autodeploy/%2/build/%{REQUEST_URI}
+
+
+
+</IfModule>

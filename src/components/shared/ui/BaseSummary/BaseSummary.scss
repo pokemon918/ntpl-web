@@ -1,0 +1,74 @@
+@import '../theme';
+@import 'assets/scss/partials/_mixins.scss';
+
+$rounded_border_radius: 4px;
+
+.BaseSummary__Container {
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: 600;
+	color: $purple_wine;
+
+	.BaseSummary__Item {
+		display: flex;
+		align-items: center;
+		margin: 15px 0;
+
+		.BaseSummary__ItemName {
+			flex: 1;
+			text-align: left;
+		}
+
+		.BaseSummary__ItemValue {
+			flex: 2;
+
+			@include mobile {
+				flex: 1.5;
+			}
+
+			.BaseSummary__ValueBar {
+				position: relative;
+				height: 7px;
+				background-color: $purple_greyed_light;
+
+				.BaseSummary__ValueDisplay {
+					height: 7px;
+					background-color: $purple_wine;
+				}
+
+				&.roundedCorners {
+					border-radius: $rounded_border_radius;
+
+					.BaseSummary__ValueDisplay {
+						border-top-left-radius: $rounded_border_radius;
+						border-bottom-left-radius: $rounded_border_radius;
+
+						&.fullValue {
+							border-top-right-radius: $rounded_border_radius;
+							border-bottom-right-radius: $rounded_border_radius;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.BaseSummary__Steps {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		display: flex;
+
+		.BaseSummary__StepSeparator {
+			flex: 1;
+			border-right: 1px solid #bfb7c6;
+
+			&:last-of-type {
+				border-right: none;
+			}
+		}
+	}
+}

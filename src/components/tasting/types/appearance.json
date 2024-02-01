@@ -1,0 +1,16 @@
+[
+	{
+		"isMultiple": false,
+		"breadcrumb": "appearance_ / winetype_",
+		"keys": ["winetype_"],
+		"name": "winetype_",
+		"required": ["winetype_"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "appearance_ / color_",
+		"keys": ["color_"],
+		"name": "color_",
+		"required": ["color_"]
+	}
+]

@@ -1,0 +1,18 @@
+[
+	{
+		"isMultiple": false,
+		"breadcrumb": "tasting_observations",
+		"title": "tasting_observations",
+		"name": "quality__",
+		"keys": ["quality__"],
+		"required": ["quality__"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "tasting_observations",
+		"title": "tasting_observations",
+		"name": "readiness__",
+		"keys": ["readiness__"],
+		"required": ["readiness__"]
+	}
+]

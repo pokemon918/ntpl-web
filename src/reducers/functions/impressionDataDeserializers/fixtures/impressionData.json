@@ -1,0 +1,57 @@
+{
+	"ref": "k3x9tlm",
+	"name": "Wine 3 from Slovenia",
+	"producer": "",
+	"country": "Slovenia",
+	"region": "Podravje",
+	"vintage": "2016",
+	"grape": "",
+	"location": "",
+	"summary_wine": "",
+	"summary_personal": "give it to me",
+	"food_pairing": "with cheese",
+	"rating": {},
+	"notes": {
+		"@": [
+			"acidity_mediumminus",
+			"alcohol_low",
+			"body_medium",
+			"category_still",
+			"notes_fruit_citrus_",
+			"notes_fruit_green_",
+			"notes_minerality_",
+			"notes_tropical_",
+			"nuance_white",
+			"quality_verygood",
+			"readiness_suitableforbottleageing",
+			"sweetness_sweet",
+			"tannins_mediumplus"
+		]
+	},
+	"images": [],
+	"created_at": "2020-01-31T20:11:23.000000Z",
+	"price": 10.62,
+	"currency": "GBP",
+	"collection": "kneqrs",
+	"metadata": {
+		"swa_round_2": true
+	},
+	"clean_key": "",
+	"producer_key": "",
+	"country_key": "",
+	"region_key": "",
+	"source": "swa20",
+	"info": {
+		"parker_blind": 99.10528561,
+		"balance": 0.9125,
+		"finish": 0.825,
+		"intensity": 0.6875,
+		"complexity": 0.55,
+		"typicity": 0.975,
+		"drinkability": 0.7875,
+		"maturity": 0.5625,
+		"value_for_money": 0.975,
+		"medal": "gold"
+	},
+	"mold": "qmcgel"
+}

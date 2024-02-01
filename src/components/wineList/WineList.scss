@@ -1,0 +1,87 @@
+@import 'components/shared/ui/_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.WineTable__Wrapper {
+	.WineList__Container {
+		max-height: 500px;
+		overflow-y: auto;
+		box-shadow: 6px 0 10px -4px #888;
+	}
+
+	.WineList__Add__Wine {
+		float: right;
+	}
+
+	.WineList__Wine__Description {
+		float: right;
+	}
+
+	.WineList__None {
+		text-align: center;
+	}
+	.WineList__Title {
+		font-size: 28px;
+		font-family: Raleway;
+		font-weight: 600;
+		color: $purple_wine;
+		margin-bottom: 10px;
+	}
+
+	.WineList__Wine__Info {
+		margin-left: -10px;
+		margin-bottom: 20px;
+	}
+
+	.WineList__Header {
+		display: flex;
+		padding: 14px 30px;
+		color: #887794;
+		font-weight: 600;
+		background: #dbdacd;
+	}
+
+	.WineList__Wrapper {
+		color: #887794;
+		display: flex;
+		border-bottom: 1px #dbdacd solid;
+		font-weight: 600;
+	}
+
+	.WineList__Id {
+		flex: 1;
+		text-align: center;
+	}
+	.WineList__Alias {
+		flex: 3;
+	}
+	.WineList__Name {
+		flex: 3;
+	}
+	.WineList__Vintage {
+		flex: 2;
+	}
+	.WineList__Country {
+		flex: 2;
+
+		display: none;
+		@include desktop {
+			display: block;
+		}
+	}
+	.WineList__Producer {
+		flex: 2;
+
+		display: none;
+		@include desktop {
+			display: block;
+		}
+	}
+	.WineList__Region {
+		flex: 2;
+
+		display: none;
+		@include desktop {
+			display: show;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+@import 'assets/scss/partials/_vars.scss';
+@import 'components/shared/ui/_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.select-tasting-page {
+	text-align: center;
+
+	.SelectTasting__Title {
+		margin-bottom: 40px;
+		font-weight: bold;
+		color: $purple_wine;
+		font-family: 'Abril Fatface';
+	}
+
+	.Select__Tasting__Mobile__Dialog {
+		display: block;
+
+		@include desktop {
+			display: none;
+		}
+	}
+
+	.DialogBox__Container__FooterContainer {
+		flex-direction: row-reverse;
+	}
+}

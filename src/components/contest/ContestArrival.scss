@@ -1,0 +1,9 @@
+.ContestArrival__Participants__Container {
+	margin-top: 40px;
+
+	table {
+		tr > td:not(:first-child) {
+			text-align: center;
+		}
+	}
+}

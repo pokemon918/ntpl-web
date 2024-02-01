@@ -1,0 +1,10 @@
+.status-message {
+	text-align: center;
+	font-size: 26px;
+	display: none;
+}
+
+@import '../partials/make-tasting/_appearance-color-palate';
+@import '../partials/make-tasting/_comments-step';
+@import '../partials/make-tasting/_info-step';
+@import '../partials/make-tasting/_rating-step';

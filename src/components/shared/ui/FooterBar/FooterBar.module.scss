@@ -1,0 +1,17 @@
+@import 'components/shared/ui/_theme';
+
+.wrapper {
+	height: 160px;
+}
+
+.container {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 145px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $secondary-dark;
+}

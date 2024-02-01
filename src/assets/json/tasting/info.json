@@ -1,0 +1,4 @@
+{
+	"keys": ["info_"],
+	"required": ["tasting_name", "tasting_vintage"]
+}

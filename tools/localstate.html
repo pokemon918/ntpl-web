@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Export Local State Bookmarklets - NTBL</title>
+		<style type="text/css">
+			body {
+				background-color: rgb(245, 244, 239);
+				padding: 10% 20%;
+				color: #391d4d;
+				font-family: raleway, helvetica, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			Drag and drop the two links below to your bookmarks bar. Click them anytime on a NTBL website
+			to import or export the state.
+		</p>
+		<!-- use this to encode the bookmarklets: https://mrcoles.com/bookmarklet/ -->
+		<p>
+			<a
+				href="javascript:(function()%7B(function%20bookmarletToExportLocalState()%20%7Bfunction%20exportLocalState()%20%7Bconst%20datetime%20%3D%20new%20Date().toISOString()%3Bconst%20payload%20%3D%20%7Bdatetime%2Curl%3A%20window.location.href%2ClocalStorage%3A%20window.localStorage%2C%7D%3Bconst%20json%20%3D%20JSON.stringify(payload%2C%20null%2C%202)%3Bconst%20dataUri%20%3D%20%60data%3Atext%2Fjson%2C%24%7Bjson%7D%60%3Bconst%20filename%20%3D%20%60NTBL_LocalState_%24%7Bdatetime%7D.json%60%3Bconst%20link%20%3D%20document.createElement('a')%3Blink.download%20%3D%20filename%3Blink.href%20%3D%20dataUri%3Blink.click()%3Bwindow.alert('State%20exported%20successfully!%5Cn%5CnYou%20can%20now%20share%20this%20file%20with%20the%20team.')%3B%7DexportLocalState()%3B%7D)()%7D)()"
+				>Export NTBL</a
+			>
+		</p>
+
+		<p>
+			<a
+				href="javascript:(function()%7B(function%20bookmarletToImportLocalState()%20%7Bfunction%20importLocalState()%20%7Bconst%20input%20%3D%20document.createElement('input')%3Binput.type%20%3D%20'file'%3Binput.addEventListener('change'%2C%20startImporting)%3Binput.click()%3Bfunction%20startImporting()%20%7Bif%20(input.files.length%20!%3D%3D%201)%20%7Breturn%3B%7Dconst%20reader%20%3D%20new%20FileReader()%3Breader.onload%20%3D%20loadTextFile%3Breader.readAsText(input.files%5B0%5D)%3Bfunction%20loadTextFile()%20%7Bconst%20text%20%3D%20reader.result%3Blet%20json%3Btry%20%7Bjson%20%3D%20JSON.parse(text)%3B%7D%20catch%20(err)%20%7Bwindow.alert('Must%20be%20a%20JSON%20file!')%3B%7Dif%20(json)%20%7BapplyStateToLocal(json)%3B%7D%7D%7Dfunction%20applyStateToLocal(json)%20%7Bif%20(typeof%20json.datetime%20!%3D%3D%20'string'%20%7C%7Ctypeof%20json.url%20!%3D%3D%20'string'%20%7C%7Ctypeof%20json.localStorage%20!%3D%3D%20'object')%20%7Bwindow.alert('Invalid%20file%20format!')%3Breturn%3B%7Dif%20(!json.url.includes(window.location.host))%20%7Bconst%20%5B%2C%20%2C%20instance%5D%20%3D%20json.url.split('%2F')%3Bwindow.alert(%60Unable%20to%20import%20state%20because%20this%20isn't%20the%20correct%20NTBL%20instance!%5Cn%5CnPlease%20go%20to%20the%20instance%20%24%7Binstance%7D%20and%20try%20again.%60)%3Breturn%3B%7Dconst%20importedStore%20%3D%20Object.keys(json.localStorage).map((key)%20%3D%3E%20(%7Bkey%2Cvalue%3A%20json.localStorage%5Bkey%5D%2C%7D))%3Bwindow.localStorage.clear()%3BimportedStore.forEach((item)%20%3D%3E%20%7Bwindow.localStorage.setItem(item.key%2C%20item.value)%3B%7D)%3Bwindow.alert(%60State%20imported%20successfully!%5Cn%5CnYou%20will%20be%20redirected%20to%20the%20route%20%24%7Bjson.url%7D%5Cn%5CnPress%20OK%20to%20continue.%60)%3Bwindow.location.replace(json.url)%3B%7D%7DimportLocalState()%3B%7D)()%7D)()"
+				>Import NTBL</a
+			>
+		</p>
+	</body>
+</html>

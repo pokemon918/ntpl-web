@@ -1,0 +1,60 @@
+@import 'components/shared/ui/_theme.scss';
+@import 'assets/scss/partials/_vars.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.NotFound__Container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
+	background-image: url('./purplebg.jpg');
+	padding: 30px;
+	background-size: cover;
+
+	@include desktop {
+		padding: 0px;
+	}
+
+	.NotFound__Text {
+		color: white;
+		position: absolute;
+		top: 200px;
+
+		.Title {
+			font-weight: 400;
+			font-size: 30px;
+			margin: 20px 0px;
+			font-family: 'Abril Fatface';
+
+			@include desktop {
+				font-size: 54px;
+			}
+		}
+
+		.Description {
+			margin: 5px 0px;
+			color: $primary-light;
+		}
+
+		a {
+			font-weight: 400;
+			color: white;
+		}
+	}
+
+	.header-404 {
+		font-size: 200px;
+		color: $purple_wine;
+	}
+
+	.header-not-found {
+		font-size: 3em;
+	}
+
+	.home-page-link {
+		font-weight: bold;
+		color: $purple_wine;
+	}
+}

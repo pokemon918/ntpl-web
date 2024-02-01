@@ -1,0 +1,28 @@
+@import '../theme';
+@import '../../../../assets/scss/partials/mixins';
+
+.WineFilter__Container {
+	@include no_select();
+
+	.WineFilter__SortContainer {
+		margin-bottom: 30px;
+		text-align: right;
+		font-size: 0.9rem;
+	}
+
+	.WineFilter__EmptyMessage {
+		margin-top: 20px;
+		font-family: Raleway;
+		font-size: 18px;
+		color: $purple_heather;
+		text-align: center;
+	}
+
+	.WineFilter__Results {
+		transition: opacity 0.5s;
+
+		&.resultsHidden {
+			opacity: 0;
+		}
+	}
+}

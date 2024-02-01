@@ -1,0 +1,76 @@
+@import '../_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.Dropdown__Container {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	font-weight: 600;
+	color: $purple_wine;
+
+	.Dropdown_Label {
+		color: $purple_greyed;
+		font-weight: 100;
+	}
+
+	.Dropdown__Value {
+		width: 100%;
+		white-space: nowrap;
+
+		cursor: pointer;
+		font-size: 18px;
+		display: inline-block;
+		font-family: 'Raleway', sans-serif;
+		border-bottom: 1.5px solid $purple_greyed;
+
+		@include desktop {
+			font-size: 16px;
+		}
+
+		&.lg span {
+			padding-right: 50px;
+		}
+
+		&::after {
+			content: url('./Icon_ChevronDown.svg');
+			margin-left: 5px;
+		}
+
+		&.disabled {
+			font-weight: 600;
+			opacity: 1;
+			border-bottom: none;
+			position: relative;
+			top: 2px;
+			color: $purple_wine;
+
+			&::after {
+				content: '';
+			}
+		}
+	}
+
+	.Dropdown__List {
+		z-index: 99;
+		position: absolute;
+		width: 100%;
+		max-height: 250px;
+		overflow-y: auto;
+		border: 2px solid $purple_greyed;
+		border-top: 0;
+
+		.Dropdown__Item {
+			padding: 10px 8px;
+			font-family: 'Raleway', sans-serif;
+			font-size: 14px;
+			font-weight: normal;
+			background-color: #ebe9e0;
+			cursor: pointer;
+
+			&:hover,
+			&.isSelected {
+				background-color: darken(#ebe9e0, 5);
+			}
+		}
+	}
+}

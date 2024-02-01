@@ -1,0 +1,80 @@
+@import 'components/shared/ui/_theme.scss';
+@import '../../../assets/scss/partials/mixins';
+
+.SignIn__Wrapper {
+	@include no_select();
+	&.padding {
+		padding: 0 40px;
+		@include mobile {
+			padding: 0;
+		}
+	}
+}
+
+.SignIn__Item {
+	margin: 30px 0px;
+
+	a {
+		font-weight: 600;
+		color: $purple_wine;
+		text-decoration-line: underline;
+
+		&:hover {
+			text-decoration-line: underline;
+			color: $purple_wine;
+		}
+	}
+
+	.SingUp__Button {
+		text-align: center;
+
+		button {
+			width: 70%;
+		}
+	}
+}
+
+.SignIn__ForgetPassword {
+	margin: 20px 0;
+}
+
+.SignIn__Error {
+	color: red;
+	font-size: 12px;
+}
+
+.SignIn_SignUpPart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.SignIn_Title {
+		font-size: 28px;
+		text-align: center;
+		font-family: 'Abril Fatface';
+		margin: 20px 0;
+	}
+	.Button {
+		width: 75%;
+		@include mobile {
+			width: 60%;
+		}
+	}
+}
+
+.SignIn_Text {
+	font-size: 16px;
+	font-weight: normal;
+	font-family: Raleway;
+	color: $purple_wine;
+
+	a {
+		font-weight: bold;
+		color: $purple_wine;
+
+		&:hover {
+			color: $purple_wine;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"name": "tasting_medal",
+	"keys": [
+		"tasting_medal_gold",
+		"tasting_medal_silver",
+		"tasting_medal_bronze",
+		"tasting_medal_extra_trophies"
+	],
+	"required": ["tasting_medal"]
+}

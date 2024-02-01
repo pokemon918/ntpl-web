@@ -1,0 +1,41 @@
+@import '../_theme.scss';
+@import '../../../../assets/scss/partials/mixins';
+
+.AutoSuggestInput__Container {
+	position: relative;
+
+	.AutoSuggestInput__List {
+		position: absolute;
+		top: 52px;
+		left: 0;
+		right: 0;
+		max-height: 250px;
+		overflow-y: auto;
+		border: 1px solid $grey_grain;
+		box-shadow: 0 3px 13px #b0a5b8;
+		z-index: 1;
+
+		@include mobile {
+			top: 55px;
+		}
+
+		.AutoSuggestInput__Item {
+			padding: 10px;
+			font-family: Raleway;
+			font-size: 14px;
+			font-weight: normal;
+			background-color: $white_grain;
+			cursor: pointer;
+
+			&:not(:last-child) {
+				width: 100%;
+				border-bottom: 1px solid $light_grey_grain;
+			}
+
+			&:hover,
+			&.isSelected {
+				background-color: #e3e1d3;
+			}
+		}
+	}
+}

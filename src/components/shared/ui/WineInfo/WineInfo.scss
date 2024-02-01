@@ -1,0 +1,130 @@
+@import 'assets/scss/partials/_mixins.scss';
+@import '../theme';
+
+.WineInfo__Container {
+	display: flex;
+	padding: 5px;
+	font-family: Raleway;
+	font-size: 13px;
+	line-height: 1em;
+	color: $primary;
+	margin-bottom: 10px;
+
+	@include desktop {
+		font-size: 16px;
+	}
+
+	.WineInfo__Details {
+		flex: 1;
+		position: relative;
+
+		section {
+			margin: 5px 0;
+		}
+
+		.WineInfo__Producer {
+			font-size: 0.85em;
+			font-weight: 600;
+			margin-top: 14px;
+		}
+
+		.WineInfo__Location {
+			font-weight: 300;
+			font-size: 16px;
+		}
+
+		.WineInfo__Name {
+			font-weight: 700;
+			width: 60%;
+			margin: 6px 0px;
+			font-size: 18px;
+
+			line-height: 1.2em;
+		}
+
+		.WineInfo__Vintage {
+			font-weight: 600;
+			font-size: 22px;
+			line-height: 1.2em;
+		}
+
+		.WineInfo__Price {
+			font-weight: 600;
+			margin: 10px 0px;
+			font-size: 14px;
+			color: $purple_heather;
+		}
+
+		.WineInfo__Demographics {
+			font-size: 14px;
+			color: $purple_heather;
+
+			.WineInfo__Date {
+				font-weight: 600;
+			}
+
+			.WineInfo__Wine_Location {
+				font-weight: 300;
+			}
+
+			.Separator {
+				margin: 0 5px;
+			}
+		}
+	}
+
+	.WineInfo__Picture {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 7em;
+
+		&:not(.image) {
+			width: 5em;
+			min-height: 90px;
+			padding-top: 24px;
+		}
+
+		.WineInfo__ScoreWrapper {
+			@include no_select();
+			position: relative;
+			width: 50px;
+			height: 50px;
+			font-size: 1em;
+			font-weight: 900;
+			color: $primary;
+			background-color: $primary;
+			border-radius: 100%;
+			text-align: center;
+
+			.WineInfo__ScoreValue {
+				top: 15px;
+				font-size: 21px;
+				color: $white;
+				position: relative;
+				font-family: 'Rawline';
+
+				svg {
+					max-width: 18px;
+					margin-top: -7px;
+				}
+			}
+		}
+
+		img {
+			width: auto;
+			height: 200px;
+		}
+
+		.WineInfo__ChosenMark {
+			margin-top: 0.5em;
+			font-size: 1.5em;
+			text-align: center;
+			cursor: pointer;
+
+			@include desktop {
+				font-size: 2em;
+			}
+		}
+	}
+}

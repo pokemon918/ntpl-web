@@ -1,0 +1,24 @@
+@import '../theme';
+
+.RatingSummary__Container {
+	.RatingSummary__Heading {
+		display: flex;
+		text-align: left;
+		align-items: center;
+		font-family: Raleway;
+		font-size: 18px;
+		font-weight: bold;
+		color: $purple_wine;
+
+		header {
+			flex: 1;
+		}
+
+		.RatingSummary__Points {
+			margin: 0 10px;
+			margin-top: -10px;
+			font-size: 50px;
+			font-weight: 900;
+		}
+	}
+}

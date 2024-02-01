@@ -1,0 +1,127 @@
+@import 'components/shared/ui/_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.EventSummary__Container {
+	.EventSummary__Loading {
+		position: relative;
+		width: 100%;
+		height: 150px;
+	}
+
+	.EventSummary__ErrorMessage {
+		margin: 20px;
+		font-family: Raleway;
+		font-size: 18px;
+		color: $purple_wine;
+		text-align: center;
+
+		div {
+			margin: 40px;
+		}
+	}
+
+	.EventSummary__Title__Container {
+		margin-bottom: 30px;
+
+		@include desktop {
+			//min-height: 160px;
+		}
+	}
+
+	.Title {
+		font-size: 24px;
+		font-weight: 600;
+		color: $purple_wine;
+		font-family: Raleway;
+	}
+
+	.SubTitle {
+		font-size: 18px;
+		font-weight: 600;
+		color: $purple_wine;
+		font-family: Raleway;
+	}
+
+	.left {
+		text-align: left;
+	}
+
+	.mx-top-20 {
+		margin-top: 20px;
+	}
+
+	.EventSummary__Description {
+		text-align: left;
+		font-size: 14px;
+		font-weight: 400;
+		color: $purple_heather;
+		font-family: Raleway;
+	}
+
+	.EventSummary__Header {
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+
+		.EventSummary__MetaEvent {
+			flex: 1;
+			font-size: 16px;
+			font-weight: 600;
+			color: $purple_wine;
+			font-family: Raleway;
+		}
+
+		.EventSummary__SubHeader {
+			flex: 1;
+			text-align: left;
+			font-size: 16px;
+			font-weight: 400;
+			color: $purple_heather;
+			font-family: Raleway;
+		}
+	}
+
+	.EventSummary__Selection {
+		position: absolute;
+		right: 0;
+		left: 0;
+		min-height: 55vh;
+		background-color: #eae9df;
+		padding: 5px 0 100px 0;
+	}
+
+	.EventSummary__Tasting {
+		padding: 10px;
+		display: flex;
+		align-items: center;
+		font-family: Raleway, sans-serif;
+		font-size: 1rem;
+		font-weight: 600;
+		color: $purple_wine;
+		border-bottom: 1px solid $purple_greyed;
+		cursor: pointer;
+
+		.EventSummary__Tasting__Container {
+			flex: 1;
+
+			.EventSummary__Tasting__Text {
+				max-width: 500px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+
+				@include mobile {
+					max-width: 300px;
+				}
+			}
+		}
+
+		&:first-of-type {
+			margin-top: 10px;
+		}
+
+		&:hover {
+			background-color: $purple_greyed_light;
+		}
+	}
+}

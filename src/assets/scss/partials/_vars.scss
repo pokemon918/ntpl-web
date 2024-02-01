@@ -1,0 +1,65 @@
+// Vars.scss
+
+// ----- Sizes
+$spacing: 10px;
+$spacing_outer: $spacing/2;
+
+// Topbar
+$h_topbar: 60px;
+$h_progress: 5px;
+$h_pager: 60px;
+
+// ----- COLORS
+$cp_wine_type: #eeeeee;
+
+// White wine
+$cp_color_white: #f0ffb4;
+$cp_lemon_green: #f5fecd;
+$cp_lemon: #feff6f;
+$cp_gold: #ffe655;
+$cp_amber: #ffbe18;
+$cp_brown_w: #c35d12;
+
+// Rosé wine
+$cp_nuance_rose: #ffaa96;
+$cp_pink: #f95a79;
+$cp_salmon: #f86a68;
+$cp_orange: #f86f57;
+$cp_onion_skin: #ea5e36;
+
+// Red wine
+$cp_color_red: #c83232;
+$cp_purple: #b4085c;
+$cp_ruby: #d20457;
+$cp_garnet: #d60f12;
+$cp_tawny: #a83119;
+$cp_brown_r: #a54916;
+
+// App
+$cp_primary: #ff645a;
+$cp_greyed: rgba(230, 230, 230, 1);
+$cp_accept: rgba(100, 225, 140, 1);
+$cp_accept: darken(desaturate(rgba(100, 225, 140, 1), 30), 20);
+$cp_accept: $cp_primary; //rgba(255,100,90,1);
+$cp_cancel: $cp_primary; //rgba(255,100,90,1);
+$cp_skip: rgba(255, 220, 100, 1);
+
+$c_border: #cccccc;
+$c_border_dark: #bbbbbb;
+$c_body: #f0f0f0;
+$c_box_shadow: #eeeeee;
+$b_round: 5px;
+$b_round_s: 3px;
+
+$cp_white: #ffffff;
+$cp_grey: rgba(250, 250, 250, 1);
+$cp_grey_light: rgba(253, 253, 253, 1);
+$cp_grey_dark: rgb(247, 247, 247);
+
+// Text
+$c_text_lightest: #fff;
+$c_text_lighter: #aaa;
+$c_text_light: #999999;
+$c_text: #666666;
+$c_text_dark: #444444;
+$c_text_blue: #007bff;

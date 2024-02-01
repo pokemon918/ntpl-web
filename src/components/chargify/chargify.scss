@@ -1,0 +1,59 @@
+@import 'components/shared/ui/_theme.scss';
+
+.Payment__Title {
+	font-size: 30px;
+	color: $primary;
+	margin-bottom: 30px;
+	text-align: center;
+	font-family: 'Abril Fatface';
+}
+
+.Payment__SubTitle {
+	font-size: 18px;
+	font-weight: 600;
+	color: $primary;
+	margin-top: 20px;
+}
+
+.Payment__UserInfo {
+	margin-bottom: 20px;
+	padding: 10px;
+
+	input {
+		&::-webkit-input-placeholder {
+			/* Chrome/Opera/Safari */
+			color: $primary-light;
+		}
+
+		&::-moz-placeholder {
+			/* Firefox 19+ */
+			color: $primary-light;
+		}
+
+		&:-ms-input-placeholder {
+			/* IE 10+ */
+			color: $primary-light;
+		}
+
+		&:-moz-placeholder {
+			/* Firefox 18- */
+			color: $primary-light;
+		}
+	}
+}
+
+.Payment__UserInfo_Buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.Payment__Chargify__Wrapper {
+	iframe {
+		width: 100% !important;
+	}
+	padding: 10px;
+}
+
+.cfy-input--number {
+	padding-left: 50px !important;
+}

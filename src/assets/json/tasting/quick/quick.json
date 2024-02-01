@@ -1,0 +1,260 @@
+{
+	"winetype_": ["category_still", "category_sparkling", "type_sherry_", "type_port"],
+	"colorintensity__": ["colorintensity_deep", "colorintensity_medium", "colorintensity_pale"],
+	"color_": ["nuance_white", "nuance_red", "nuance_orange", "nuance_rose"],
+	"nuance_tint_": [
+		"nuance_lemongreen",
+		"nuance_lemon",
+		"nuance_gold",
+		"nuance_amber",
+		"nuance_brown"
+	],
+	"noseintensity__": [
+		"noseintensity_pronounced",
+		"noseintensity_mediumplus",
+		"noseintensity_medium",
+		"noseintensity_mediumminus",
+		"noseintensity_light"
+	],
+	"deliberateoxidation__": [
+		"deliberateoxidation_pronounced",
+		"deliberateoxidation_medium",
+		"deliberateoxidation_light"
+	],
+	"development__": ["development_fullydeveloped", "development_developing", "development_youthful"],
+	"autolytic_": ["autolytic_pronounced", "autolytic_medium", "autolytic_light", "autolytic_none"],
+	"notes_yeast_": ["autolytic_pronounced", "autolytic_medium", "autolytic_light", "autolytic_none"],
+	"sweetness__": [
+		"sweetness_luscious",
+		"sweetness_sweet",
+		"sweetness_medium",
+		"sweetness_mediumdry",
+		"sweetness_offdry",
+		"sweetness_dry"
+	],
+	"acidity__": [
+		"acidity_high",
+		"acidity_mediumplus",
+		"acidity_medium",
+		"acidity_mediumminus",
+		"acidity_low"
+	],
+	"tannins__": [
+		"tannins_high",
+		"tannins_mediumplus",
+		"tannins_medium",
+		"tannins_mediumminus",
+		"tannins_low",
+		"tannins_none"
+	],
+	"alcohol__": ["alcohol_high", "alcohol_medium", "alcohol_low"],
+	"body__": ["body_full", "body_mediumplus", "body_medium", "body_mediumminus", "body_light"],
+	"mousse__": ["mousse_aggressive", "mousse_creamy", "mousse_delicate", "mousse_none"],
+	"flavourintensity__": [
+		"palateintensity_pronounced",
+		"palateintensity_mediumplus",
+		"palateintensity_medium",
+		"palateintensity_mediumminus",
+		"palateintensity_light"
+	],
+	"finish__": [
+		"finish_long",
+		"finish_mediumplus",
+		"finish_medium",
+		"finish_mediumminus",
+		"finish_short"
+	],
+	"quality__": [
+		"quality_outstanding",
+		"quality_verygood",
+		"quality_good",
+		"quality_acceptable",
+		"quality_poor",
+		"quality_faulty"
+	],
+	"readiness__": [
+		"readiness_tooyoung",
+		"readiness_suitableforbottleageing",
+		"readiness_notsuitableforbottleageing",
+		"readiness_tooold"
+	],
+	"mineral_": ["yes", "no"],
+	"rating_balance_": ["rating_balance_min", "rating_balance_max"],
+	"rating_finish__": ["rating_finish_min", "rating_finish_max"],
+	"rating_intensity__": ["rating_intensity_min", "rating_intensity_max"],
+	"rating_terroir_": ["rating_terroir_min", "rating_terroir_max"],
+	"rating_complexity_": ["rating_complexity_min", "rating_complexity_max"],
+	"rating_quality__": ["rating_quality_min", "rating_quality_max"],
+	"rating_drinkability_": ["rating_drinkability_min", "rating_drinkability_max"],
+	"notes_white_": [
+		"notes_fruit_green_",
+		"notes_floral_",
+		"notes_fruit_citrus_",
+		"notes_tertiary_",
+		"notes_stone_fruit_",
+		"notes_oak_",
+		"notes_tropical_",
+		"notes_minerality_",
+		"notes_fruit_dried_",
+		"trait_creamy"
+	],
+	"notes_red_": [
+		"notes_fruit_black_",
+		"notes_herbal_",
+		"notes_fruit_red_",
+		"notes_oak_",
+		"notes_tertiary_",
+		"notes_pungent_spice_",
+		"notes_floral_",
+		"notes_minerality_"
+	],
+	"notes_orange_": [
+		"notes_fruit_red_",
+		"notes_fruit_black_",
+		"notes_fruit_dried_",
+		"notes_stone_fruit_",
+		"notes_floral_",
+		"notes_fruit_green_",
+		"notes_minerality_",
+		"notes_fruit_citrus_",
+		"notes_oak_"
+	],
+	"notes_rose_": [
+		"notes_fruit_red_",
+		"notes_fruit_black_",
+		"notes_fruit_dried_",
+		"notes_stone_fruit_",
+		"notes_tropical_",
+		"notes_floral_",
+		"notes_fruit_green_",
+		"notes_minerality_",
+		"notes_fruit_citrus_",
+		"notes_oak_"
+	],
+	"notes_sparkling_white_": [
+		"notes_fruit_green_",
+		"notes_floral_",
+		"notes_fruit_citrus_",
+		"notes_tertiary_",
+		"notes_stone_fruit_",
+		"notes_oak_",
+		"notes_tropical_",
+		"notes_minerality_",
+		"notes_fruit_dried_",
+		"note_lees",
+		"notes_herbal_"
+	],
+	"notes_sparkling_red_": [
+		"notes_fruit_black_",
+		"notes_herbal_",
+		"notes_fruit_red_",
+		"notes_oak_",
+		"notes_tertiary_",
+		"notes_pungent_spice_",
+		"notes_floral_",
+		"notes_minerality_",
+		"note_lees"
+	],
+	"notes_sparkling_orange_": [
+		"notes_fruit_red_",
+		"notes_fruit_black_",
+		"notes_fruit_dried_",
+		"notes_stone_fruit_",
+		"notes_floral_",
+		"notes_fruit_green_",
+		"notes_minerality_",
+		"notes_fruit_citrus_",
+		"notes_oak_",
+		"note_lees",
+		"notes_herbal_"
+	],
+	"notes_sparkling_rose_": [
+		"notes_fruit_red_",
+		"notes_fruit_black_",
+		"notes_fruit_dried_",
+		"notes_stone_fruit_",
+		"notes_tropical_",
+		"notes_floral_",
+		"notes_fruit_green_",
+		"notes_minerality_",
+		"notes_fruit_citrus_",
+		"notes_oak_",
+		"note_lees",
+		"notes_herbal_"
+	],
+	"notes_fortified_white_": [
+		"notes_fruit_green_",
+		"notes_floral_",
+		"notes_fruit_citrus_",
+		"notes_sweet_spice_",
+		"notes_stone_fruit_",
+		"notes_oak_",
+		"notes_tropical_",
+		"notes_kernel_",
+		"notes_fruit_dried_",
+		"notes_tertiary_",
+		"notes_herbal_",
+		"notes_minerality_"
+	],
+	"notes_fortified_red_": [
+		"notes_fruit_red_",
+		"notes_sweet_spice_",
+		"notes_fruit_black_",
+		"notes_kernel_",
+		"notes_fruit_dried_",
+		"notes_oak_",
+		"notes_tertiary_",
+		"note_orange",
+		"notes_herbal_",
+		"notes_minerality_",
+		"notes_floral_",
+		"notes_pungent_spice_"
+	],
+	"notes_fortified_default_": [
+		"notes_fruit_green_",
+		"notes_floral_",
+		"notes_tertiary_",
+		"notes_stone_fruit_",
+		"notes_oak_",
+		"notes_tropical_",
+		"notes_minerality_",
+		"notes_fruit_dried_",
+		"notes_herbal_",
+		"notes_fruit_black_",
+		"notes_fruit_red_",
+		"notes_pungent_spice_"
+	],
+	"notes_fortified_sherry_white_": [
+		"notes_fruit_green_",
+		"notes_floral_",
+		"notes_fruit_citrus_",
+		"notes_tertiary_",
+		"notes_minerality_",
+		"notes_fruit_dried_",
+		"note_lees",
+		"notes_kernel_",
+		"notes_sweet_spice_",
+		"note_orange",
+		"notes_herbal_"
+	],
+	"rating_": [
+		"rating_balance_",
+		"rating_finish__",
+		"rating_intensity__",
+		"rating_complexity_",
+		"rating_terroir_"
+	],
+	"comments_": ["wine_summary", "wine_personal"],
+	"info_": [
+		"tasting_country",
+		"tasting_region",
+		"tasting_producer",
+		"tasting_name",
+		"tasting_grape",
+		"tasting_vintage"
+	],
+	"origin_": ["ui_eu", "ui_sa", "ui_au"],
+	"ui_eu": ["Italy", "Denmark", "France", "Greece", "Armenia"],
+	"ui_au": ["Melbourne", "Sydney"],
+	"ui_au": ["Brazil", "Spain"]
+}

@@ -1,0 +1,119 @@
+@import 'assets/scss/partials/_vars.scss';
+@import 'components/shared/ui/_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.WineDetails__Wrapper {
+	margin-top: 20px;
+	margin-bottom: 50px;
+
+	.Tasting__Summary__Title {
+		padding: 30px;
+		text-align: center;
+
+		span {
+			font-size: 32px;
+			color: $purple_wine;
+			font-family: 'Abril Fatface';
+		}
+	}
+}
+
+.MyWines__Text {
+	font-family: Raleway;
+	font-size: 16px;
+	color: $purple_heather;
+
+	a {
+		font-weight: bold;
+		color: $purple_wine;
+	}
+}
+
+header {
+	font-family: Raleway;
+	font-size: 18px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	color: $purple_wine;
+}
+
+.WineDetails__Text__Wrapper {
+	text-align: left;
+	white-space: pre-wrap;
+}
+
+.WineDetails__Item {
+	padding: 10px 0px;
+
+	.BaseSummary__Item {
+		font-size: 14px;
+		font-weight: 600;
+	}
+}
+
+.WineDetail__Error {
+	font-family: Raleway;
+	font-size: 16px;
+	color: $purple_heather;
+}
+
+.wine-details {
+	margin-bottom: 70px !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+
+	.all-wines-btn-wrapper {
+		text-align: center;
+
+		.arrow-icon {
+			position: relative;
+			top: -2px;
+			left: -11px;
+			font-size: 20px;
+		}
+
+		.btn {
+			margin: 0;
+			padding: 0 2.14rem;
+			border-radius: 0.125rem 0.125rem 0 0;
+			line-height: 0.84rem;
+			font-size: 18px;
+			height: 40px;
+			line-height: 40px;
+			background: $cp_primary !important;
+		}
+	}
+
+	.selected-wine-card {
+		text-align: center;
+
+		@include desktop {
+			padding: 30px 10%;
+		}
+	}
+
+	.done-btn {
+		padding: 10px 0;
+		text-align: right;
+		span {
+			display: flex;
+			align-items: center;
+			height: 100%;
+		}
+	}
+}
+
+.WineDetails__Item_Content {
+	margin: 15px 0;
+	white-space: pre-wrap;
+}
+
+.LabelMargin {
+	margin-right: 15px;
+}
+
+.WineDetails__FooterActions {
+	.WineDetails__ActionButtons {
+		text-align: right;
+	}
+}

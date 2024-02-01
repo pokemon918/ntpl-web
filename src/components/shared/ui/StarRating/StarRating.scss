@@ -1,0 +1,36 @@
+@import '../_theme';
+
+.StarRating_Wrapper {
+	.StarRating_Container {
+		cursor: pointer;
+		display: inline-block;
+	}
+
+	.viewMode {
+		cursor: default !important;
+		pointer-events: none !important;
+	}
+}
+
+.StarRating_Item {
+	color: $default_button_primary;
+	font-size: 32px;
+
+	&.active {
+		color: $default_button_primary !important;
+	}
+
+	&:not(.viewMode):hover ~ & {
+		color: $default_button_primary_disabled !important;
+	}
+
+	&:not(.viewMode):hover {
+		color: $default_button_primary;
+	}
+}
+
+.StarRating_Container:not(:hover) {
+	.StarRating_Item {
+		color: $default_button_primary_disabled;
+	}
+}

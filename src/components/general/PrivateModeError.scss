@@ -1,0 +1,28 @@
+@import 'assets/scss/partials/_vars.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.private-mode-error-page {
+	text-align: center;
+
+	.content {
+		@include border_radius(5px);
+		background: $cp_grey_light;
+		padding: 30px;
+		position: relative;
+		border: 1px solid $c_border;
+		min-height: 500px;
+
+		p {
+			margin-bottom: 5px;
+		}
+	}
+
+	.header-error {
+		margin-bottom: 35px;
+		font-size: 2.5em;
+	}
+
+	.home-page-link {
+		color: $cp_primary;
+	}
+}

@@ -1,0 +1,153 @@
+@import 'assets/scss/partials/_mixins.scss';
+@import 'components/shared/ui/_theme.scss';
+.Billing__Wrapper {
+	.Billing__Error {
+		a {
+			font-weight: 600;
+			color: $purple_wine;
+			text-decoration-line: underline;
+
+			&:hover {
+				text-decoration-line: underline;
+				color: $purple_wine;
+			}
+		}
+	}
+
+	.Billing__Title {
+		font-family: 'Abril Fatface';
+		font-size: 28px;
+		color: $primary;
+		margin-bottom: 20px;
+
+		@include desktop {
+			font-size: 42px;
+		}
+	}
+
+	.Billing__Description {
+		padding: 30px 20px;
+		border-top: 1px solid #b0a5b8;
+		border-bottom: 1px solid #b0a5b8;
+		display: flex;
+		font-family: Raleway;
+		align-items: center;
+		color: $primary;
+		margin: 10px 0px;
+		flex-direction: row;
+
+		.Billing__Info {
+			flex: 2;
+
+			@include desktop {
+				flex: 1;
+			}
+		}
+
+		.Billing__Day {
+			flex: 1;
+			font-size: 24px;
+			font-weight: 900;
+			line-height: 20px;
+			margin-bottom: 6px;
+		}
+
+		.Billing__Days {
+			flex: 1;
+			font-size: 10px;
+			font-weight: bold;
+		}
+
+		.Billing__Free {
+			flex: 1;
+			font-size: 10px;
+			font-weight: bold;
+		}
+
+		.Billing__Payment__Details {
+			flex: 8;
+			font-size: 14px;
+			color: $purple_wine;
+			font-family: Raleway;
+		}
+
+		.Billing__Payment__Cancel {
+			font-weight: 600;
+		}
+	}
+
+	.SignUp__Checkbox {
+		padding: 0px 20px;
+		color: $primary;
+		font-family: Raleway;
+		font-size: 14px;
+	}
+
+	.Billing__Subscription__Wrapper {
+		color: $primary;
+		font-family: Raleway;
+
+		.Billing__Subscription {
+			padding-bottom: 30px;
+			border-bottom: 1px solid #b0a5b8;
+
+			.Billing__Subscription__Info {
+				@include desktop {
+					padding: 0px 30px;
+				}
+			}
+		}
+
+		.Billing__Price__Container {
+			color: $purple_wine;
+			font-family: Raleway;
+			font-size: 14px;
+		}
+		.Billing__Subscription__Header {
+			padding: 15px 0px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		.Billing__Subscription__SubHeader {
+			font-size: 16px;
+			color: $purple_wine;
+		}
+		.Billing__Subscription__Plan {
+			display: none;
+		}
+
+		.Billing__Subscription__Type {
+			padding-top: 16px;
+		}
+
+		.Billing__Price {
+			font-weight: 600;
+			color: $purple_wine;
+		}
+		.Billing__Price__Save {
+			color: $purple_heather;
+			font-family: Raleway;
+			font-size: 12px;
+		}
+		.Radio__Container {
+			font-weight: 900;
+		}
+	}
+
+	.Billing__Buttons {
+		padding: 10px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.Billing__Subscription__Header_Wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		& > div {
+			flex: 1;
+		}
+	}
+}

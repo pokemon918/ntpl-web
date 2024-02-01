@@ -1,0 +1,30 @@
+[
+	{
+		"isMultiple": false,
+		"breadcrumb": "palate_ / sweetness__",
+		"name": "sweetness__",
+		"keys": ["sweetness__"],
+		"required": ["sweetness__"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "palate_ / acidity__",
+		"name": "acidity__",
+		"keys": ["acidity__"],
+		"required": ["acidity__"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "palate_ / alcohol__",
+		"name": "alcohol__",
+		"keys": ["alcohol__"],
+		"required": ["alcohol__"]
+	},
+	{
+		"isMultiple": false,
+		"name": "body__",
+		"breadcrumb": "palate_ / body__",
+		"keys": ["body__"],
+		"required": ["body__"]
+	}
+]

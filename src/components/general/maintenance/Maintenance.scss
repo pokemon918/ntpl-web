@@ -1,0 +1,47 @@
+@import 'components/shared/ui/_theme.scss';
+@import 'assets/scss/partials/_vars.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.Maintenance__Container {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
+	padding: 30px;
+	background-image: url('./maintenance.png');
+	background-size: cover;
+	background-color: $primary;
+
+	.Maintenance__Text {
+		height: 100%;
+		color: white;
+		margin-left: 0px;
+		transform: translateY(32%);
+
+		@include desktop {
+			margin-left: 200px;
+			transform: translateY(37%);
+		}
+
+		.Title {
+			font-size: 52px;
+			margin: 20px 0px;
+			font-family: 'Abril Fatface';
+
+			@include desktop {
+				font-size: 72px;
+			}
+		}
+
+		.Description {
+			font-size: 20px;
+			margin: 5px 0px;
+
+			@include desktop {
+				font-size: 24px;
+			}
+		}
+	}
+}

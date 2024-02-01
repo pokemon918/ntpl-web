@@ -1,0 +1,32 @@
+@import '../_theme';
+@import 'assets/scss/partials/_mixins.scss';
+
+.SearchBar__Wrapper {
+	width: 100%;
+	display: flex;
+
+	span {
+		display: flex;
+		width: 100%;
+	}
+
+	.SearchBar__Default {
+		@include border_radius(25px);
+		border: 1px solid $purple_greyed_light;
+		outline: none;
+		flex: 1;
+		margin: 20px 10px;
+		padding: 12px 40px 12px 20px;
+		font-size: 16px;
+		font-family: $body_font_family;
+		font-weight: 600;
+		color: $purple_wine !important;
+		background-color: $white !important;
+		line-height: 20px;
+		background: url('search_icon.png') no-repeat right 20px center;
+
+		&::placeholder {
+			color: $purple_greyed_light;
+		}
+	}
+}

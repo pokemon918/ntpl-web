@@ -1,0 +1,215 @@
+@import 'assets/scss/shared/fonts.scss';
+@import 'assets/scss/partials/_vars';
+@import 'components/shared/ui/_theme.scss';
+
+/* Generic styles */
+html,
+body,
+#root {
+	height: 100%;
+	font-family: Raleway;
+	color: $primary;
+	background-color: $secondary;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.title {
+	margin-bottom: 25px;
+}
+
+.title-header {
+	font-weight: 400;
+	color: $purple_wine;
+	font-size: 24px;
+	font-family: 'Abril Fatface';
+	&.sign {
+		text-align: center;
+		font-size: 36px;
+
+		&.margin {
+			margin-bottom: 40px;
+		}
+	}
+}
+.error {
+	border: 1px solid red;
+}
+
+.error-message {
+	display: none;
+}
+
+.show-error-message {
+	display: block;
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.hidden {
+	display: none;
+	opacity: 0;
+	@include transition(opacity, 0.5s, ease-in);
+}
+
+/* App styles */
+.app-wrapper {
+	min-height: 100%;
+	height: auto;
+
+	&.authenticated {
+		background-color: $secondary;
+	}
+}
+
+.App {
+	text-align: center;
+}
+
+.App-body {
+	transition: margin-left 0.5s;
+	padding: 20px;
+	padding-top: 65px;
+	position: relative;
+	@include transition(left, 0.55s, ease);
+	left: 0;
+
+	&.nav-is-open {
+		left: 250px;
+	}
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	float: left;
+}
+
+.pd-10 {
+	padding: 10px;
+}
+
+.mx-10 {
+	margin: 10px;
+}
+
+.minWidth-150 {
+	min-width: 150px;
+}
+
+.minWidth-60 {
+	min-width: 60px;
+}
+
+.pos-relative {
+	position: relative;
+}
+
+.text-justify {
+	text-align: center;
+}
+
+.btn.pulsing,
+.auto-generate-btn.pulsing {
+	@include animate(pulsing, 500ms, infinite, linear);
+}
+
+.fa-spin {
+	font-size: 30px;
+	color: #333;
+	@include animate(fa-spin, 2s, infinite, linear);
+}
+
+.App-Cursor {
+	cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+	.side-nav {
+		padding-top: 15px;
+	}
+	.side-nav a {
+		font-size: 18px;
+	}
+}
+
+@keyframes fa-spin {
+	0% {
+		@include rotate(0);
+	}
+	100% {
+		@include rotate(359);
+	}
+}
+
+@keyframes pulsing {
+	0% {
+		opacity: 1;
+		color: #ffffff;
+	}
+	50% {
+		opacity: 0.75;
+		color: #ffb2ad;
+	}
+	100% {
+		opacity: 1;
+		color: #ffffff;
+	}
+}
+
+body b,
+body strong {
+	font-weight: bold;
+}
+
+.bit-bigger {
+	font-size: 1.3em;
+}
+
+body div h5,
+body div h4 {
+	font-weight: bold;
+}
+
+body h1,
+body .h1 {
+	@include mobile {
+		font-size: 2rem;
+	}
+}
+
+.no-select {
+	@include no_select();
+}
+
+.no-mouse {
+	cursor: none;
+}
+
+.just-mouse {
+	cursor: default;
+}

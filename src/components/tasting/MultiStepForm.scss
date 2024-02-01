@@ -1,0 +1,417 @@
+@import 'assets/scss/partials/_vars.scss';
+@import 'assets/scss/partials/_mixins.scss';
+@import 'components/shared/ui/_theme.scss';
+
+/* Multi step form */
+
+.multi-step-form {
+	padding-bottom: 40px;
+}
+
+.Profound-page {
+	.DialogBox__Modal {
+		transform: translateX(-10px);
+
+		@include desktop {
+			transform: translateX(0px);
+		}
+	}
+}
+
+.mobile-only {
+	display: block;
+
+	@include desktop {
+		display: none;
+	}
+}
+
+.mulit-step-form-wrapper {
+	.DialogBox__Modal {
+		transform: translateX(20px);
+
+		@include desktop {
+			transform: translateX(0px);
+		}
+	}
+
+	padding: 90px 10px 70px;
+
+	.selector-wrapper {
+		@include no_select();
+		width: 100%;
+		margin: auto;
+	}
+
+	&.nectar {
+		ol.progtrckr {
+			padding: 0 35.3%;
+
+			li {
+				width: 50%;
+			}
+		}
+	}
+
+	ol.progtrckr {
+		background: #f0f0f0;
+		padding-bottom: 0px;
+	}
+
+	.scroll-end-point {
+		position: relative;
+		left: 0;
+		bottom: 0;
+		visibility: hidden;
+	}
+
+	.alert {
+		text-align: center;
+		font-size: 24px;
+	}
+
+	@include mobile {
+		.Modal__Wrapper .Modal__Container__FooterWrapper {
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background-color: #f5f4ef00;
+		}
+	}
+}
+
+.step-title {
+	margin: 25px 0 35px 0;
+	text-transform: capitalize;
+}
+
+.step-container {
+	// min-height: 570px;
+	padding-bottom: 10px;
+}
+
+.info-title {
+	margin-bottom: 20px;
+	color: $purple_wine;
+	font-family: 'Abril Fatface';
+	text-align: center;
+}
+
+.multi-step-form-nav {
+	display: flex;
+	justify-content: space-between;
+	margin: 0px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 25px;
+	padding: 15px;
+	z-index: 100;
+	text-align: center;
+
+	@include mobile {
+		padding: 3px 5px;
+		margin-bottom: 10px;
+		background: #f5f4ef;
+	}
+
+	.prev-btn,
+	.next-btn,
+	.save-btn {
+		height: 50px;
+
+		@include mobile {
+			height: 40px;
+		}
+	}
+
+	.prev-btn {
+		&.hide {
+			display: none;
+		}
+		button {
+			outline: none;
+		}
+	}
+
+	.next-btn {
+		&.hide {
+			display: none;
+		}
+
+		button {
+			outline: none;
+		}
+	}
+
+	.save-btn {
+		@include desktop {
+			button {
+				font-size: 14px;
+				min-width: 140px;
+			}
+		}
+
+		&.hide {
+			display: none;
+		}
+
+		button {
+			outline: none;
+		}
+	}
+}
+
+/* Progress tracker */
+ol.progtrckr {
+	margin: 0;
+	list-style-type: none;
+	padding-left: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/*left:10%;*/
+	/*margin-left: -5%;*/
+	z-index: 10;
+	padding: 0 5% 4.9rem 5%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef1f1f+0,ef1f1f+0,f0f0f0+70,f0f0f0+100 */
+	@include linear_gradient($c_body);
+
+	li {
+		display: inline-block;
+		text-align: center;
+		line-height: 4.5rem;
+		/*padding: 0 0.7rem;*/
+		cursor: pointer;
+		width: 14.27%;
+		position: relative;
+		height: 75px;
+
+		&:before {
+			position: absolute;
+			left: 50%;
+			margin-left: -14px;
+			bottom: -12px;
+		}
+
+		&.progtrckr-todo {
+			color: silver;
+			border-bottom: 4px solid silver;
+			line-height: 4.9rem;
+
+			&:before {
+				content: '\2022';
+				color: $cp_grey_dark;
+				background-color: #ccc;
+				width: 1.2em;
+				line-height: 1.2em;
+				@include border_radius(1.2em);
+				margin-top: -4px;
+			}
+
+			&:hover:before {
+				color: $cp_grey_dark;
+			}
+		}
+
+		&.progtrckr-doing {
+			color: black;
+			border-bottom: 4px solid $cp_primary;
+			font-weight: bold;
+			font-size: 1.5rem;
+
+			&:before {
+				content: '\2022';
+				color: white;
+				background-color: $cp_primary;
+				width: 1.2em;
+				line-height: 1.2em;
+				@include border_radius(1.2em);
+				margin-top: -2px;
+				font-size: 1rem;
+			}
+
+			&:hover:before {
+				color: $cp_grey_dark;
+			}
+		}
+
+		&.progtrckr-done {
+			color: black;
+			border-bottom: 4px solid $cp_primary;
+			line-height: 4.9rem;
+
+			&:before {
+				content: '\2713';
+				color: white;
+				background-color: $cp_primary;
+				width: 1.2em;
+				line-height: 1.2em;
+				@include border_radius(1.2em);
+				margin-top: -4px;
+			}
+
+			&:hover:before {
+				color: $cp_grey_dark;
+			}
+		}
+	}
+
+	em {
+		display: none;
+		font-weight: 700;
+		padding-left: 1rem;
+	}
+}
+
+.binary-selection-title {
+	font-size: 28px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-weight: normal;
+	color: $purple_wine;
+	font-family: Abril Fatface;
+}
+
+.binary-selection-wrapper {
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.view-sm {
+	display: block;
+
+	&.arrow {
+		cursor: pointer;
+	}
+
+	&.disabled {
+		opacity: 0.1;
+		cursor: not-allowed;
+	}
+
+	@include desktop {
+		display: none;
+	}
+}
+
+.PersonalNote__Wrapper {
+	margin: 0 auto;
+	padding-bottom: 40px;
+
+	@include desktop {
+		margin-bottom: 40px;
+	}
+}
+
+.PersonalNote__Item {
+	padding: 20px 0;
+}
+
+.TastingNote__Wrapper {
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 40px;
+
+	.TastingNote__TextArea {
+		textarea {
+			min-height: 250px;
+		}
+	}
+
+	.WineDetails__Item {
+		padding-bottom: 0;
+		margin-bottom: 15px;
+
+		&:first-child {
+			.WineDetails__FeatureList {
+				margin-bottom: 0;
+			}
+		}
+
+		&:last-child {
+			padding-top: 0;
+
+			.BaseSummary__Item {
+				&:first-child {
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+
+	.TastingNote__Buttons {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+		justify-content: space-between;
+
+		.Button {
+			margin-bottom: 15px;
+		}
+
+		.Button__Outlined {
+			&.Show_Button {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	@include desktop {
+		margin-bottom: 40px;
+
+		.TastingNote__Buttons {
+			flex-wrap: nowrap;
+
+			.Button {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.home-btn {
+	@include desktop {
+		button {
+			font-size: 14px;
+			min-width: 140px;
+		}
+	}
+}
+
+.view-lg {
+	display: none;
+
+	@include desktop {
+		button {
+			font-size: 14px;
+			min-width: 140px;
+		}
+		display: block;
+	}
+}
+
+.ProgressBar__Wrapper {
+	height: 5px;
+	background-color: $purple_greyed;
+
+	.ProgressBar__Value {
+		background-color: $purple_wine;
+		height: 5px;
+		transition: 0.3s ease-in-out;
+	}
+}
+
+@media (max-width: 650px) {
+	.progtrckr li span {
+		display: none;
+	}
+}
+
+@media (max-width: 650px) {
+	.progtrckr em {
+		display: inline;
+	}
+}

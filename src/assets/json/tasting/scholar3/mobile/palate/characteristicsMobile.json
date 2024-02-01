@@ -1,0 +1,51 @@
+[
+	{
+		"isMultiple": false,
+		"breadcrumb": "palate_ / sweetness__",
+		"name": "sweetness__",
+		"keys": ["sweetness__"],
+		"required": ["sweetness__"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "palate_ / acidity__",
+		"name": "acidity__",
+		"keys": ["acidity__"],
+		"required": ["acidity__"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "palate_ / tannins__",
+		"keys": ["tannins__"],
+		"name": ["tannins__"],
+		"required": ["tannins__"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "palate_ / alcohol__",
+		"keys": ["alcohol__"],
+		"name": ["alcohol__"],
+		"required": ["alcohol__"]
+	},
+	{
+		"isMultiple": false,
+		"name": "body__",
+		"breadcrumb": "palate_ / body__",
+		"keys": ["body__"],
+		"required": ["body__"]
+	},
+	{
+		"isMultiple": false,
+		"name": "mousse__",
+		"breadcrumb": "palate_ / mousse__",
+		"keys": ["mousse__"],
+		"required": ["mousse__"]
+	},
+	{
+		"isMultiple": false,
+		"name": "flavourintensity__",
+		"breadcrumb": "palate_ / flavourintensity__",
+		"keys": ["flavourintensity__"],
+		"required": ["flavourintensity__"]
+	}
+]

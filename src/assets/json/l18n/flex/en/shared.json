@@ -1,0 +1,13 @@
+{
+	"shared_empty": " ",
+	"shared_error_cannot_complete_action_": "Cannot complete action. Error found.",
+	"shared_field_required": "This field is required.",
+	"shared_field_email_invalid": "Invalid email address.",
+	"shared_field_text_too_short": "Must be {min} characters or longer",
+	"shared_field_text_too_long": "Must be at most {max} characters long",
+	"shared_field_number_too_small": "Must be at least {min}",
+	"shared_field_number_too_big": "Must be at most {max}",
+	"shared_prompt_modal_default_question": "Do you wish to continue from your last session?",
+	"shared_rating_points": "Points",
+	"shared_search_placeholder": "Filter"
+}

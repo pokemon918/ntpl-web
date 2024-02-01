@@ -1,0 +1,51 @@
+@import '../_theme';
+@import 'assets/scss/partials/_mixins.scss';
+
+.Checkbox__Container {
+	display: flex;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: Raleway;
+	align-items: center;
+
+	&.disabled {
+		opacity: 0.4;
+	}
+
+	.Checkbox__Wrapper {
+		display: flex;
+		cursor: pointer;
+		width: 100%;
+
+		.disabled {
+			cursor: none;
+			color: black;
+		}
+
+		/*.active {
+			
+		}*/
+
+		.Checkbox__Context {
+			min-width: 20px;
+			margin-right: 5px;
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		.Checkbox_Label {
+			white-space: nowrap;
+			margin-top: 2px;
+			color: #391d4d;
+
+			@include mobile {
+				white-space: pre-line;
+			}
+		}
+	}
+
+	&.small {
+		font-size: 14px;
+		margin-bottom: 13px;
+	}
+}

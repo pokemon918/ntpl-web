@@ -1,0 +1,70 @@
+.SearchDemo__Container {
+	font-family: Raleway;
+
+	.EmptyMessage {
+		margin: 50px;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	h1 {
+		font-family: 'Abril Fatface';
+		font-size: 32px;
+		text-align: center;
+	}
+
+	.SearchDemo__InputWrapper {
+		position: relative;
+
+		.SearchDemo__Suggestions__Wrapper {
+			position: absolute;
+			top: 65px;
+			width: 100%;
+
+			.SearchDemo__Suggestions__Container {
+				margin: 0 30px;
+				background-color: #ffffff;
+				border: 1px solid #d7d2db;
+			}
+
+			.SearchDemo__SuggestionItem {
+				padding: 3px 5px;
+				cursor: pointer;
+
+				&.active {
+					background-color: #d7d2db;
+				}
+			}
+
+			&:hover {
+				.SearchDemo__SuggestionItem {
+					&.active {
+						background-color: #fff;
+					}
+
+					&:hover {
+						background-color: #d7d2db;
+					}
+				}
+			}
+		}
+	}
+
+	.SearchDemo__Header {
+		font-weight: bold;
+	}
+
+	.SearchDemo__FilteredItems {
+		padding-left: 30px;
+	}
+
+	.SearchDemo__FilteredItems .SearchDemo__Item {
+		display: grid;
+		grid-template-columns: 3fr 1fr 1fr 1fr;
+	}
+
+	pre {
+		padding-bottom: 15px;
+		max-width: 500px;
+	}
+}

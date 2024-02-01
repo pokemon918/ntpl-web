@@ -1,0 +1,65 @@
+@import 'assets/scss/partials/_vars.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.event-showcase-page {
+	.wine-list-col {
+		margin-bottom: 25px;
+	}
+
+	.wine-card {
+		&:hover {
+			@include b-s(0px, 0px, 5px, 0px, rgba(0, 0, 0, 0.55));
+			cursor: pointer;
+			@include transition(box-shadow, 0.5s, ease);
+		}
+
+		.view {
+			border-bottom: 1px solid #ddd;
+			padding: 10px;
+
+			.mask:hover {
+				cursor: pointer;
+			}
+		}
+
+		.wine-img {
+			max-width: 90%;
+			height: auto;
+			margin: 0 auto;
+		}
+
+		.card-body {
+			position: relative;
+		}
+
+		.see-more-btn {
+			opacity: 0;
+			@include transition(opacity, 0.55s, ease);
+			background-color: $cp_primary !important;
+		}
+
+		&:hover .see-more-btn {
+			opacity: 1;
+		}
+
+		.rating-total-wrapper {
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			bottom: 25px;
+			right: 15px;
+
+			.rating-total {
+				@include border_radius(20px);
+				width: 40px;
+				height: 40px;
+				padding-top: 12px;
+
+				.rp-digits {
+					font-weight: 300;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}

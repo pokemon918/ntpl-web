@@ -1,0 +1,13 @@
+@import 'components/shared/ui/_theme.scss';
+
+.btn-secondary.Ripple-parent {
+	&.disable {
+		opacity: 0.65;
+		box-shadow: none;
+
+		&:hover {
+			box-shadow: none;
+			cursor: initial;
+		}
+	}
+}

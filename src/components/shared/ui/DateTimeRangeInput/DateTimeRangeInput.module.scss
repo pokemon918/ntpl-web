@@ -1,0 +1,12 @@
+.container {
+	display: grid;
+	grid-template-columns: 95px auto;
+	grid-gap: 28px 0;
+	align-items: center;
+	font-size: 14px;
+
+	dd,
+	dl {
+		margin: 0;
+	}
+}

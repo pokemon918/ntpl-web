@@ -1,0 +1,40 @@
+@import 'components/shared/ui/_theme.scss';
+
+.Reset__Item {
+	margin: 60px 0px;
+
+	a {
+		font-weight: 600;
+		color: $purple_wine;
+		text-decoration-line: underline;
+
+		&:hover {
+			text-decoration-line: underline;
+			color: $purple_wine;
+		}
+	}
+}
+
+.Reset__Token__Title {
+	font-size: 16px;
+	font-weight: normal;
+	font-family: Raleway;
+	color: $purple_wine;
+}
+
+.Reset__Token__Link {
+	cursor: pointer;
+	font-weight: bold;
+	color: $purple_wine;
+}
+
+.Reset_Text {
+	font-size: 16px;
+	font-weight: normal;
+	font-family: Raleway;
+	color: $purple_wine;
+
+	.title {
+		font-weight: 600;
+	}
+}

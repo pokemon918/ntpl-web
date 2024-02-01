@@ -1,0 +1,49 @@
+[
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_tertiary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"name": "deliberateoxidation__",
+		"keys": ["deliberateoxidation__"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_tertiary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"name": "fruitdevelopment_white__",
+		"keys": ["fruitdevelopment_white__"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_tertiary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"name": "fruitdevelopment_red__",
+		"keys": ["fruitdevelopment_red__"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_tertiary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"name": "bottleage_white__",
+		"keys": ["bottleage_white__"]
+	},
+	{
+		"isMultiple": true,
+		"breadcrumb": "nose_ / tasting_aromas_tertiary",
+		"title": "tasting_aromas_secondary",
+		"subtitle": "tasting_select_many",
+		"name": "bottleage_red__",
+		"keys": ["bottleage_red__"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "nose_",
+		"name": "nose_",
+		"keys": ["development__"],
+		"required": ["development__"]
+	}
+]

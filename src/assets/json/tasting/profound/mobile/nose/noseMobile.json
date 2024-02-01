@@ -1,0 +1,23 @@
+[
+	{
+		"isMultiple": false,
+		"breadcrumb": "nose_",
+		"name": "nose_",
+		"keys": ["condition__"],
+		"required": ["condition__"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "nose_",
+		"name": "nose_",
+		"keys": ["noseintensity__"],
+		"required": ["noseintensity__"]
+	},
+	{
+		"isMultiple": false,
+		"breadcrumb": "nose_",
+		"name": "nose_",
+		"keys": ["development__"],
+		"required": ["development__"]
+	}
+]

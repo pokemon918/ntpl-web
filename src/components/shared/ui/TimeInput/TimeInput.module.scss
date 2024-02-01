@@ -1,0 +1,22 @@
+@import 'components/shared/ui/_theme';
+
+.container {
+	display: inline-block;
+}
+
+.input {
+	width: 70px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	background-color: $white;
+	border: 1px solid $secondary-dark;
+	font-family: $body_font_family;
+	color: $primary;
+	font-size: 14px;
+	text-align: center;
+
+	&::placeholder {
+		color: rgba($black, 0.2);
+	}
+}

@@ -1,0 +1,19 @@
+@import 'assets/scss/partials/_vars.scss';
+
+.saving-page {
+	min-height: 570px;
+	position: relative;
+	text-align: center;
+
+	.loading-text {
+		margin-top: 10%;
+		margin-bottom: 20px;
+		font-size: 24px;
+		color: $cp_primary;
+	}
+
+	.fa-spin {
+		font-size: 45px;
+		color: $cp_primary;
+	}
+}

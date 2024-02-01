@@ -1,0 +1,320 @@
+@import 'assets/scss/partials/_vars.scss';
+@import 'components/shared/ui/_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.group-details {
+	.my-groups-btn-wrapper {
+		.arrow-icon {
+			position: relative;
+			top: -2px;
+			left: -11px;
+			font-size: 20px;
+		}
+
+		.btn {
+			margin: 0;
+			padding: 0 2.14rem;
+			border-radius: 0.125rem 0.125rem 0 0;
+			line-height: 0.84rem;
+			font-size: 18px;
+			height: 40px;
+			line-height: 40px;
+			background: $cp_primary !important;
+		}
+	}
+
+	.group-info {
+		position: relative;
+
+		.edit-btn {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 5px 10px;
+			border: 0;
+			background: $cp_primary !important;
+			color: #fff;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		.save-btn {
+			padding: 5px 20px;
+			border: 0;
+			background: $cp_primary !important;
+			color: #fff;
+			margin-right: 10px;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		.disabled {
+			background: $c_border !important;
+		}
+
+		.group-about {
+			margin-bottom: 20px;
+		}
+
+		.group-handle {
+			&.edit {
+				padding: 0 5px;
+			}
+		}
+
+		.group-description {
+			padding: 5px;
+		}
+
+		.loading-wrapper {
+			display: inline-block;
+		}
+	}
+}
+
+.TeamDetails__Header_Wrapper {
+	display: flex;
+	justify-content: space-between;
+
+	@include mobile {
+		justify-content: center;
+	}
+}
+
+.TeamDetails__Header {
+	display: flex;
+	margin-bottom: 50px;
+
+	@include mobile {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+.TeamDetails__Title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 700;
+	border-bottom: 1px solid $primary-text-light;
+
+	button {
+		position: relative;
+		top: -10px;
+	}
+
+	.TeamDetails__Title_Members {
+		p {
+			display: inline-block;
+			color: $primary-text-light;
+			font-weight: 500;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.TeamDetails__Image {
+	margin-right: 20px;
+	img {
+		border-radius: 100%;
+		width: 125px;
+		height: 125px;
+		object-fit: cover;
+	}
+
+	@include mobile {
+		margin: 0 0 15px 0;
+	}
+}
+
+.TeamDetails__Description_Wrapper {
+	margin-bottom: 40px;
+
+	.TeamDetails__Description {
+		font-size: 14px;
+		color: $primary-text-light;
+		padding-top: 15px;
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.TeamDetails__Title_Wrapper {
+	margin: auto 0;
+}
+
+.TeamDetails__Header_Title {
+	h2 {
+		font-family: $headings_font_family;
+		color: $purple_wine;
+	}
+
+	@include mobile {
+		text-align: center;
+	}
+}
+
+.TeamDetails__Caption {
+	color: $primary-text-light;
+	font-size: 14px;
+
+	.TeamDetails__Created {
+		span {
+			margin-right: 5px;
+		}
+	}
+}
+
+.TeamDetails__Location {
+	padding-right: 10px;
+	margin: 0 10px 0 0;
+	border-right: 1px solid $primary-text-light;
+	font-weight: 600;
+}
+
+.TeamDetails__Events_Wrapper {
+	margin-bottom: 40px;
+}
+
+.TeamDetails__Events {
+	.TeamDetails__Event_Item {
+		display: flex;
+		align-items: center;
+		padding: 10px 0;
+		border-bottom: 1px solid $primary-text-light;
+
+		.TeamDetails__Event_Name {
+			flex: 3 1;
+			font-size: 12px;
+			font-weight: 600;
+			margin-right: 10px;
+		}
+
+		.TeamDetails__Event_Info {
+			flex: 2 1;
+			font-size: 12px;
+			color: $primary-text-light;
+		}
+
+		.TeamDetails__Event_Edit {
+			flex: 1;
+			font-size: 14px;
+			font-weight: 600;
+			cursor: pointer;
+		}
+	}
+}
+
+.TeamDetails__Members_Wrapper {
+	margin-bottom: 40px;
+}
+
+.TeamDetails__Members {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	padding-top: 20px;
+	margin: 0 -5px;
+
+	@include mobile {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+.TeamDetails__Member_Item {
+	margin: 0 5px 10px;
+	font-size: 12px;
+
+	.TeamDetails__Member_Image {
+		margin-bottom: 5px;
+
+		img {
+			width: 50px;
+			height: 50px;
+			object-fit: cover;
+			border-radius: 100%;
+		}
+	}
+
+	.TeamDetails__Member_Name {
+		color: $purple_wine;
+		font-weight: 600;
+	}
+
+	.TeamDetails__Member_Location {
+		color: $primary-text-light;
+	}
+}
+
+.UpdateTeamForm__Location {
+	display: flex;
+	padding: 10px 0;
+	label {
+		margin: 0 10px 0 0;
+	}
+}
+
+.TeamDetails__JoinList_Empty {
+	display: flex;
+	margin: 0px 30px;
+	padding: 20px 10px;
+	color: $primary;
+}
+
+.TeamDetails__JoinList__Item {
+	display: flex;
+	align-items: center;
+	padding: 20px 10px;
+	color: $primary;
+	border-bottom: 1px solid #b0a5b8;
+	font-size: 14px;
+
+	&:nth-last-child(1) {
+		border-bottom: none;
+	}
+
+	.TeamDetails__JoinList_Name {
+		font-weight: 600;
+		flex: 3;
+		text-align: center;
+		word-break: break-word;
+
+		@include mobile {
+			font-size: 13px;
+		}
+	}
+
+	.TeamDetails__JoinList_Button {
+		cursor: pointer;
+		font-weight: 600;
+		margin: 0px 10px;
+
+		button {
+			@include mobile {
+				padding: 10px 15px;
+			}
+		}
+	}
+
+	.TeamDetails__JoinList_Date {
+		flex: 2 1;
+		text-align: center;
+	}
+
+	.TeamDetails__JoinList_Accept {
+		flex: 3;
+		cursor: pointer;
+		font-weight: 600;
+	}
+
+	.TeamDetails__JoinList_Decline {
+		flex: 2;
+		cursor: pointer;
+		font-weight: 600;
+	}
+}

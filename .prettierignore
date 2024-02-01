@@ -1,0 +1,12 @@
+node_modules/*
+demo*
+build*
+public*
+*.png
+*.md
+src/assets/css/*
+ntbl-fount/*
+.cache/*
+.vscode/*
+.storybook/
+coverage/*

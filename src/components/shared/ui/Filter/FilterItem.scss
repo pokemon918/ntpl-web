@@ -1,0 +1,28 @@
+@import '../_theme';
+
+.FilterItem__Default {
+	padding: 7px 15px;
+	border-radius: 25px;
+	border: 1px solid $purple_wine;
+	font-family: $body_font_family;
+	font-size: 14px;
+	font-weight: 500;
+	color: $purple_wine;
+	background: transparent;
+	cursor: pointer;
+	display: inline-block;
+
+	& span {
+		margin-left: 10px;
+		color: $purple_heather;
+	}
+
+	&.FilterItem__Selected {
+		color: $white;
+		background: $purple_wine;
+
+		span {
+			color: $white;
+		}
+	}
+}

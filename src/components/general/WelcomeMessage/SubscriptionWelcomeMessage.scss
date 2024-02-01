@@ -1,0 +1,235 @@
+@import 'assets/scss/partials/_vars.scss';
+@import 'components/shared/ui/_theme.scss';
+@import 'assets/scss/partials/_mixins.scss';
+
+.GetStart_Container_Subscription {
+	position: absolute;
+	top: 49px;
+	left: 0;
+	right: 0;
+	padding: 0px 25px;
+	background-color: #f5f4ef;
+	height: 100%;
+
+	font-size: 18px;
+	.GetStart__Header {
+		margin-bottom: 20px;
+
+		.GetStart__Title {
+			color: #391d4d;
+			font-size: 28px;
+
+			font-weight: normal;
+			font-family: 'Abril Fatface';
+
+			@include desktop {
+				font-size: 42px;
+			}
+		}
+
+		.GetStart__SubTitle {
+			color: $primary;
+			font-family: Raleway;
+			font-size: 14px;
+
+			@include desktop {
+				font-size: 18px;
+			}
+		}
+	}
+
+	.GetStart_Wrap {
+		padding-top: 50px;
+
+		.GetStart__Upper {
+			.GetStart__Summary {
+				font-size: 14px;
+				font-weight: normal;
+				color: $primary;
+				font-family: Raleway;
+				padding-bottom: 20px;
+
+				.GetStart__Summary__Title {
+					font-weight: 600;
+				}
+			}
+
+			.GetStart__Free {
+				display: flex;
+				padding: 30px 0px;
+				align-items: center;
+				width: 90%;
+				border-top: 1px solid #b0a5b8;
+
+				@include desktop {
+					width: 80%;
+				}
+
+				.GetStart__Free__Icon {
+					flex: 2;
+					color: $primary;
+					text-align: center;
+
+					@include desktop {
+						flex: 1;
+					}
+				}
+
+				.GetStart__Free__Info {
+					flex: 6;
+					font-size: 14px;
+
+					.GetStart__Free__Info__Title {
+						font-weight: 600;
+						margin-bottom: 5px;
+					}
+
+					.GetStart__Free__Info__SubTitle {
+						font-weight: normal;
+					}
+				}
+			}
+		}
+	}
+
+	.GetStart_Wrapper {
+		background-color: #391d4d;
+		padding: 20px;
+		position: absolute;
+		left: 0;
+		right: 0;
+
+		color: #fff;
+
+		@include desktop {
+			padding: 30px 60px 40px;
+			position: relative;
+		}
+
+		.GetStart_Wrapper_Title,
+		.GetStart_Button {
+			text-align: center;
+			color: #ffffff;
+			font-family: 'Abril Fatface';
+			font-size: 22px;
+		}
+	}
+
+	.GetStart_Caption {
+		margin-bottom: 20px;
+
+		p {
+			margin-bottom: 10px;
+		}
+	}
+
+	.GetStart_List {
+		padding: 20px 10px;
+		color: #ffffff;
+		font-family: Raleway;
+		font-size: 14px;
+
+		@include desktop {
+			padding: 0 30px 15px 30px;
+			font-size: 18px;
+		}
+
+		.GetStart_List_Item {
+			position: relative;
+			list-style: none;
+			padding-left: 50px;
+			margin-bottom: 20px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				width: 40px;
+				height: 40px;
+				top: 0;
+				background-repeat: no-repeat;
+				background-position: top left;
+			}
+
+			&:nth-child(1) {
+				&:before {
+					background-image: url('./FirstCircle.svg');
+				}
+			}
+
+			&:nth-child(2) {
+				&:before {
+					background-image: url('./SecondCircle.svg');
+				}
+			}
+
+			&:nth-child(3) {
+				&:before {
+					background-image: url('./ThirdCircle.svg');
+				}
+			}
+
+			&:nth-child(4) {
+				&:before {
+					background-image: url('./FourthCircle.svg');
+				}
+			}
+
+			&:nth-child(5) {
+				&:before {
+					background-image: url('./FifthCircle.svg');
+				}
+			}
+
+			.GetStart_List_Item_Bold {
+				display: inline;
+				font-weight: 700;
+			}
+		}
+	}
+
+	.SiteHeader_Hamburger {
+		margin-left: 5px;
+		display: inline-block;
+
+		.SiteHeader_Hamburger_Item {
+			width: 18px;
+			height: 2px;
+
+			margin: 4px 0;
+
+			background-color: #fff;
+
+			position: relative;
+
+			top: 5px;
+
+			@include desktop {
+				width: 22px;
+			}
+		}
+	}
+
+	.GetStarted__Footer {
+		position: fixed;
+		bottom: 10px;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+
+	.GetStart_Link {
+		button {
+			width: 242px;
+			span {
+				font-family: Raleway;
+				font-size: 18px;
+				font-weight: bold;
+			}
+		}
+	}
+}

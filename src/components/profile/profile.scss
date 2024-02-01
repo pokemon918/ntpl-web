@@ -1,0 +1,207 @@
+@import 'assets/scss/partials/_mixins.scss';
+@import 'components/shared/ui/_theme.scss';
+
+.ProfilePage__Wrapper {
+	.ProfilePage__Body {
+		display: flex;
+		flex-direction: column;
+		margin-top: 125px;
+		padding: 50px 0;
+
+		@include desktop {
+			flex-direction: row;
+
+			.ProfilePage__Body__Right {
+				margin: 0 10px;
+			}
+		}
+
+		@include mobile {
+			margin-top: 60px;
+			padding: 30px 0;
+		}
+
+		.ProfilePage__Body__Left {
+			margin: 0 10px;
+			flex: 1;
+		}
+
+		.ProfilePage__Body__Right {
+			flex: 1;
+			margin: 20px 10px 0;
+		}
+
+		.title {
+			font-family: Raleway;
+			font-size: 18px;
+			font-weight: 600;
+
+			@include mobile {
+				margin: 10px 0px;
+				font-size: 14px;
+			}
+		}
+
+		&.isMobile {
+			display: none;
+
+			@include mobile {
+				display: block;
+			}
+		}
+
+		&.isDesktop {
+			display: flex;
+
+			@include mobile {
+				display: none;
+			}
+		}
+	}
+
+	.Accordion__Body {
+		padding: 0px !important;
+	}
+
+	.ProfilePage__Footer {
+		padding-top: 40px;
+		color: $primary;
+		font-size: 12px;
+
+		a {
+			color: $primary;
+			font-weight: 600;
+		}
+	}
+}
+
+.ProfilePage__Item {
+	padding: 10px 0px;
+
+	@include mobile {
+		font-size: 14px;
+
+		.TextInput__Container {
+			input {
+				font-size: 14px;
+			}
+		}
+
+		.Grid__Wrapper .Grid__Column {
+			margin: 0;
+			width: 100%;
+
+			&:first-child {
+				width: 100%;
+			}
+		}
+
+		.Dropdown__Container .Dropdown__Value {
+			font-size: 14px;
+		}
+	}
+}
+
+.ProfilePage__Phone__Container {
+	display: flex;
+	font-family: Raleway;
+
+	.ProfilePage__Phone__Prefix {
+		flex: 4;
+	}
+
+	.ProfilePage__Phone {
+		flex: 8;
+		margin-left: -15px;
+	}
+}
+
+.ProfilePage__Body__Right {
+	.title {
+		font-family: Raleway;
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	color: $primary;
+}
+
+.ProfilePage__Error {
+	color: red;
+	font-weight: 600;
+}
+
+.WineKnowledge__Wrapper {
+	padding-top: 30px;
+}
+
+.WineKnowledge__WrapperItems {
+	margin-top: 50px;
+	width: 100%;
+
+	span {
+		color: #887794;
+	}
+}
+
+.WineKnowledge__Block {
+	display: flex;
+	margin-bottom: 50px;
+
+	@include mobile {
+		flex-wrap: wrap;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.WineKnowledge__Title {
+		max-width: 100px;
+		width: 100%;
+	}
+
+	.WineKnowledge__Items {
+		display: grid;
+		grid-template-columns: 1fr;
+		width: 100%;
+	}
+}
+
+.WineKnowledge__Knowledge {
+	margin-bottom: 40px;
+}
+
+.WineKnowledge__Education__Buttons {
+	display: flex;
+	justify-content: space-between;
+
+	button {
+		margin-bottom: 20px;
+	}
+
+	@include mobile {
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
+}
+
+.WineKnowledge__Education__Item {
+	margin-bottom: 20px;
+	display: flex;
+
+	.WineKnowledge__Education__ContentItem {
+		flex-grow: 1;
+	}
+
+	.WineKnowledge__Education__Item_Remove {
+		padding-top: 10px;
+		cursor: pointer;
+	}
+}
+
+.isEmbedded {
+	.ProfilePage__Body {
+		margin-top: 80px;
+	}
+}

@@ -1,0 +1,27 @@
+[
+	{
+		"id": "event_visibility_blind_alias",
+		"name": "alias",
+		"default": true
+	},
+	{
+		"id": "event_visibility_blind_vintage",
+		"name": "vintage"
+	},
+	{
+		"id": "event_visibility_blind_country",
+		"name": "country"
+	},
+	{
+		"id": "event_visibility_blind_region",
+		"name": "region"
+	},
+	{
+		"id": "event_visibility_blind_producer",
+		"name": "producer"
+	},
+	{
+		"id": "event_visibility_blind_appellation",
+		"name": "appellation"
+	}
+]

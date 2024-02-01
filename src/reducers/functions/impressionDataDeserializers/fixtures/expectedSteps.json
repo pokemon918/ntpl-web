@@ -1,0 +1,279 @@
+{
+	"nose": {
+		"subSteps": {
+			"step1": {
+				"data": {
+					"selections": [
+						{
+							"key": "notes_white_",
+							"activeOption": [
+								"notes_fruit_citrus_",
+								"notes_fruit_green_",
+								"notes_minerality_",
+								"notes_tropical_"
+							],
+							"options": [
+								"notes_fruit_green_",
+								"notes_floral_",
+								"notes_fruit_citrus_",
+								"notes_tertiary_",
+								"notes_stone_fruit_",
+								"notes_oak_",
+								"notes_tropical_",
+								"notes_minerality_",
+								"notes_fruit_dried_",
+								"trait_creamy"
+							],
+							"isActive": true,
+							"hideSelection": false,
+							"hiddenOptions": []
+						}
+					],
+					"activeSelection": {
+						"key": "notes_white_",
+						"activeOption": [
+							"notes_fruit_citrus_",
+							"notes_fruit_green_",
+							"notes_minerality_",
+							"notes_tropical_"
+						],
+						"options": [
+							"notes_fruit_green_",
+							"notes_floral_",
+							"notes_fruit_citrus_",
+							"notes_tertiary_",
+							"notes_stone_fruit_",
+							"notes_oak_",
+							"notes_tropical_",
+							"notes_minerality_",
+							"notes_fruit_dried_",
+							"trait_creamy"
+						],
+						"isActive": true,
+						"hiddenOptions": []
+					}
+				}
+			}
+		},
+		"isSubStep": true
+	},
+	"characteristics": {
+		"subSteps": {
+			"step1": {
+				"data": {
+					"selections": [
+						{
+							"key": "sweetness__",
+							"activeOption": "sweetness_sweet",
+							"options": [
+								"sweetness_luscious",
+								"sweetness_sweet",
+								"sweetness_medium",
+								"sweetness_mediumdry",
+								"sweetness_offdry",
+								"sweetness_dry"
+							],
+							"isActive": true,
+							"hideSelection": false
+						}
+					],
+					"activeSelection": {
+						"key": "sweetness__",
+						"activeOption": "sweetness_sweet",
+						"options": [
+							"sweetness_luscious",
+							"sweetness_sweet",
+							"sweetness_medium",
+							"sweetness_mediumdry",
+							"sweetness_offdry",
+							"sweetness_dry"
+						],
+						"isActive": true
+					}
+				}
+			},
+			"step2": {
+				"data": {
+					"selections": [
+						{
+							"key": "acidity__",
+							"activeOption": "acidity_mediumminus",
+							"options": [
+								"acidity_high",
+								"acidity_mediumplus",
+								"acidity_medium",
+								"acidity_mediumminus",
+								"acidity_low"
+							],
+							"isActive": true,
+							"hideSelection": false
+						}
+					],
+					"activeSelection": {
+						"key": "acidity__",
+						"activeOption": "acidity_mediumminus",
+						"options": [
+							"acidity_high",
+							"acidity_mediumplus",
+							"acidity_medium",
+							"acidity_mediumminus",
+							"acidity_low"
+						],
+						"isActive": true
+					}
+				}
+			},
+			"step3": {
+				"data": {
+					"selections": [
+						{
+							"key": "tannins__",
+							"activeOption": "tannins_mediumplus",
+							"options": [
+								"tannins_high",
+								"tannins_mediumplus",
+								"tannins_medium",
+								"tannins_mediumminus",
+								"tannins_low",
+								"tannins_none"
+							],
+							"isActive": true,
+							"hideSelection": false
+						}
+					],
+					"activeSelection": {
+						"key": "tannins__",
+						"activeOption": "tannins_mediumplus",
+						"options": [
+							"tannins_high",
+							"tannins_mediumplus",
+							"tannins_medium",
+							"tannins_mediumminus",
+							"tannins_low",
+							"tannins_none"
+						],
+						"isActive": true
+					}
+				}
+			},
+			"step4": {
+				"data": {
+					"selections": [
+						{
+							"key": "alcohol__",
+							"activeOption": "alcohol_low",
+							"options": ["alcohol_high", "alcohol_medium", "alcohol_low"],
+							"isActive": true,
+							"hideSelection": false
+						}
+					],
+					"activeSelection": {
+						"key": "alcohol__",
+						"activeOption": "alcohol_low",
+						"options": ["alcohol_high", "alcohol_medium", "alcohol_low"],
+						"isActive": true
+					}
+				}
+			},
+			"step5": {
+				"data": {
+					"selections": [
+						{
+							"key": "body__",
+							"activeOption": "body_medium",
+							"options": [
+								"body_full",
+								"body_mediumplus",
+								"body_medium",
+								"body_mediumminus",
+								"body_light"
+							],
+							"isActive": true,
+							"hideSelection": false
+						}
+					],
+					"activeSelection": {
+						"key": "body__",
+						"activeOption": "body_medium",
+						"options": [
+							"body_full",
+							"body_mediumplus",
+							"body_medium",
+							"body_mediumminus",
+							"body_light"
+						],
+						"isActive": true
+					}
+				}
+			}
+		},
+		"isSubStep": true
+	},
+	"observations": {
+		"subSteps": {
+			"step1": {
+				"data": {
+					"selections": [
+						{
+							"key": "readiness__",
+							"activeOption": "readiness_suitableforbottleageing",
+							"options": [
+								"readiness_tooyoung",
+								"readiness_suitableforbottleageing",
+								"readiness_notsuitableforbottleageing",
+								"readiness_tooold"
+							],
+							"isActive": true,
+							"hideSelection": false
+						}
+					],
+					"activeSelection": {
+						"key": "readiness__",
+						"activeOption": "readiness_suitableforbottleageing",
+						"options": [
+							"readiness_tooyoung",
+							"readiness_suitableforbottleageing",
+							"readiness_notsuitableforbottleageing",
+							"readiness_tooold"
+						],
+						"isActive": true
+					}
+				}
+			},
+			"step2": {
+				"data": {
+					"selections": [
+						{
+							"key": "quality__",
+							"activeOption": "quality_verygood",
+							"options": [
+								"quality_outstanding",
+								"quality_verygood",
+								"quality_good",
+								"quality_acceptable",
+								"quality_poor",
+								"quality_faulty"
+							],
+							"isActive": true,
+							"hideSelection": false
+						}
+					],
+					"activeSelection": {
+						"key": "quality__",
+						"activeOption": "quality_verygood",
+						"options": [
+							"quality_outstanding",
+							"quality_verygood",
+							"quality_good",
+							"quality_acceptable",
+							"quality_poor",
+							"quality_faulty"
+						],
+						"isActive": true
+					}
+				}
+			}
+		},
+		"isSubStep": true
+	}
+}

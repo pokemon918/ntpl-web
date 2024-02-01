@@ -1,0 +1,18 @@
+@import '../_theme';
+@import 'assets/scss/partials/_mixins.scss';
+
+.SplitScreen_Wrapper {
+	.SplitScreen_Item_Wrapper {
+		padding: 5px 20px;
+		color: #391d4d;
+		background-color: transparent;
+		min-height: calc((50vh - 50px)) !important;
+	}
+
+	.SplitScreen_Item_Wrapper:nth-child(2n) {
+		padding: 5px 20px;
+		color: #f5f4ef;
+		background-color: #391d4d;
+		min-height: calc((50vh - 50px)) !important;
+	}
+}

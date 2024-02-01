@@ -1,0 +1,21 @@
+{
+	"name": "ntbl-findwine",
+	"version": "1.0.0",
+	"description": "Wine Search API powered by WebSockets.",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"private": true,
+	"dependencies": {
+		"lodash": "^4.17.15",
+		"papaparse": "^5.0.1",
+		"websocket": "^1.0.29",
+		"winston": "^3.2.1"
+	},
+	"devDependencies": {
+		"dotenv": "^8.0.0",
+		"nodemon": "^1.19.1"
+	}
+}

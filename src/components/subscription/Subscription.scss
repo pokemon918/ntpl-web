@@ -1,0 +1,271 @@
+@import 'assets/scss/partials/_mixins.scss';
+@import 'components/shared/ui/_theme.scss';
+
+.Subscription__Header {
+	margin-bottom: 30px;
+	color: $purple_wine;
+
+	@include desktop {
+		margin-bottom: 50px;
+	}
+
+	.Subscription__Header__Title {
+		font-family: 'Abril Fatface';
+		font-size: 42px;
+		@include mobile {
+			& + div {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.Subscription__Header__SubTitle {
+		font-family: Raleway;
+		font-size: 18px;
+	}
+}
+
+.Subscription__Wrapper {
+	margin: 10px 0px;
+}
+
+.Subscription__Coupon {
+	margin-top: 50px;
+	background: $primary;
+	color: white;
+
+	.Subscription__Coupon__Header {
+		color: $cp_white;
+		font-family: 'Abril Fatface';
+		font-size: 24px;
+		padding: 10px;
+	}
+
+	.Subscription__Coupon__Details {
+		border-right: 1px solid #c0b7c5;
+	}
+
+	.Subscription__Coupon__Title {
+		font-size: 14px;
+		color: $primary-light;
+		font-family: Raleway;
+		font-weight: 600;
+	}
+
+	.Subscription__Coupon__Save {
+		font-family: Raleway;
+		font-size: 16px;
+	}
+
+	.Subscription__Coupon__Rate {
+		font-weight: 900;
+		font-family: Raleway;
+		font-size: 31px;
+	}
+
+	.Subscription__Coupon__Symbol {
+		color: #ffffff;
+		font-family: Raleway;
+		font-size: 21px;
+	}
+
+	.Subscription__Coupon__Footer {
+		color: $primary-light;
+		font-size: 12px;
+		padding: 30px 0px;
+	}
+}
+
+.Subscription__Tab__Wrapper {
+	display: flex;
+
+	@include desktop {
+		display: inline;
+		float: right;
+	}
+}
+
+.SubscriptionItem__Header {
+	text-align: center;
+
+	&.active {
+		background: $primary;
+		color: white;
+	}
+
+	@include mobile {
+		padding: 12px 0;
+	}
+}
+
+.SubscriptionItem__Wrapper {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+
+	&:not(.SubscriptionItem__Header) {
+		border-top: 1px solid #c0b7c5;
+	}
+
+	&:nth-last-child(1) {
+		border-bottom: 1px solid #c0b7c5;
+	}
+
+	.SubscriptionItem__Title {
+		color: $primary;
+
+		@include desktop {
+			flex: 3;
+		}
+
+		.SubscriptionItem__Title__Header {
+			font-size: 16px;
+			color: $primary;
+			font-weight: 600;
+		}
+
+		.SubscriptionItem__Title__SubHeader {
+			font-size: 12px;
+		}
+	}
+
+	.SubscriptionItem__Description {
+		flex: 2;
+		padding: 25px 0px;
+		text-align: center;
+		color: $primary;
+		width: 175px;
+		font-size: 16px;
+		font-weight: bold;
+		margin-left: 2px;
+
+		&:not(.header) {
+			min-height: 72px;
+		}
+
+		&.header {
+			padding: 20px 0px;
+			background-color: #eae9df;
+		}
+
+		.title {
+			font-size: 12px;
+			font-weight: 200;
+		}
+
+		&.active {
+			background: #efedeb;
+		}
+
+		&.active-header {
+			color: #ffffff;
+			font-family: Raleway;
+			font-weight: bold;
+			background-color: $primary;
+		}
+
+		.SubscriptionItem__Price__Value {
+			font-weight: 900;
+			font-family: Rawline;
+			font-size: 24px;
+			font-weight: 900;
+		}
+
+		.SubscriptionItem__Price__Symbol {
+			color: $primary;
+			font-family: Rawline;
+			font-size: 14px;
+		}
+	}
+}
+
+.mobile-only {
+	display: block;
+
+	@include desktop {
+		display: none;
+	}
+}
+
+.desktop-only {
+	display: none;
+
+	@include desktop {
+		display: block;
+	}
+}
+
+.SubscriptionItemMobile__Wrapper {
+	color: $primary;
+	display: block;
+
+	border-top: 1px solid #c0b7c5;
+
+	&:nth-last-child(1) {
+		border-bottom: 1px solid #c0b7c5;
+	}
+
+	&.header {
+		border-top: none;
+	}
+
+	.SubscriptionItem__Title {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding-top: 10px;
+		color: $primary;
+
+		.SubscriptionItem__Title__Header {
+			flex: 1;
+			color: $primary;
+			font-family: Raleway;
+			font-size: 14px;
+			font-weight: 600;
+		}
+
+		.SubscriptionItem__Title__SubHeader {
+			flex: 1;
+			color: $purple_heather;
+			font-size: 14px;
+		}
+	}
+
+	.SubscriptionItem__Level {
+		display: flex;
+
+		.SubscriptionItem__Price {
+			flex: 1;
+			padding: 15px 0px;
+			text-align: center;
+
+			.SubscriptionItem__Price__Value {
+				font-size: 28px;
+				font-weight: 900;
+			}
+
+			&.active {
+				background: #efedeb;
+			}
+		}
+
+		.SubscriptionItem__Description {
+			flex: 1;
+			padding: 15px 0px;
+			text-align: center;
+
+			&.active {
+				background: #efedeb;
+			}
+
+			@include mobile {
+				button {
+					height: auto;
+					padding: 5px 23px;
+					width: 100px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,77 @@
+@import 'components/shared/ui/_theme.scss';
+
+.DevLogs__Container {
+	.DevLogs__EmptyMessage {
+		margin: 10px;
+		text-align: center;
+	}
+
+	.DevLogs__CenterContent {
+		display: flex;
+		align-items: center;
+	}
+
+	.DevLogs__UnreadIndicator {
+		margin: 0 10px;
+		font-size: 5px;
+		color: #e83e8c;
+	}
+
+	.DevLogs__LoadMore {
+		text-align: center;
+	}
+
+	code {
+		color: $purple_grape_light;
+	}
+
+	.DevLogs__Table {
+		width: 100%;
+
+		thead th {
+			font-weight: bold;
+			border-bottom: 2px solid $purple_heather;
+		}
+
+		thead th,
+		tbody td {
+			padding: 5px;
+			vertical-align: top;
+		}
+
+		tbody tr {
+			&:nth-child(odd) {
+				background-color: lighten($secondary, 1%);
+			}
+
+			&:nth-child(even) {
+				background-color: darken($secondary, 1%);
+			}
+
+			&:hover {
+				background-color: $secondary-dark;
+				cursor: pointer;
+			}
+
+			td {
+				pre {
+					max-width: 400px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
+		}
+	}
+
+	.DevLogs__Details {
+		strong {
+			font-weight: bold;
+		}
+
+		pre {
+			max-width: 790px;
+			max-height: 120px;
+			overflow: auto;
+		}
+	}
+}

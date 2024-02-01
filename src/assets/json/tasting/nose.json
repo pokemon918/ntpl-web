@@ -1,0 +1,29 @@
+[
+	{
+		"isMultiple": false,
+		"keys": ["condition__", "noseintensity__", "development__"],
+		"required": ["condition__", "noseintensity__", "development__"]
+	},
+	{
+		"isMultiple": true,
+		"keys": [
+			"notes_floral_",
+			"notes_fruit_green_",
+			"notes_fruit_citrus_",
+			"notes_stone_fruit_",
+			"notes_tropical_",
+			"notes_fruit_red_",
+			"notes_fruit_black_",
+			"notes_fruit_dried_",
+			"notes_fruit_cooked_"
+		]
+	},
+	{
+		"isMultiple": true,
+		"keys": ["notes_herbaceous_", "notes_herbal_", "notes_pungent_spice_", "notes_other_"]
+	},
+	{
+		"isMultiple": true,
+		"keys": ["notes_yeast_", "notes_mlf_", "notes_oak_"]
+	}
+]

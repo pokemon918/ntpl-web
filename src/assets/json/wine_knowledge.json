@@ -1,0 +1,15 @@
+{
+	"wine_knowledge_list": [
+		{"title_key": "sommelier", "description": "Sommelier", "role": "Sommelier"},
+		{"title_key": "winemaker", "description": "Winemaker", "role": "Winemaker"},
+		{"title_key": "wine_expert", "description": "Wine Expert", "role": "Wine Expert"},
+		{"title_key": "wine_enthusiast", "description": "Wine Enthusiast", "role": "Wine Enthusiast"},
+		{"title_key": "wine_producer", "description": "Wine Producer", "role": "Wine Producer"},
+		{"title_key": "wine_importer", "description": "Wine Importer", "role": "Wine Importer"},
+		{"title_key": "wine_dealer", "description": "Wine Dealer", "role": "Wine Dealer"},
+		{"title_key": "wine_writer", "description": "Wine Writer", "role": "Wine Writer"},
+		{"title_key": "wine_blogger", "description": "Wine Blogger", "role": "Wine Blogger"},
+		{"title_key": "wine_collector", "description": "Wine Collector", "role": "Wine Collector"},
+		{"title_key": "other", "description": "Other", "role": "Other"}
+	]
+}

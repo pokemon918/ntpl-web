@@ -1,0 +1,34 @@
+.Contest__AssessmentFinal {
+	h1 {
+		margin-bottom: 10px;
+	}
+
+	table {
+		margin-bottom: 0;
+
+		th.NoWrap {
+			white-space: nowrap;
+		}
+
+		tr > td:not(:first-of-type) {
+			text-align: center;
+
+			.Checkbox__Container {
+				display: inline-block;
+			}
+		}
+	}
+
+	.Contest__AssessmentFinal__MiniTastingSummary {
+		text-align: left;
+	}
+
+	.Contest__AssessmentFinal__SupervisorConclusion__Action {
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+	.Contest__AssessmentFinal__TeamLoading {
+		text-align: center !important;
+	}
+}

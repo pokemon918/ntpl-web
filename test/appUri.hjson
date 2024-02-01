@@ -1,0 +1,23 @@
+{
+	ENV:{
+		DEFAULT_API_URL: 'http://core.winenode.com'
+		SNAPSHOT_PATH: ./test-reports/
+
+	}
+
+	SETTINGS:{		
+		NAVIGATE: /settings
+		ADVANCED_OPEN: '#settings-advanced'
+		CORE_API_OPEN: '#main-content > div.container-fluid > div > div > div > div > button'
+		CORE_API_INPUT: 'input#server-url'
+		USER_LOGIN_EMAIL:'#login_email'
+		USER_LOGIN_PW:'#login_password'
+		USER_LOGIN_BUTTON:'#login_button'
+		USER_EMAIL: 'user2@gmail.com'
+		USER_PW: '11111'
+	}
+
+	MODAL_PRIMARY_BUTTON: 'div.modal-footer > button.btn.btn-primary'
+
+
+}

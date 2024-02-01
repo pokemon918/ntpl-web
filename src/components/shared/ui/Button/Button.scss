@@ -1,0 +1,104 @@
+@import 'assets/scss/partials/_mixins.scss';
+@import '../_theme';
+
+.Button {
+	display: inline-block;
+	align-items: center;
+	padding: 10px 30px;
+	height: 50px;
+	font-family: $body_font_family;
+	font-size: 14px;
+	font-weight: 600;
+	@include border_radius(25px);
+	border: 2px solid transparent;
+	background-color: #ffffff;
+
+	&.skinny {
+		padding: 5px 10px;
+		height: 40px;
+	}
+
+	// adds spacing between icons
+	& > *:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	&.Size--small {
+		height: auto;
+		padding: 5px 15px;
+	}
+
+	&:hover {
+		cursor: pointer;
+		box-shadow: 0px 0px 0px 1px $primary;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&:active {
+		opacity: 0.9;
+		transform: translate(1px, 1px);
+	}
+
+	&:disabled {
+		opacity: 0.1;
+		cursor: not-allowed;
+	}
+
+	&.Button__Default {
+		border-color: $default_button_primary;
+		background-color: $default_button_primary;
+		color: $white;
+	}
+
+	&.Button__Outlined {
+		border-color: $default_button_primary;
+		background-color: transparent;
+		color: $default_button_primary;
+
+		&:disabled {
+			background-color: $default_button_primary_disabled;
+		}
+	}
+
+	&.Button__Inverse {
+		border-color: $white;
+		background-color: $primary;
+		color: $white;
+	}
+
+	&.Button__Reverse {
+		color: $white;
+		background: $purple_heather !important;
+	}
+
+	&.Button__Secondary {
+		border-color: $secondary_button_background;
+		background-color: $secondary_button_background;
+		color: $primary;
+	}
+
+	&.Button__Transparent {
+		border-color: transparent;
+		background-color: transparent;
+		box-shadow: none;
+		color: $primary;
+		box-shadow: none;
+	}
+
+	&.Button__Icon {
+		width: 50px;
+		padding: 0;
+		border-color: transparent;
+		background-color: transparent;
+		color: $primary;
+
+		&:hover {
+			border-color: $default_button_primary;
+			background-color: $default_button_primary;
+			color: $secondary;
+		}
+	}
+}

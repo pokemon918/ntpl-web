@@ -1,0 +1,277 @@
+{
+	"teamStats": {
+		"status": "success",
+		"data": {
+			"collection": {
+				"ref": "falqmz",
+				"name": "Round 1: Sauvignon Blanc - white - assorted countries (Team 2)"
+			},
+			"team": {"ref": "hk9cqt", "name": "Team 2"},
+			"subjects": [
+				{
+					"data": {
+						"ref": "fyn69b",
+						"name": "Wine 4 from Israel",
+						"producer": "",
+						"country": "Israel",
+						"region": "Upper Galilee",
+						"vintage": "2016",
+						"grape": "",
+						"location": "",
+						"summary_wine": "",
+						"summary_personal": "",
+						"food_pairing": "",
+						"rating": {},
+						"notes": {"@": ["category_still", "nuance_white"]},
+						"images": [],
+						"created_at": "2020-03-05T13:30:20.000000Z",
+						"price": 13.33,
+						"currency": "GBP",
+						"collection": "falqmz",
+						"metadata": {},
+						"clean_key": "",
+						"producer_key": "",
+						"country_key": "",
+						"region_key": "",
+						"source": "",
+						"info": {},
+						"mold": null
+					},
+					"team_statement": null,
+					"impressions": []
+				},
+				{
+					"data": {
+						"ref": "qmahhz",
+						"name": "Wine 3 from Slovenia",
+						"producer": "",
+						"country": "Slovenia",
+						"region": "Podravje",
+						"vintage": "2016",
+						"grape": "",
+						"location": "",
+						"summary_wine": "",
+						"summary_personal": "",
+						"food_pairing": "",
+						"rating": {},
+						"notes": {"@": ["category_still", "nuance_white"]},
+						"images": [],
+						"created_at": "2020-03-05T13:30:20.000000Z",
+						"price": 10.62,
+						"currency": "GBP",
+						"collection": "falqmz",
+						"metadata": {},
+						"clean_key": "",
+						"producer_key": "",
+						"country_key": "",
+						"region_key": "",
+						"source": "",
+						"info": {},
+						"mold": null
+					},
+					"team_statement": null,
+					"impressions": [
+						{
+							"creator": {
+								"ref": "x83lek",
+								"email": "hailey_leader_corwin96@gmail.com",
+								"name": "Hailey Leader Corwin"
+							},
+							"data": {
+								"ref": "a45gq5g",
+								"name": "Wine 3 from Slovenia",
+								"producer": "",
+								"country": "",
+								"region": "Podravje",
+								"vintage": "2016",
+								"grape": "",
+								"location": "",
+								"summary_wine": "",
+								"summary_personal": "",
+								"food_pairing": "",
+								"rating": {},
+								"notes": {"@": [null, null, null, null, null, null, null, null, null]},
+								"images": [],
+								"created_at": "2020-03-05T13:36:17.000000Z",
+								"price": 10.62,
+								"currency": "GBP",
+								"collection": "falqmz",
+								"metadata": {"swa_round_2": false},
+								"clean_key": "",
+								"producer_key": "",
+								"country_key": "si",
+								"region_key": "",
+								"source": "swa20",
+								"info": {
+									"parker_blind": 96.91250096,
+									"balance": 0.4375,
+									"finish": 0.9,
+									"intensity": 0.9,
+									"complexity": 0.9,
+									"typicity": 0.9,
+									"drinkability": 0.9,
+									"maturity": 0.9,
+									"value_for_money": 0.9,
+									"recommendation": "medal"
+								},
+								"mold": "qmahhz"
+							}
+						},
+						{
+							"creator": {
+								"ref": "rcet3z",
+								"email": "kaylah_guide_lowe23@yahoo.com",
+								"name": "Kaylah Guide Lowe"
+							},
+							"data": {
+								"ref": "cbxe25t",
+								"name": "Wine 3 from Slovenia",
+								"producer": "",
+								"country": "",
+								"region": "Podravje",
+								"vintage": "2016",
+								"grape": "",
+								"location": "",
+								"summary_wine": "",
+								"summary_personal": "",
+								"food_pairing": "",
+								"rating": {},
+								"notes": {"@": [null, null, null, null, null, null, null, null, null]},
+								"images": [],
+								"created_at": "2020-03-05T13:41:31.000000Z",
+								"price": 10.62,
+								"currency": "GBP",
+								"collection": "falqmz",
+								"metadata": {"swa_round_2": false},
+								"clean_key": "",
+								"producer_key": "",
+								"country_key": "si",
+								"region_key": "",
+								"source": "swa20",
+								"info": {
+									"parker_blind": 98.46905738,
+									"balance": 0.75,
+									"finish": 0.75,
+									"intensity": 0.75,
+									"complexity": 0.45,
+									"typicity": 0.75,
+									"drinkability": 0.75,
+									"maturity": 0.75,
+									"value_for_money": 0.75,
+									"recommendation": "faulty"
+								},
+								"mold": "qmahhz"
+							}
+						}
+					]
+				},
+				{
+					"data": {
+						"ref": "tfnxb9",
+						"name": "Wine 1 from South Africa",
+						"producer": "",
+						"country": "South Africa",
+						"region": "Western Cape",
+						"vintage": "2018",
+						"grape": "",
+						"location": "",
+						"summary_wine": "",
+						"summary_personal": "",
+						"food_pairing": "",
+						"rating": {},
+						"notes": {"@": ["category_still", "nuance_white"]},
+						"images": [],
+						"created_at": "2020-03-05T13:30:20.000000Z",
+						"price": 7.2,
+						"currency": "GBP",
+						"collection": "falqmz",
+						"metadata": {},
+						"clean_key": "",
+						"producer_key": "",
+						"country_key": "",
+						"region_key": "",
+						"source": "",
+						"info": {},
+						"mold": null
+					},
+					"team_statement": null,
+					"impressions": []
+				},
+				{
+					"data": {
+						"ref": "yfnhtk",
+						"name": "Wine 2 from France",
+						"producer": "",
+						"country": "France",
+						"region": "Touraine",
+						"vintage": "2017",
+						"grape": "",
+						"location": "",
+						"summary_wine": "",
+						"summary_personal": "",
+						"food_pairing": "",
+						"rating": {},
+						"notes": {"@": ["category_still", "nuance_white"]},
+						"images": [],
+						"created_at": "2020-03-05T13:30:20.000000Z",
+						"price": 9.57,
+						"currency": "GBP",
+						"collection": "falqmz",
+						"metadata": {},
+						"clean_key": "",
+						"producer_key": "",
+						"country_key": "",
+						"region_key": "",
+						"source": "",
+						"info": {},
+						"mold": null
+					},
+					"team_statement": null,
+					"impressions": []
+				}
+			]
+		},
+		"subjects": {
+			"fyn69b": {"team_marked_statements": [], "impressions": {}},
+			"qmahhz": {
+				"team_marked_statements": [],
+				"impressions": {
+					"x83lek": {
+						"ref": "a45gq5g",
+						"medal": "",
+						"recommendation": "Medal",
+						"tasting_note": "",
+						"food_pairing": ""
+					},
+					"rcet3z": {
+						"ref": "cbxe25t",
+						"medal": "",
+						"recommendation": "Faulty",
+						"tasting_note": "",
+						"food_pairing": ""
+					}
+				}
+			},
+			"tfnxb9": {"team_marked_statements": [], "impressions": {}},
+			"yfnhtk": {"team_marked_statements": [], "impressions": {}}
+		}
+	},
+	"currentMembers": [
+		{
+			"ref": "x83lek",
+			"name": "Hailey Leader Corwin",
+			"division": "hk9cqt",
+			"role": "leader",
+			"metadata": null,
+			"email": "hailey_leader_corwin96@gmail.com"
+		},
+		{
+			"ref": "lege9n",
+			"name": "Clinton Member Larkin",
+			"division": "hk9cqt",
+			"role": "member",
+			"metadata": null,
+			"email": "clinton_member_larkin36@hotmail.com"
+		}
+	]
+}
